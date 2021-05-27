@@ -926,7 +926,7 @@ A = [[Axx, Axy], [Ayx, Ayy]]</pre><br />
   C = [[0, 0], [0, 0]]
   for i in range(2):
     for j in range(2):
-      for j in range(2):
+      for k in range(2):
         C[i][j] += A[i][k] * B[k][j]
   return C
       </pre>
@@ -941,7 +941,7 @@ A = [[Axx, Axy], [Ayx, Ayy]]</pre><br />
   C = [[0]*n for _ in range(2)]
   for i in range(n):
     for j in range(n):
-      for j in range(n):
+      for k in range(n):
         C[i][j] += A[i][k] * B[k][j]
   return C
       </pre>
@@ -969,7 +969,7 @@ A = [[Axx, Axy], [Ayx, Ayy]]</pre><br />
   C = [[0]*n for _ in range(2)]
   for i in range(n):
     for j in range(n):
-      for j in range(n):
+      for k in range(n):
         C[i][j] += A[i][k] * B[k][j]
   return C
       </pre>
