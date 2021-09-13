@@ -12,5 +12,6 @@ gh-pages で、個別に書いた HTML コンテンツをホスティングす�
 * ZAF 2021/02 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202102/ichiki/)
 * ZAF 2021/01 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202101/ichiki/)
 * （少し飛んで）
+* ZAF 2020/11 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202011/ichiki/)
 * ZAF 2020/10 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202010/ichiki/)
 * などなど
