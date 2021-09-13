@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM - ZOOM ライブ (2020/11/25)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM ZOOM LIVE 2020/11/25</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20201125-1280x720.jpg"><!-- 1280x720 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20201125-1280x720_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+    <br />
+    <a href="20201120_forum.JPG"><!-- 923x250 -->
+      <img src="20201120_forum_thumb.jpg" width="800" height="217" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <h2>今回のテーマ「実践」</h2>
+  <p>
+    前回振り返った原点
+    <ul>
+      <li>「誰でもできるAI」</li>
+      <li>「理系でなくてもできるAI」</li>
+      <li>「コピペでできるAI」</li>
+    </ul>
+    から、ではどうするか、というイメージです。
+    <br />
+    楽しんでいきましょう。</p>
+  <h3>今回の内容</h3>
+  <ul>
+    <li>『ニューラルネットの基本的なテクニック』古川</li>
+    <li>『最近の話題から、実践編』市來</li>
+  </ul>
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li>[6:30 - 7:00]（前座）『<a href="#quiz">数理クイズ</a>』
+    </li>
+
+    <li>[7:00 - 8:00] 『ニューラルネットの基本的なテクニック』古川
+    </li>
+
+    <li>[8:00 - 9:00] 『<a href="#news">最近の話題から、実践編</a>』市來
+    </li>
+  </ul>    
+
+  <hr />
+
+  <h2 id="quiz">数理クイズ</h2>
+  <ul>
+    <li>ちょっと趣向を変えて
+      <ul>
+	<li>対話が大事かな、と</li>
+      </ul>
+    </li>
+    <li>（前回のフォーラムで思ったこと）
+      <ul>
+	<li>目指すもの
+	  <pre>
+「誰でもできるAI」
+「理系でなくてもできるAI」
+「コピペでできるAI」
+	  </pre>
+	</li>
+
+	<li>プログラミング
+	  <ul>
+	    <li>コンピュータとコミュニケーションする手段</li>
+	    <li>（外国の人とコミュニケーションしたくて、外国語を勉強している人をイメージ）</li>
+	    <li>2020年の今、今後１０年を考えて、<br />
+	      プログラミングできなくて大丈夫ですか？</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>今日のテーマ『実践』
+      <ul>
+	<li>（今日の裏テーマ『ゆるＡＩ』）</li>
+      </ul>
+    </li>
+    <li>プログラミングの実践とは？
+      <ul>
+	<li>数理</li>
+      </ul>
+    </li>
+
+    <li>日常と数理を結びつけることが大事かな、と
+      <ul>
+	<li>それで『数理クイズ』</li>
+	<li>なんでクイズか？
+	  <ul>
+	    <li>出題時に、回答する必要がないから！</li>
+	    <li>（準備する時間が足りませんでした）</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+  <h3>問い「人生、その時々の興味の赴くまま学んでいって大丈夫ですか？」</h3>
+  <ul>
+    <li>（極めて日常的なステートメント）</li>
+    <li>モデル化しましょう</li>
+
+    <li>「ランダム・ウォーク」
+      <ul>
+	<li>最初、あなたは、ある場所 <b>x0</b> にいます。</li>
+	<li>一定時間間隔 dt ごとに、任意の方向に距離 dr 移動します。</li>
+	<li>（「任意の方向」というのが「その時々の興味の赴くまま」に
+	  対応しています）</li>
+	<li>このとき、未来のある時点 t でのあなたのいる場所 <b>x</b>(t) に
+	  ついて考えましょう！</li>
+      </ul>
+    </li>
+
+    <li>「ランダム」から「統計」
+      <ul>
+	<li>「任意の方向に」と書いた通り、どこにいくか分かりません。</li>
+	<li>あなた以外に１０人の人が同じルールに従えば、
+	  それぞれ違うステップを歩み、最終的に別々の場所にいるでしょう（一般に）</li>
+	<li>（例えば、ある領域が「成功ゾーン」、別の領域が「失敗ゾーン」とすると）
+	  「成功するか」「失敗するか」は運次第ということになります。</li>
+	<li>「出発点 <b>x0</b> からどれだけ遠くに行けるか」を、
+	  「あなたがどれだけ成長したか」と解釈することにしましょう。</li>
+	<li>統計的事象について、なにか明確な主張をしたければ
+	  （「運がよかった、悪かった」以上の）、
+	  なんらかの統計処理を行う必要があります。</li>
+	<li>たくさんの事象（あるいは沢山の人）に対して「平均をとる」と、
+	  平均的な傾向が分かってきます。</li>
+      </ul>
+    </li>
+
+    <li>「その時々の興味の赴くままに学んで行って、成長しますか？」
+      <ul>
+	<li>という問いに、答えてみよう！</li>
+      </ul>
+    </li>
+    
+  </ul>
+
+
+  <h3>関連する（おもしろそうな）話題</h3>
+  <ul>
+    <li>「乱数」について：
+      <ul>
+	<li>乱数について、一様乱数は [0, 1) を一定の確率で返してくれる。</li>
+	<li>正規分布（ガウス分布）に従う乱数を生成するには、どうするか？</li>
+	<li>円周上に均一に分布する乱数を生成する方法？</li>
+	<li>円内に均一に分布する乱数を生成する方法？</li>
+	<li>球面上（球の内側）に均一に分布する乱数</li>
+	<li>d 次元空間の超球面上に均一に分布する乱数</li>
+	<li>参考文献： Numerical Recipes, The Art of Computer Programming Vol.2 (Knuth), GNU Scientific Library</li>
+      </ul>
+    </li>
+    <li>「ランダム・ウォーク」について
+      <ul>
+	<li>「地球上であるとき出会った二人は、
+	  その後再び出会うことはできるのでしょうか？」</li>
+	<li>「宇宙であるとき出会った二人は、
+	  その後再び出会うことはできるのでしょうか？」</li>
+	<li>「d次元空間であるとき出会った二人は、果たして
+	  その後再び出会うことはできるのでしょうか？」</li>
+	<li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <hr />
+
+  <h2 id="news">第１部：『ニューラルネットの基本的なテクニック』古川郁衣さん</h2>
+  <p>
+    <a href="20201125-zenkei-ai-forum-yuru-ai.jpg"><!-- 449x388 -->
+      <img src="20201125-zenkei-ai-forum-yuru-ai_thumb.jpg" width="600" height="518" style="border: 2px #ccc solid;" /></a>
+  </p>
+  <p>
+    ニューラルネットの簡単なテクニックとその効果の確認を行っていきます。<br />
+    label smoothingとかTTAとか、、<br />
+    コードも後で公開するので、誰でもできます。
+  </p>
+
+
+  <hr />
+
+  <h2 id="news">最近の話題から、実践編</h2>
+  <ul>
+    <li>最近の話題として、２つのネタをピックアップします。
+      <ul>
+	<li>Vision Transformer
+	  <ul>
+	    <li>「Attention Is All You Need」(<a href="https://arxiv.org/abs/1706.03762">arxiv 1706.03762</a>) から始まった Transformer （の快進撃)</li>
+	    <li>そもそも LSTM に導入された attention mechanism が、<br />
+	      「これだけでいいんじゃね？」<br />
+	      というノリ（？）で始まったもの</li>
+	    <li>NLP で既存の手法 (RNN, LSTM) を根こそぎ淘汰した後、</li>
+	    <li>音声方面にも活用されつつあって、</li>
+	    <li>シーケンス・データでなかった「画像」はここまで CNN が頑張ってきたが、</li>
+	    <li>とうとう Transformer の魔の手が忍び寄ってきた！</li>
+	    <li>という論文</li>
+	    <li>（死神の meme 画像、見かけたはずなのに見つからなかった…<br />
+	      誰か、見つけたら、教えてください！）</li>
+	  </ul>
+	</li>
+
+	<li>Bootstrap Your Own Latent
+	  <ul>
+	    <li>強化学習にめちゃくちゃ力入れてる DeepMind の論文。</li>
+	    <li>self supervised learning の最新の方法論</li>
+	    <li>ラベルなしデータセットで、特徴量を学習させる計算手法</li>
+	    <li>これまで長らく、巧みの技の世界だったらしい<br />
+	      cf. Jeremy のブログ記事 (<a href="https://www.fast.ai/2020/01/13/self_supervised/">Self-supervised learning and computer vision</a>)<br />
+	      <a href="Jeremy-Self-Supervised-Learning.png"><!-- 2527x771 -->
+		<img src="Jeremy-Self-Supervised-Learning_thumb.jpg" width="400" height="122" style="border: 2px #ccc solid;" /></a>
+	      <br />
+	      (Written: 13 Jan 2020 by Jeremy Howard)
+	    </li>
+	    <li>グーグルの SimCLR<br />
+	      (<a href="https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html">Advancing Self-Supervised and Semi-Supervised Learning with SimCLR</a>)
+	      <br />
+	      <a href="SimCLR-google-ai-blog.png"><!-- 1388x746 -->
+		<img src="SimCLR-google-ai-blog_thumb.jpg" width="400" height="215" style="border: 2px #ccc solid;" /></a>
+	      <br />
+	      (Wednesday, April 8, 2020)
+	    </li>
+	    <li>これでもずいぶんシンプルになったところを、<br />
+	      「ネガティブ・サンプル」すら準備する必要なくなった！<br />
+	      というのが BYOL</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+    <li>なにが「実践編」？
+      <ul>
+	<li>話題提供だけなら、今までの「最近の話題から」と同じですね。</li>
+	<li>この２つの手法を、<br />
+	  「勉強する」「論文を読んでみる」のではなく、<br />
+	  理解する前に、実際に使ってみよう！<br />
+	  という意味です。</li>
+	<li>やること：
+	  <ul>
+	    <li>ViT を使って「五郎島分類」</li>
+	    <li>BYOL を使って「五郎島分類」</li>
+	    <li>BYOL を使って「Dog Breed 分類」</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <h3>Vision Transformer</h3>
+  <ul>
+    <li>OpenReview: <a href="https://openreview.net/forum?id=YicbFdNTTy">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</a>
+      <ul>
+	<li><a href="an_image_is_worth_16x16_words_transformers_for_image_recognition_at_scale.pdf">PDF</a><br />
+	  <a href="VisionTransformer_01.png"><!-- 1142x851 -->
+	    <img src="VisionTransformer_01_thumb.jpg" width="400" height="298" style="border: 2px #ccc solid;" /></a>
+	  <a href="VisionTransformer_02.png"><!-- 1119x679 -->
+	    <img src="VisionTransformer_02_thumb.jpg" width="400" height="243" style="border: 2px #ccc solid;" /></a>
+	</li>
+	<li>github: <a href="https://github.com/google-research/vision_transformer">google-research/vision_transformer</a>
+	  - 公式実装 (JAX)
+	  <ul>
+	    <li>colab: <a href="https://colab.research.google.com/github/google-research/vision_transformer/blob/master/vit_jax.ipynb">https://colab.research.google.com/github/google-research/vision_transformer/blob/master/vit_jax.ipynb</a><br />
+	      <a href="ViT-colab_01.png"><!-- 2880x1800 -->
+		<img src="ViT-colab_01_thumb.jpg" width="400" height="250" style="border: 2px #ccc solid;" /></a>
+	      <a href="ViT-colab_02.png"><!-- 2880x1800 -->
+		<img src="ViT-colab_02_thumb.jpg" width="400" height="250" style="border: 2px #ccc solid;" /></a>
+	      <a href="ViT-colab_03.png"><!-- 2880x1800 -->
+		<img src="ViT-colab_03_thumb.jpg" width="400" height="250" style="border: 2px #ccc solid;" /></a>
+	      <a href="ViT-colab_04.png"><!-- 2880x1800 -->
+		<img src="ViT-colab_04_thumb.jpg" width="400" height="250" style="border: 2px #ccc solid;" /></a>
+	    </li>
+	  </ul>
+	</li>
+	<li>github: <a href="https://github.com/lucidrains/vit-pytorch">lucidrains/vit-pytorch</a>
+	  - pytorch 実装
+	</li>
+
+	<li><a href="https://deepsquare.jp/2020/10/vision-transformer/">画像認識の革新モデル！脱CNNを果たしたVision Transformerを徹底解説！</a> (2020.10.16)
+	</li>
+	<li>Qiita <a href="https://qiita.com/omiita/items/0049ade809c4817670d7">画像認識の大革命。AI界で話題爆発中の「Vision Transformer」を解説！</a>
+	  (@omiita updated at 2020-10-24)
+	</li>
+
+      </ul>
+    </li>
+  </ul>
+
+
+  <h3>BYOL: Bootstrap Your Own Latent</h3>
+  <ul>
+    <li>arxiv <a href="https://arxiv.org/abs/2006.07733">2006.07733</a>
+      Bootstrap your own latent: A new approach to self-supervised Learning
+      <br />
+      (Jean-Bastien Grill, et al.)
+      <ul>
+	<li><a href="arxiv-2006.07733.pdf">PDF</a><br />
+	  <a href="arxiv-2006.07733_01.png"><!-- 1275x947 -->
+	    <img src="arxiv-2006.07733_01_thumb.jpg" width="400" height="297" style="border: 2px #ccc solid;" /></a>
+	  <a href="arxiv-2006.07733_02.png"><!-- 644x691 -->
+	    <img src="arxiv-2006.07733_02_thumb.jpg" width="373" height="400" style="border: 2px #ccc solid;" /></a>
+	  <a href="arxiv-2006.07733_03.png"><!-- 1281x553 -->
+	    <img src="arxiv-2006.07733_03_thumb.jpg" width="400" height="173" style="border: 2px #ccc solid;" /></a>
+	</li>
+	<li>github: <a href="https://github.com/deepmind/deepmind-research/tree/master/byol">deepmind/deepmind-research/tree/master/byol</a>
+	  - official 実装 (by deepmind)</li>
+	<li>github: <a href="https://github.com/lucidrains/byol-pytorch">lucidrains/byol-pytorch</a>
+	  - pytorch 実装</li>
+      </ul>
+    </li>
+    <li><a href="https://untitled-ai.github.io/understanding-self-supervised-contrastive-learning.html">Understanding self-supervised and contrastive learning with "Bootstrap Your Own Latent" (BYOL)</a>
+      (Aug 24, 2020 • Abe Fetterman, Josh Albrecht)
+      <ul>
+	<li>上の lucidrains によると
+	  <pre>
+	    There is now new evidence that batch normalization is key to making this technique work well
+	  </pre>
+	</li>
+      </ul>
+    </li>
+    <li>arxiv <a href="https://arxiv.org/abs/2010.10241">2010.10241</a>
+      BYOL works even without batch statistics
+      <br />
+      (Pierre H. Richemond, et al.)
+      <ul>
+	<li><a href="arxiv-2010.10241.pdf">PDF</a><br />
+	  <a href="arxiv-2010.10241_01.png"><!-- 1196x533 -->
+	    <img src="arxiv-2010.10241_01_thumb.jpg" width="400" height="178" style="border: 2px #ccc solid;" /></a>
+	</li>
+	<li>上の lucidrains によると
+	  <pre>
+	    A new paper has successfully replaced batch norm with group norm + weight standardization, refuting that batch statistics are needed for BYOL to work
+	  </pre>
+	</li>
+      </ul>
+    </li>
+
+    <li>YouTube: <a href="https://www.youtube.com/watch?v=YPfUiOMYOEE">BYOL: Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (Paper Explained)</a>
+    </li>
+    <li><a href="https://sn-neural-compute.netlify.app/202006250/">自己教師あり学習法 BYOL</a> (Published on 6/26, 2020)
+    </li>
+
+    <li>arxiv <a href="https://arxiv.org/abs/2011.10566">2011.10566</a>
+      Exploring Simple Siamese Representation Learning
+      <br />
+      (Xinlei Chen, Kaiming He)
+      <ul>
+	<li><a href="arxiv-2011.10566.pdf">PDF</a><br />
+	  <a href="arxiv-2011.10566_01.png"><!-- 1386x948 -->
+	    <img src="arxiv-2011.10566_01_thumb.jpg" width="400" height="274" style="border: 2px #ccc solid;" /></a>
+	  <a href="arxiv-2011.10566_02.png"><!-- 701x733 -->
+	    <img src="arxiv-2011.10566_02_thumb.jpg" width="383" height="400" style="border: 2px #ccc solid;" /></a>
+	</li>
+      </ul>
+    </li>
+
+    <li>ちなみに、なんで BYOL という名前をつけたのか？
+      <ul>
+	<li>Wikipedia <a href="https://en.wikipedia.org/wiki/BYOB">BYOB</a>
+	  <pre>
+BYOB is an acronym that means "bring your own bottle" or "bring your own booze".
+
+BYOB is a later variant of the earlier expression, BYOL meaning "bring your own liquor."
+	  </pre>
+	</li>
+	<li>ということで、パーティのホストが
+	  <blockquote>
+	  「酒は飲みたい人が勝手に持ってきてね
+	  （オレは準備しねーぞ）」
+	  </blockquote>
+	  という言葉 BYOL をもじった、ということらしい
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+
+</section>
+
+</body>           
+</html>
