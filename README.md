@@ -4,14 +4,25 @@ gh-pages で、個別に書いた HTML コンテンツをホスティングす�
 
 * トップ： https://zenkei-ai-forum.github.io/pages/
 * ZAF 2021/08 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202108/ichiki/)
+  * 雑誌と本とホームページ、新企画：本を読んでみよう、最近の話題から（HuggingFace Transformers）
 * ZAF 2021/07 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202107/ichiki/)
+  * 技術書典１１振り返り
 * ZAF 2021/06 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202106/ichiki/)
+  * 続々東海道５Ｘ、最近の話題から（GPT-3）
 * ZAF 2021/05 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202105/ichiki/)
+  * 『ＡＩの社会への活用』座談会
 * ZAF 2021/04 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202104/ichiki/)
+  * ゴールデン・ウィークもＡＩ
 * ZAF 2021/03 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202103/ichiki/)
+  * コンピュータ会話教室、続東海道５x
 * ZAF 2021/02 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202102/ichiki/)
+  * AI 最近の話題から、月刊 ZENKEI AI MAGAZINE 創刊！
 * ZAF 2021/01 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202101/ichiki/)
-* （少し飛んで）
+  * 「技術書典１０のまとめ」
+* ZAF 2020/12 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202012/ichiki/)
+  * ２０２０年最後のAI FORUM
 * ZAF 2020/11 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202011/ichiki/)
+  * 今回のテーマ「実践」
 * ZAF 2020/10 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202010/ichiki/)
+  * 「誰でもできるAI」「理系でなくてもできるAI」「コピペでできるAI」
 * などなど
