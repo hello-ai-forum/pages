@@ -1,0 +1,2494 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2021/09/29)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2021/09/29</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20210929-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20210929-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF ２０２１年９月２８日
+    </div>
+    <div style="font-size: 40px;">＜今回のテーマ＞</div>
+    <div style="font-size: 80px;">
+      秋の夜長は
+      <div style="font-weight: bolder;">
+	コーディング
+      </div>
+      <div style="font-weight: bolder;">
+	（あるいは読書）
+      </div>
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li><b>前座</b> [6:30 - 7:00]
+      <ul>
+	<li><a href="#podcast">ポッドキャスト復活！</a></li>
+	<li><a href="#zam">One More Thing</a></li>
+	<li>（<a href="#part0-toc">目次</a>）</li>
+      </ul>
+    </li>
+
+    <li>（新シリーズ）『２０２１年版 NLP を完全に理解する』第１回</li>
+
+    <li><b>第１部</b> [7:00 - 8:00]<br />
+      <a href="#reading">秋の夜長は読書</a>
+      <ul>
+	<li>論文 "Neural Machine Translation By Jointly Learning To Align and Translate" を精読！</li>
+	<li>（<a href="#part1-toc">目次</a>）</li>
+      </ul>
+    </li>
+
+    <li><b>第２部</b> [8:00 - 9:00]<br />
+      <a href="#coding">秋の夜長はコーディング</a>
+      <ul>
+	<li>Attention を組み込むための Seq2Seq を導入</li>
+	<li>（<a href="#part2-toc">目次</a>）</li>
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part0">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座
+    </div>
+  </center>
+  <h2 id="podcast">ポッドキャスト復活！</h2>
+
+  <ul>
+    <li>ここのところ、ことあるごとに「更新せねば」と言っていた
+      ZAP （ザップ）こと ZENKEI AI ポッドキャスト
+    </li>
+    <li>実は最終更新が（１回、今年の７月に残ってた１話をアップしましたが）
+      去年の 2020年10月にアップしたシーズン８でした
+      <ul>
+	<li>ZAF のシーズン８は、 ZAF 2020年８月に対応してます</li>
+      </ul>
+    </li>
+
+    <li>滞っていた理由
+      <ul>
+	<li>音声ファイルの編集に、手間をかけていた
+	  <ul>
+	    <li>「あー」とか「うー」とか</li>
+	    <li>「チッ」とか「ハーッ」とか「...」とか</li>
+	    <li>そういうのをカットしつつ、</li>
+	    <li>それでも自然に話してるように隙間は整えつつ、</li>
+	  </ul>
+	  という涙ぐましい編集作業が、結構大変だった
+	</li>
+      </ul>
+    </li>
+
+    <li>前回の ZAF ８月を終えて、１つの決断をしました
+      <ul>
+	<li>「オーディオのクオリティ」と「リリース」を天秤にかけて</li>
+	<li>「オーディオのクオリティ」＜＜「リリース」だろう、と</li>
+	<li>コンテンツは、みんなに届けて「なんぼ」だろう、と</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-1">新しい編集方針</h3>
+  <ul>
+    <li>ZAF イベント（２時間半）から、話題ごとにカットする</li>
+    <li>１本３０分を限度として、６〜７本を目処に</li>
+    <li>編集は、この切り出しのみとし、それ以上の修正は行わない
+      <ul>
+	<li>基本的に、２時間半の尺に、キューポイントを設定するのみ</li>
+      </ul>
+    </li>
+    <li>音量については comp や normalize のみ簡単にかける</li>
+  </ul>
+
+  <p>いい点</p>
+  <ul>
+    <li>編集時間が大幅に減る
+      <ul>
+	<li>週末の半日で、ほぼ、終わる</li>
+      </ul>
+    </li>
+    <li>オーディオに対応したビデオも（比較的簡単に）作れる</li>
+  </ul>
+
+  <p>ということで、８月末から、即実行！</p>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-2">ということで、８月末から、即実行！</h3>
+  <ul>
+    <li>8/27 (Fri) からの週：シーズン９ (2020年9月のイベント）</li>
+    <li>9/4 (Sat) からの週：シーズン１０ (2020年10月のイベント）</li>
+    <li>9/11 (Sat) からの週：シーズン１１ (2020年11月のイベント）</li>
+    <li>9/19 (Sun) からの週：シーズン１２ (2020年12月のイベント）</li>
+    <li>9/26 (Sun) からの週：シーズン１３ (2021年1月のイベント）</li>
+    <li>ほぼ毎日、１話ずつ、公開中！</li>
+  </ul>
+
+  <center>
+    <a href="Screen Shot 2021-09-28 at 17.33.56.png"><!-- 2682x1426 -->
+      <img src="Screen Shot 2021-09-28 at 17.33.56_thumb.jpg" width="600" height="319" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-28 at 17.34.03.png"><!-- 2680x1422 -->
+      <img src="Screen Shot 2021-09-28 at 17.34.03_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-3">ポッドキャスト</h3>
+
+  <p>ところでみなさん、ポッドキャスト、どうやって聞いてますか？</p>
+
+  <p>ZENKEI AI ポッドキャストは、
+    ホームページ以外に、
+    いろんなポッドキャスト・サービスからも聞くことができます！
+  </p>
+
+  <center>
+    <a href="Screen Shot 2021-09-28 at 17.36.32.png"><!-- 2662x1372 -->
+      <img src="Screen Shot 2021-09-28 at 17.36.32_thumb.jpg" width="600" height="309" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+  <ul>
+    <li><a href="https://podcasts.apple.com/jp/podcast/zenkei-ai-%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88/id1504899046">Apple Podcast</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.36.44.png"><!-- 2674x1416 -->
+	<img src="Screen Shot 2021-09-28 at 17.36.44_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li><a href="https://music.amazon.co.jp/podcasts/ccf57fae-e92d-4b31-bfcb-a178eeeb3934/zenkei-ai-%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88">Amazon Music</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.38.02.png"><!-- 2655x1421 -->
+	<img src="Screen Shot 2021-09-28 at 17.38.02_thumb.jpg" width="600" height="321" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li><a href="https://open.spotify.com/show/2ZAgWWpxJzaiMmih8JPtrw">Spotify</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.37.07.png"><!-- 2672x1246 -->
+	<img src="Screen Shot 2021-09-28 at 17.37.07_thumb.jpg" width="600" height="280" style="border: 2px #ccc solid;" /></a>
+    </li>
+  </ul>
+  	</td>
+  	<td valign="top">
+  <ul>
+    <li><a href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWRzLmZlZWRidXJuZXIuY29tL1plbmtlaUFpUG9kY2FzdA?hl=jp">Google Podcasts</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.36.19.png"><!-- 2673x1420 -->
+	<img src="Screen Shot 2021-09-28 at 17.36.19_thumb.jpg" width="600" height="319" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li><a href="https://tunein.com/podcasts/Technology-Podcasts/ZENKEI-AI-Podcast-p1313880/">TuneIn</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.37.24.png"><!-- 2051x1244 -->
+	<img src="Screen Shot 2021-09-28 at 17.37.24_thumb.jpg" width="600" height="364" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li>などなど</li>
+  </ul>
+	</td>
+      </tr>
+    </table>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="podcast-4">
+    <div style="font-size: 50px; font-weight: bolder;">
+      反響は？
+    </div>
+  </center>
+
+  <ul>
+    <li>今回の決断の理由は、上に書いた通り
+      <center>
+	<div style="font-size: 50px;">
+	  コンテンツは<br />
+	  みんなに届けて<br />
+	  「なんぼ」だろう
+	  <br />
+	  　
+	</div>
+      </center>
+    </li>
+    <li>で、１ヶ月、ほぼ毎日アップロードし続けて
+      <center>
+	<div style="font-size: 50px;">
+	  <br />
+	  どれだけ届いたのだろう？
+	</div>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-5">Podcast Freaks</h3>
+  <ul>
+    <li><a href="https://podcastfreaks.com/">podcastfreaks.com</a><br />
+      <a href="Screen Shot 2021-09-28 at 17.43.41.png"><!-- 2674x1424 -->
+	<img src="Screen Shot 2021-09-28 at 17.43.41_thumb.jpg" width="600" height="320" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li>ここは、技術系のポッドキャストのキュレーションをやってるところ
+      <ul>
+	<li>リストに入れてもらうのは、自己申告みたいなので、
+	  ポッドキャスト始めた頃に登録してもらった</li>
+      </ul>
+    </li>
+    <li>Tips としては、リストは深夜に１度更新なので、
+      トップに行きたかったら午前０時直前を狙ってアップデートしたらよい
+      <ul>
+	<li>ZAF は、今公開はスケジューリングしてますが、
+	  リリース時間はお昼に設定してます</li>
+	<li>（つまりは、あんまり気にしてない）</li>
+      </ul>
+    </li>
+    <li>実際のところ、このリストがどれほどリスナーへのリーチに
+      寄与しているのか、よく分からない</li>
+    <li>でも、毎日更新する励みにはなる</li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-6">Podcast Ranking</h3>
+  <ul>
+    <li><a href="https://podcastranking.jp/">podcastranking.jp</a>
+      <br />
+      <a href="Screen Shot 2021-09-28 at 18.50.17.png"><!-- 2672x1418 -->
+	<img src="Screen Shot 2021-09-28 at 18.50.17_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+    <li>毎日更新した成果（？）<br />
+      <a href="Screen Shot 2021-09-28 at 17.43.55.png"><!-- 2680x1416 -->
+	<img src="Screen Shot 2021-09-28 at 17.43.55_thumb.jpg" width="600" height="317" style="border: 2px #ccc solid;" /></a>
+      <a href="Screen Shot 2021-09-28 at 17.44.07.png"><!-- 2677x1419 -->
+	<img src="Screen Shot 2021-09-28 at 17.44.07_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-7">反響は...よく分からない</h3>
+  <ul>
+    <li>みなさん、コメントください！</li>
+    <li>ツイッターでハッシュタグ #zenkeiai でツイートしていただければ、
+      補足できます！
+      <center>
+	<a href="Screen Shot 2021-09-28 at 19.07.15.png"><!-- 1266x1373 -->
+	  <img src="Screen Shot 2021-09-28 at 19.07.15_thumb.jpg" width="553" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-8">ところで YouTube</h3>
+
+  <ul>
+    <li>これまでのユーチューブのアーカイブは、ユーザーに不親切だったかも...
+      <ul>
+	<li>（特に ZOOM になった最近は）<br />
+	  １回が２時間半のビデオをドーンと置いて、<br />
+	  それで終わり
+	</li>
+      </ul>
+    </li>
+    <li>元気がある時は、それでもインデックス付けたりしてましたが
+      <center>
+	<a href="Screen Shot 2021-09-28 at 19.13.33.png"><!-- 2645x1427 -->
+	  <img src="Screen Shot 2021-09-28 at 19.13.33_thumb.jpg" width="600" height="324" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2021-09-28 at 19.13.41.png"><!-- 2646x1394 -->
+	  <img src="Screen Shot 2021-09-28 at 19.13.41_thumb.jpg" width="600" height="316" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>（上に書いた）新しい編集方針の「いい点」
+      <center>
+	<div style="font-size: 50px; font-weight: bold;">
+	  <br />
+	  オーディオに対応したビデオも<br />
+	  （比較的簡単に）作れる<br />
+	  　
+	</div>
+      </center>
+    </li>
+
+    <li>ということで、ユーザー体験向上のため
+      <center>
+	<div style="font-size: 50px; font-weight: bold;">
+	  <br />
+	  ZENKEI AI FORUM<br />
+	  SELECTIONS 爆誕！<br />
+	  　
+	</div>
+      </center>
+    </li>
+
+    <li>ZAF SELECTIONS とは？
+      <ul>
+	<li>話題ごとに切り出された、ショートビデオ
+	  <ul>
+	    <li>タイトル付けた（ユーチューバーっぽい！）</li>
+	    <li>（実態は、ポッドキャストと同じ尺に切っただけ...）</li>
+	  </ul>
+	</li>
+	<li><a href="https://www.youtube.com/playlist?list=PLubrgrfAPsevS3-JBuoLdrdpqLIkNDFsz">ZENKEI AI FORUM SELECTIONS</a> プレイリスト
+	  <center>
+	    <a href="Screen Shot 2021-09-28 at 17.39.04.png"><!-- 2653x1332 -->
+	      <img src="Screen Shot 2021-09-28 at 17.39.04_thumb.jpg" width="800" height="402" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>ついでに、<a href="https://www.youtube.com/channel/UC-Nk3ykVac-FwnElsdtwpHg">ぼくのユーチューブ・チャンネル</a>、サブスクお願いします！
+      <br />
+      （「チャンネル登録」というのかな？）
+      <center>
+	<a href="Screen Shot 2021-09-28 at 19.27.10.png"><!-- 2616x1382 -->
+	  <img src="Screen Shot 2021-09-28 at 19.27.10_thumb.jpg" width="800" height="423" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>現在のサブスクライバー数は、<b>２９人</b>！</li>
+	<li>全然増えませんね</li>
+	<li>「宣伝しないですね」と言われますが、<br />
+	  宣伝するのが苦手なんで...
+	</li>
+	<li>しかし、最近（やっと）学んだことなんだけど<br />
+	  声を上げないと、やっぱり誰にも気づいてもらえない<br />
+	  （当たり前のことなんだけど...）
+	  <ul>
+	    <li>一方で、我が恩師の言葉
+	      (<a href="https://kichiki.wordpress.com/2011/02/20/%E3%81%BC%E3%81%8F%E3%81%8C%E5%BD%B1%E9%9F%BF%E3%82%92%E5%8F%97%E3%81%91%E3%81%9F%EF%BC%95%E4%BA%BA%E3%81%8B%E3%82%89%E3%80%81%E4%B8%89%E4%BA%BA%E7%9B%AE%E3%80%82/">kichiki.wordpress.com/2011/02/20/ぼくが影響を受けた５人から、三人目。/</a>)
+	      <center>
+		<a href="Screen Shot 2021-09-28 at 19.43.15.png"><!-- 1979x1037 -->
+		  <img src="Screen Shot 2021-09-28 at 19.43.15_thumb.jpg" width="600" height="314" style="border: 2px #ccc solid;" /></a>
+		<br />
+		<table border="0">
+		  <tr>
+		    <td valign="top">
+		<a href="Screen Shot 2021-09-28 at 19.43.29.png"><!-- 1503x836 -->
+		  <img src="Screen Shot 2021-09-28 at 19.43.29_thumb.jpg" width="600" height="334" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		    <td>
+		<a href="Screen Shot 2021-09-28 at 19.43.36.png"><!-- 1531x1331 -->
+		  <img src="Screen Shot 2021-09-28 at 19.43.36_thumb.jpg" width="600" height="522" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		  </tr>
+		</table>
+		<div style="font-size: 30px; font-weight: bold;">
+		  「本当に能力があれば機会を与えられることの意味は分かるはず」
+		  <br />
+		  　
+		</div>
+	      </center>
+	    </li><!-- 一方で、我が恩師の言葉 -->
+	    <li>オレは
+	      <center>
+		<div style="font-size: 30px; font-weight: bold;">
+		  日々きちんとしていれば、きっと誰かが見てくれている
+		  <br />
+		  　
+		</div>
+	      </center>
+	      くらいの意味に捉えていたな
+	    </li>
+	    <li>あぁ、そう言えば（思い出した）「影響を受けた二人目」として書いた
+	      Bill Evans も、そういうこと言ってたよ
+	      (<a href="https://kichiki.wordpress.com/2011/02/12/%e3%81%bc%e3%81%8f%e3%81%8c%e5%bd%b1%e9%9f%bf%e3%82%92%e5%8f%97%e3%81%91%e3%81%9f%ef%bc%95%e4%ba%ba%e3%81%8b%e3%82%89%e3%80%81%e4%ba%8c%e4%ba%ba%e7%9b%ae%e3%80%82/">kichiki.wordpress.com/2011/02/12/ぼくが影響を受けた５人から、二人目。</a>)
+	      <center>
+		<table border="0">
+		  <tr><td valign="top">
+		<a href="Screen Shot 2021-09-28 at 19.54.23.png"><!-- 1985x1343 -->
+		  <img src="Screen Shot 2021-09-28 at 19.54.23_thumb.jpg" width="600" height="406" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		    <td valign="top">
+		<a href="Screen Shot 2021-09-28 at 19.55.08.png"><!-- 1998x1297 -->
+		  <img src="Screen Shot 2021-09-28 at 19.55.08_thumb.jpg" width="600" height="389" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		  </tr>
+		</table>
+	      </center>
+	      <ul>
+		<li>正確には
+		  <center>
+		    <div style="font-size: 30px; font-weight: bold;">
+		    Ultimately, I came to the conclusion that<br />
+		    all I must do is take care of the music<br />
+		    even if I do it in a closet.<br />
+		    And if I really do that,<br />
+		    somebody is gonna come to the closet<br />
+		    and open the door and say,<br />
+		    “Hey, we’re looking for you!”
+		    </div>
+		  </center>
+		</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</li><!-- しかし、最近（やっと）学んだことなんだけど... -->
+	<li>ってことで、恥ずかしがらずに、自分の存在を主張していこうと思います。
+	  <center>
+	    <div style="font-size: 30px; font-weight: bold;">
+	      <br />
+	      チャンネル登録、よろしくね！
+	      <br /><br />
+	      ZENKEI AI ポッドキャスト、よろしくね！
+	      <br /><br />
+	      ZENKEI AI フォーラム、よろしくね！
+	      <br />
+	    </div>
+	  </center>
+	</li>
+
+      </ul>
+    </li><!-- ついでに、ぼくのユーチューブ・チャンネル、サブスクお願いします！ -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2 id="zam">One More Thing （for 前座）</h2>
+
+  <center>
+    <div style="font-size: 30px; font-weight: bold;">
+      <br />
+      前座といえば...
+      <br /><br />
+      アレはどうなったのか、と...
+      <br /><br />
+      思ってる人も、ちらほらと...
+      <br /><br />
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 30px; font-weight: bold;">
+      <br />
+      ZAM （ザム）はどうなった？
+      <br /><br />
+      編集長、出てこいっ
+      <br /><br />
+    </div>
+    <p>って、思ってますよね</p>
+  </center>
+
+  <h3>ZAM の現状報告</h3>
+
+  <center>
+    <div>まとめ - 月刊 ZAM</div>
+    <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+      <tr>
+	<th colspan="2">号</th><th>刊行状況</th>
+	<th colspan="2">号</th><th>刊行状況</th>
+      </tr>
+      <tr>
+	<td rowspan="2">2021/01</td>
+	<td rowspan="2">
+	  <a href="ZAM202101-cover14.jpg"><!-- 5123x3624 -->
+	    <img src="ZAM202101-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td>初版：オンライン公開済み、印刷</td>
+
+	<td rowspan="2">2021/02</td>
+	<td rowspan="2">
+	  <a href="ZAM202102-cover14.jpg"><!-- 5123x3624 -->
+	    <img src="ZAM202102-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td rowspan="2">初版：オンライン公開済み、印刷</td>
+      </tr>
+      <tr>
+	<td>第２版：オンライン公開済み</td>
+      </tr>
+
+      <tr>
+	<td>2021/03</td>
+	<td>
+	  <a href="ZAM202103-cover14.jpg"><!-- 5123x3624 -->
+	    <img src="ZAM202103-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td>初版：オンライン公開済み、印刷</td>
+
+	<td bgcolor="#800">2021/04</td>
+	<td bgcolor="#800">-</td>
+	<td bgcolor="#800">まだ</td>
+      </tr>
+
+      <tr>
+	<td>2021/05</td>
+	<td>
+	  <a href="ZAM202105-cover14.jpg"><!-- 5123x3623 -->
+	    <img src="ZAM202105-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td>初版：オンライン公開済み、印刷</td>
+
+	<td bgcolor="#800">2021/06</td>
+	<td bgcolor="#800">-</td>
+	<td bgcolor="#800">まだ</td>
+      </tr>
+
+      <tr>
+	<td bgcolor="#880">2021/07</td>
+	<td>
+	  <a href="ZAM202107-cover14.png"><!-- 5016x3541 -->
+	    <img src="ZAM202107-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td bgcolor="#880">原稿着</td>
+
+	<td bgcolor="#800">2021/08</td>
+	<td bgcolor="#800">-</td>
+	<td bgcolor="#800">まだ</td>
+      </tr>
+
+      <tr>
+	<td>2021/09</td>
+	<td>-</td>
+	<td>-</td>
+
+	<td>2021/10</td>
+	<td>-</td>
+	<td>-</td>
+      </tr>
+
+      <tr>
+	<td>2021/11</td>
+	<td>-</td>
+	<td>-</td>
+
+	<td>2021/12</td>
+	<td>-</td>
+	<td>-</td>
+      </tr>
+    </table>
+
+    <div>まとめ - ZAM 季報</div>
+    <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+      <tr>
+	<th colspan="2">号</th><th>刊行状況</th>
+      </tr>
+      <tr>
+	<td>ZAM 季報 VOL.1 (2021/07)</td>
+	<td>
+	  <a href="ZAM2021Summer-cover14.jpg"><!-- 5016x3541 -->
+	    <img src="ZAM2021Summer-cover14_thumb.jpg" width="200" height="141" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td>初版：オンライン公開済み、印刷</td>
+      </tr>
+      <tr>
+	<td>ZAM 季報 VOL.2 (2021/12)</td>
+	<td>-</td>
+	<td>-</td>
+      </tr>
+    </table>
+  </center>
+
+  <br />
+  <br />
+
+  <center>
+    <div style="font-size: 50px; font-weight: bolder;">
+      これから、がんばります！
+    </div>
+  </center>
+
+  <h3>優先順位的には、</h3>
+  <ul>
+    <li>月刊 ZAM 2021/7 - 既に３名のみなさまから原稿はいただいています</li>
+    <li>月刊 ZAM 2021/4, 6, 8 - 古いものから、順にまとめます</li>
+    <li>月刊 ZAM 2021/9 - それで、今日のイベントのまとめ</li>
+    <li>ZAM 季報 VOL.2 - 冬に予定されている「季報」も、準備をすすめたいな、と</li>
+  </ul>
+
+  <br />
+  <br />
+
+  <center>
+    <div style="font-size: 50px; font-weight: bolder;">
+      みなさんも、原稿を書いてみませんか？
+      <br />
+      <br />
+      お待ちしてます！！
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part0-toc"><a href="#part0">前座</a>　目次</h3>
+  <ul>
+    <li><a href="#podcast">ポッドキャスト復活！</a>
+      <ul>
+	<li><a href="#podcast-1">新しい編集方針</a></li>
+	<li><a href="#podcast-2">ということで、８月末から、即実行！</a></li>
+	<li><a href="#podcast-3">ポッドキャスト、みなさん、どうやって聞いてますか？</a></li>
+	<li><a href="#podcast-4">反響は？</a></li>
+	<li><a href="#podcast-5">Podcast Freaks</a></li>
+	<li><a href="#podcast-6">Podcast Ranking</a></li>
+	<li><a href="#podcast-7">反響は...よく分からない</a></li>
+	<li><a href="#podcast-8">ところで YouTube - SELECTIONS 作った</a></li>
+      </ul>
+    </li>
+    <li><a href="#zam">One More Thing</a>
+      - ZAM もがんばります</li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="reading">
+    <div style="font-size: 50px; font-weight: bolder;">
+      第１部
+      <br />
+      秋の夜長は読書（論文を読もう）
+    </div>
+  </center>
+
+  <br />
+  <br />
+
+  <center>
+    <div style="font-size: 40px;">
+      前回（２０２１年８月）の ZAF で
+    </div>
+    <a href="Screen Shot 2021-09-28 at 17.25.35.png"><!-- 2793x1423 -->
+      <img src="Screen Shot 2021-09-28 at 17.25.35_thumb.jpg" width="800" height="408" style="border: 2px #ccc solid;" /></a>
+    <div style="font-size: 40px;">
+      話題の Transformer について、<br />
+      チラっとしゃべりました<br /><br />
+      で、閃きました！<br />
+    </div>
+  </center>
+
+  <ul>
+    <li>そうそう、ぼくが定期的に言ってるヤツですね</li>
+    <li>最初は、なんだっけ？
+      <ul>
+	<li>そもそも ZENKEI AI セミナーやろうってのも「閃き」だった気がするし...</li>
+	<li>ポッドキャストやろう、も...</li>
+	<li>「技術書典」に出よう、本を書こう、も...</li>
+	<li>雑誌を創刊しよう、も...</li>
+      </ul>
+    </li>
+    <li>なので、みなさんも慣れてきたと思いますが</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part1-1">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （新シリーズ）<br /><br />
+      ２０２１年版<br />
+      NLP を完全に理解する<br /><br />
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li>要するに、ぼくが、２０２１年の今すっかり取り残されているので</li>
+    <li>Transformer 時代の NLP を<br />
+      Jeremy がかつて RNN 時代の NLP に於いてやったレベルで
+      <center>
+	<div style="font-size: 30px; font-weight: bolder;">	
+	  <br />
+	  「完全に理解する」
+	  <br />
+	  　
+	</div>
+      </center>
+      をやろう！<br />
+      という企画
+    </li>
+    <li>「Jeremy のレベルで」という意味で<br />
+      つまり「完全に理解する」というのは
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  <br />
+	  🙅 HuggingFace Transformers を使う（だけ）
+	  <br /><br />
+	  🙆 Transformer を論文を読んで自分で実装する
+	  <br />
+	  　
+	</div>
+      </center>
+      </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part1-2">
+    ってことで、まずは Transformer 関連の主要な論文をリストアップ
+    <br />
+    <a href="Screen Shot 2021-09-28 at 22.23.40.png"><!-- 2796x792 -->
+      <img src="Screen Shot 2021-09-28 at 22.23.40_thumb.jpg" width="1000" height="283" style="border: 2px #ccc solid;" /></a>
+    <br />
+    これだけは、最低でも完璧に読まないと、<br />
+    Jeremy レベルにはなれないだろう、と
+    <br /><br />
+    で、まずは最初の（有名な）
+    <div style="font-size: 50px; font-weight: bolder;">
+      <br />
+      " Attention Is All You Need "
+      <br />
+      　
+    </div>
+    論文を、精読した（完了形！）
+    <br />
+    <a href="Screen Shot 2021-09-28 at 22.24.01.png"><!-- 2796x1425 -->
+      <img src="Screen Shot 2021-09-28 at 22.24.01_thumb.jpg" width="600" height="306" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-28 at 22.24.48.png"><!-- 2791x1423 -->
+      <img src="Screen Shot 2021-09-28 at 22.24.48_thumb.jpg" width="600" height="306" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li>で、気づいた
+      <ul>
+	<li>単に Transformer を実装しても、多分、腑に落ちない</li>
+	<li>Jeremy のレベルでの理解にならない</li>
+	<li>「完全に理解」できない</li>
+      </ul>
+      だろう、と
+    </li>
+    <li>ということで</li>
+  </ul>
+
+  <center id="part1-3">
+    <div style="font-size: 50px; font-weight: bolder;">
+      <br />
+      構想を立てた！
+      <br />
+      　
+    </div>
+  </center>
+
+  <ul>
+    <li>（１） RNN を「完全に」理解する
+      <ul>
+	<li>Language Model</li>
+	<li>jeremy は「ニーチェ」でデモ</li>
+	<li>古川さんが、おでんの絵 (by jeremy) で解説してくれた</li>
+      </ul>
+    </li>
+    <li>（２） Seq2Seq を「完全に」理解する
+      <ul>
+	<li>jeremy は「Spelling Bee」から「質問に限定したフランス語-英語翻訳」をデモ</li>
+	<li>（実際には attention まで含めて解説）</li>
+      </ul>
+    </li>
+    <li>（３） Seq2Seq への Attention の導入を「完全に」理解する
+      <ul>
+	<li>一斉を風靡した BiLSTM with Attention</li>
+	<li>jeremy が keras で大変で pytorch に移行した理由の１つ</li>
+	<li>attention mechanism には、調べると、いくつかあるみたい</li>
+      </ul>
+    </li>
+    <li>（４） Transformer を「完全に」理解する
+    </li>
+    <li>（５）その応用である BERT, GPT, T5 を「完全に」理解する
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-4">本日のお題</h3>
+
+  <ul>
+    <li>今日 (ZAF-2109) は、いきなりだけど（３）に飛び込む！</li>
+    <li>その心は
+      <center>
+	<div style="font-size: 40px; font-weight: bold;">
+	  秋の夜長は<br />
+	  コーディング<br />
+	  （というか読書）
+	</div>
+      </center>
+    </li>
+    <li>「Jeremy のレベルで理解する」には、<br />
+      論文を正確に読んで、<br />
+      その内容を正確に実装する、<br />
+      そういうスキルが欠かせない
+    </li>
+    <li>今日は Attention の論文を正確に読むことで、<br />
+      実際にこのプロセスを体験していきたい
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3>Seq2Seq への Attention の導入</h3>
+
+  <p>Bahdanau, Cho, Bengio による論文
+    <center>
+      <div style="font-size: 30px; font-weight: bold;">
+	" Neural Machine Translation By Jointly Learning To Align and Translate "
+      </div>
+    </center>
+    を精読する
+    <ul>
+      <li><a href="https://arxiv.org/abs/1409.0473">arxiv: 1409.0473</a>
+	(<a href="arxiv-1409.0473_NMT-bengio.pdf">local copy</a>)
+      </li>
+    </ul>
+    <center>
+      <a href="Screen Shot 2021-09-27 at 13.49.42.png"><!-- 2171x1300 -->
+	<img src="Screen Shot 2021-09-27 at 13.49.42_thumb.jpg" width="400" height="240" style="border: 2px #ccc solid;" /></a>
+      <a href="Screen Shot 2021-09-27 at 13.49.56.png"><!-- 2164x1305 -->
+	<img src="Screen Shot 2021-09-27 at 13.49.56_thumb.jpg" width="400" height="241" style="border: 2px #ccc solid;" /></a>
+    </center>
+  </p>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-5">論文の読み方</h3>
+  <ul>
+    <li>Abstract を読む
+      <ul>
+	<li>この論文の内容が簡潔にまとまっている</li>
+      </ul>
+    </li>
+    <li>全体の構成を見る
+      <ul>
+	<li>文章を読む前に、全体の構成を見る</li>
+	<li>Intro があるか（普通ある）<br />
+	  Conclusion があるか
+	  （普通ある、 Discussions でお茶を濁してるときもある）<br />
+	  アルゴリズムの詳細などがあるか
+	  （本文になくても、今回のように Appendix にあったりする）
+	</li>
+	<li>など、読み始める前の準備</li>
+      </ul>
+    </li>
+    <li>Introduction と Conclusion を精読する
+      <ul>
+	<li>この論文が置かれている（歴史的）状況を理解する
+	  （課題の背景、文脈、関連する重要な論文などが分かる）</li>
+	<li>この論文のスコープがはっきりする
+	  （どこまで議論して、どこからは議論しないか）</li>
+      </ul>
+    </li>
+    <li>そのあと、必要に応じで、必要なところを読み込んでいく
+      <ul>
+	<li>実装するためにアルゴリズムが知りたい時は Model の説明のセクションを</li>
+	<li>結果が知りたい時は Results のセクションを</li>
+	<li>などなど
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-6">Abstract を精読</h3>
+
+  <center>
+    <a href="Screen Shot 2021-09-29 at 1.14.52.png"><!-- 1676x920 -->
+      <img src="Screen Shot 2021-09-29 at 1.14.52_thumb.jpg" width="800" height="439" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>Neural machine translation は機械翻訳に対して最近提案された方法</li>
+    <li>それまでの統計的な機械翻訳と違って、
+      １つの neural network を構築し、
+      パフォーマンスを上げるように調整する</li>
+    <li>最近提案されている neural machine translation の多くは
+      encoder-decoder に分類される。<br />
+      encoder は source sentence を１つの固定長ベクトルにエンコードし、<br />
+      decoder はそれから翻訳を生成する</li>
+    <li>本論文で、我々はこの１つの固定長ベクトルを使うことが
+      パフォーマンスのボトルネックになっていることを示し、<br />
+      target word を予想するのに重要な部分が source sentence のどこかを、<br />
+      あからさまな hard segment として部分を構成することなく、<br />
+      自動的に（ゆるやかに）探索するようなモデルの拡張を提案する</li>
+    <li>この方法により、
+      現在の state-of-the-art である phrase-based system と同等の翻訳性能を、
+      英語からフランス語への翻訳で達成する</li>
+    <li>さらに、定性的な解析から、モデルが見つけたこの (soft-)alignments が
+      我々の直感によく一致していることが分かる</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-7">論文の構成を見る</h3>
+
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+	  <ul>
+	    <li>1 Introduction</li>
+	    <li>2 Backround: Neural Machine Translation
+	      <ul>
+		<li>2.1 RNN Encoder-Decoder</li>
+	      </ul>
+	    </li>
+	    <li>3 Learning To Align and Translate
+	      <ul>
+		<li>3.1 Decoder: General Description</li>
+		<li>3.2 Encoder: Bidirectional RNN
+		  for Annotating Sequences</li>
+	      </ul>
+	    </li>
+	    <li>4 Experiment Settings
+	      <ul>
+		<li>4.1 Dataset</li>
+		<li>4.2 Models</li>
+	      </ul>
+	    </li>
+	    <li>5 Results
+	      <ul>
+		<li>5.1 Quantitative Results</li>
+		<li>5.2 Qualitative Results
+		  <ul>
+		    <li>5.2.1 Alignment</li>
+		    <li>5.2.2 Long Sentences</li>
+		  </ul>
+		</li>
+	      </ul>
+	    </li>
+	    <li>6 Related Works
+	      <ul>
+		<li>6.1 Learning to Align</li>
+		<li>6.2 Neural Networks for Machine Translation</li>
+	      </ul>
+	    </li>
+	    <li>7 Conclusion</li>
+	    <li>Acknowledgements</li>
+	    <li>References</li>
+	  </ul>
+	</td>
+	<td valign="top">
+	  <ul>
+	    <li>A Model Architecture
+	      <ul>
+		<li>A.1 Architectural Choices
+		  <ul>
+		    <li>A.1.1 Recurrent Neural Network</li>
+		    <li>A.1.2 Alignment Model</li>
+		  </ul>
+		</li>
+		<li>A.2 Detailed Description of the Model
+		  <ul>
+		    <li>A.2.1 Encoder</li>
+		    <li>A.2.2 Decoder</li>
+		    <li>A.2.3 Model Size</li>
+		  </ul>
+		</li>
+	      </ul>
+	    </li>
+	    <li>B Training Procedure
+	      <ul>
+		<li>B.1 Parameter Initialization</li>
+		<li>B.2 Training</li>
+	      </ul>
+	    </li>
+	    <li>C Translations of Long Sentences
+	    </li>
+	  </ul>
+	</td>
+      </tr>
+    </table>
+  </center>
+  
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li>今の目的は、 Seq2Seq に Attention を導入する方法を知りたいということ
+      <ul>
+	<li>論文の「encoder-decoder」というのが「Seq2Seq」</li>
+	<li>Abstract の
+	  「重要な部分を source sentence のどこかを自動的に（ゆるやかに）探索する」
+	  機構が「Attention」</li>
+	<li>あとでわかるが、この論文の中では Attention と言う言葉は出てこなくて、<br />
+	  Alignment と呼ばれている</li>
+      </ul>
+    </li>
+    <li>普通なら、Introduction と Conclusion は、最初にしっかり読み込んでから、
+      本文の詳細を読み進めていくところだが、<br />
+      今回は「Attention」の計算方法をすぐに読んでいこう
+    <li>しかし読むと分かるが、この論文の体裁が、
+      アルゴリズムの説明という形になっていなくて、
+      その分、読みにくい</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-8">Encoder-Decoder の説明</h3>
+  <center>
+    <a href="Screen Shot 2021-09-29 at 1.36.19.png"><!-- 1927x787 -->
+      <img src="Screen Shot 2021-09-29 at 1.36.19_thumb.jpg" width="600" height="245" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 1.36.27.png"><!-- 1912x769 -->
+      <img src="Screen Shot 2021-09-29 at 1.36.27_thumb.jpg" width="600" height="241" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ここは、この論文の主張ではなくて、既に主張されていたことのおさらい</li>
+    <li>NLP における (RNN を使った) Encoder-Decoder は、<br />
+      画像を扱う CNN による Auto-Encoder とはちょっと違っている
+      <ul>
+	<li>CNN の Encoder-Decoder は、
+	  <ul>
+	    <li>Encoder は入力画像をもらって、あるベクトルを出力</li>
+	    <li>Decoder はそのベクトルをもらって、出力画像を計算</li>
+	    <li>処理の流れは１本道</li>
+	  </ul>
+	</li>
+	<li>RNN の Encoder-Decoder (Seq2Seq) は、ここで簡単に説明されている通り
+	  <ul>
+	    <li>入力データは文字列 <b>x</b> = (x<sub>1</sub>,...,x<sub>T<sub>x</sub></sub>)</li>
+	    <li>Encoder は RNN で構成され、
+	      <ul>
+		<li>入力シーケンスから hidden states を計算<br />
+		  <br />
+		  h<sub>t</sub> = f(x<sub>t</sub>, h<sub>t-1</sub>)
+		  <br />
+		  　
+		</li>
+		<li>計算された hidden states から１つの context vector を計算<br />
+		  <br />
+		  c = q({h<sub>1</sub>, ..., h<sub>T<sub>x</sub></sub>})
+		  <br />
+		  　
+		</li>
+	      </ul>
+	    </li><!-- Encoder は RNN で構成され、 -->
+	    <li>Decoder も RNN で構成され、
+	      <ul>
+		<li>time t の出力文字 y<sub>t</sub> の予測確率は<br />
+		  <br />
+		  p( y<sub>t</sub> | {y<sub>1</sub>, ..., y<sub>t-1</sub>}, c)
+		  = g( y<sub>t-1</sub>, s<sub>t</sub>, c )
+		  <br />
+		  　
+		</li>
+		<li>ここで s<sub>t</sub> は Decoder の RNN の hidden state</li>
+	      </ul>
+	    </li><!-- Decoder も RNN で構成され、 -->
+	  </ul>
+	</li><!-- RNN の Encoder-Decoder (Seq2Seq) は... -->
+
+	<li>イメージ（Sutskever et al. <a href="https://arxiv.org/abs/1409.3215">arxiv: 1409.3215</a>, <a href="arxiv-1409.3215_seq2seq.pdf">local copy</a>) より
+      <br />
+      Sequence to Sequence Learning with Neural Networks
+	  <center>
+	    <a href="Screen Shot 2021-09-27 at 13.43.01.png"><!-- 2166x1198 -->
+	      <img src="Screen Shot 2021-09-27 at 13.43.01_thumb.jpg" width="800" height="442" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  <ul>
+	    <li>この論文 Sutskever et al. (2014) は、
+	      LSTM を使った Seq2Seq を紹介した論文</li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li><!-- NLP における (RNN を使った) Encoder-Decoder は... -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-9">Context Vector と Alignment Model の説明</h3>
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+    <a href="Screen Shot 2021-09-29 at 2.02.31.png"><!-- 1868x1021 -->
+      <img src="Screen Shot 2021-09-29 at 2.02.31_thumb.jpg" width="600" height="328" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td valign="top">
+    <a href="Screen Shot 2021-09-29 at 2.02.51.png"><!-- 1890x878 -->
+      <img src="Screen Shot 2021-09-29 at 2.02.51_thumb.jpg" width="600" height="279" style="border: 2px #ccc solid;" /></a>
+	</td>
+      </tr>
+    </table>
+  </center>
+
+  <ul>
+    <li>この Alignment Model ってのが、今回のお目当ての「Attention」</li>
+    <li>ポイントは、先の（Attentionのない） Seq2Seq との違いで、<br />
+      <br />
+      p( y<sub>i</sub> | {y<sub>i</sub>, ..., y<sub>i-1</sub>}, <b>x</b>)
+      = g( y<sub>i-1</sub>, s<sub>i</sub>, c<sub>i</sub> )
+      <br />
+      　
+      <ul>
+	<li>分かりにくいけど、ポイントは<br />
+	  context vector <b>c</b> が<br />
+	  時間 i に依存するもの <b>c</b><sub>i</sub> に置き換わった、<br />
+	  ということ</li>
+	<li>ちなみに、通常の Seq2Seq では <b>c</b> は
+	  Encoder の最後の hidden state h<sub>t<sub>X</sub></sub>
+	  が使われる
+	  <ul>
+	    <li>ポイントは、出力文字の位置（時間） i には関係ない</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>この i に依存した context vector <b>c</b><sub>i</sub> は
+      どう計算するのか、というのが右で、
+      <ul>
+	<li>Encoder の hidden states （これを「Annotations」と呼んでいる）<br />
+	  h<sub>j</sub> に対する重み付き平均で定義する<br />
+	  <br />
+	c<sub>i</sub> = Σ<sub>j=1</sub><sup>T<sub>x</sub></sup>
+	  α<sub>ij</sub> h<sub>j</sub>
+	  <br />
+	  　
+	</li>
+	<li>この重み α<sub>ij</sub> は（重みなので正規化されている必要があって）<br />
+	  <br />
+	  α<sub>ij</sub> = softmax( e<sub>ij</sub> )
+	  <br />
+	  　
+	  <ul>
+	    <li>正規化は index j に対して行われる</li>
+	  </ul>
+	</li>
+	<li>この e<sub>ij</sub> を決めるのが Alignment Model a() で<br />
+	  <br />
+	  e<sub>ij</sub> = a( s<sub>i-1</sub>, h<sub>j</sub> )
+	  <br />
+	  　
+	</li>
+      </ul>
+    </li>
+    <li>実は、この論文、ここまでで Decoder と Attention の部分の説明は終わり
+      <ul>
+	<li>つまり Encoder から Annotation （と呼ばれている hidden states）
+	  h<sub>j</sub> をもらって</li>
+	<li>Decoder の hidden state s<sub>i</sub> と</li>
+	<li>直前の Decoder の出力 y<sub>i-1</sub> から</li>
+	<li>まず Alignment Model a() を使って e<sub>ij</sub> を計算</li>
+	<li>それから context vector c<sub>i</sub> を計算</li>
+	<li>それらを Decoder RNN g() に入れて</li>
+	<li>次の出力文字 y<sub>i</sub> を予想する</li>
+      </ul>
+      と、形式論で終わってる
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-10">Encoder の Bidirectional RNN の説明</h3>
+  <center>
+    <a href="Screen Shot 2021-09-29 at 2.23.51.png"><!-- 1942x1061 -->
+      <img src="Screen Shot 2021-09-29 at 2.23.51_thumb.jpg" width="600" height="328" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>この当時は Bidirectional RNN をきちんと説明しないと通じなかったのかな？</li>
+    <li>それなりに詳しく説明してある</li>
+    <li>この論文の表式が、やっぱり分かりにくい
+      <ul>
+	<li>forward と backward の hidden states を concat して
+	  「Annotation」を構成する、と言ってるところ<br />
+	  <br />
+	  h<sub>j</sub> = [
+	  h<sup>→</sup><sub>j</sub><sup>T</sup>;
+	  h<sup>←</sup><sub>j</sub><sup>T</sup>
+	  ]<sup>T</sup>
+	  <br />
+	  　
+	</li>
+	<li>これを、分かりやすく書くと（時間のインデックス j は省略して）
+	  <center>
+	    <br />
+	    <table border="0">
+	      <tr>
+		<td valign="center">
+		  <b>h</b> =　
+		</td>
+		<td valign="top">
+		  <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+		    <tr>
+		      <td>
+			h<sup>→</sup><sub>1</sub>
+		      </td>
+		      <td>
+			h<sup>→</sup><sub>2</sub>
+		      </td>
+		      <td>
+			...
+		      </td>
+		      <td>
+			h<sup>→</sup><sub>nh</sub>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>
+			h<sup>←</sup><sub>1</sub>
+		      </td>
+		      <td>
+			h<sup>←</sup><sub>2</sub>
+		      </td>
+		      <td>
+			...
+		      </td>
+		      <td>
+			h<sup>←</sup><sub>nh</sub>
+		      </td>
+		    </tr>
+		  </table>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	  と、 unidirectional RNN なら (1, nh) なところが<br />
+	  time j での Annotation テンソルは (2, nh) にするよ、ということ
+	  （だよね？）
+	</li>
+      </ul>
+    </li>
+    <li>この論文を読んでいて、解読していった、数式の notation
+      <ul>
+	<li>transpose （転置）の記号 T をベクトルに使うと「縦ベクトル」
+	  <ul>
+	    <li>というのは、まぁオッケー</li>
+	    <li>ダガー † を使うか T （みたいな記号）を使うのか、
+	      はフレーバーがあるけど</li>
+	  </ul>
+	</li>
+	<li>[<b>x</b>; <b>y</b>] は concat を表してるんだね
+	  <ul>
+	    <li>鍵かっこが大事なのかな？</li>
+	    <li>あと「 ; 」も？</li>
+	    <li>これ、どの分野の notation なんだろう？</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-11">困ったときの Appendix</h3>
+  <ul>
+    <li>これでモデルの説明は終わり？
+      <ul>
+	<li>という論文で、これじゃコーディングできない、と思いましたが</li>
+      </ul>
+    </li>
+    <li>Appendix （補遺）がありました
+      <center>
+	<table border="0">
+	  <tr><td valign="top">
+	<a href="Screen Shot 2021-09-29 at 2.51.18.png"><!-- 1942x1042 -->
+	  <img src="Screen Shot 2021-09-29 at 2.51.18_thumb.jpg" width="600" height="322" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	<a href="Screen Shot 2021-09-29 at 2.51.28.png"><!-- 1879x1243 -->
+	  <img src="Screen Shot 2021-09-29 at 2.51.28_thumb.jpg" width="600" height="397" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+    <li>この RNN の説明、ほとんど GRU を説明しなおしてるだけですね
+      <ul>
+	<li>PyTorch の reference <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">torch.nn.GRU</a>
+	  <center>
+	    <a href="Screen Shot 2021-09-29 at 2.55.22.png"><!-- 2790x1416 -->
+	      <img src="Screen Shot 2021-09-29 at 2.55.22_thumb.jpg" width="800" height="406" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>気になる点が２つ
+      <ul>
+	<li>（１）RNN (GRU) に Attention を入れる方法について</li>
+	<li>（２）proposed updated staate s<sup>~</sup><sub>i</sub> の式について</li>
+      </ul>
+    </li><!-- 気になる点が２つ -->
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-12">（１）RNN (GRU) に Attention を入れる方法について</h3>
+
+  <ul>
+    <li>RNN (GRU) に context vector c<sub>i</sub> を通して Attention を入れる、というのがこの論文の趣旨</li>
+    <li>どのように入れるか、については上の式に書いてあるとおり<br />
+      （再掲）
+      <center>
+	<a href="Screen Shot 2021-09-29 at 2.51.28.png"><!-- 1879x1243 -->
+	  <img src="Screen Shot 2021-09-29 at 2.51.28_thumb.jpg" width="600" height="397" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>GRU はモジュールとして（ありものを）使いたいが、<br />
+      内部に、加算的に、導入されている
+      <center>
+	<br />
+	E e( y<sub>i</sub> ) + U s<sub>i-1</sub>
+	<br />
+	　
+      </center>
+      となっている各 gates の式の部分を
+      <center>
+	<br />
+	E e( y<sub>i</sub> ) + U s<sub>i-1</sub> + <font color="red">C c<sub>i</sub></font>
+	<br />
+	　
+      </center>
+    </li>
+    <li>PyTorch の GRU の使い方としては、入力パラメータは
+      <ul>
+	<li><b>input</b> - これは e( y<sub>i</sub> ) に相当</li>
+	<li><b>h_0</b> - これは s<sub>i-1</sub> に相当</li>
+      </ul>
+      なので、<br />
+      <font color="red">C c<sub>i</sub></font> の寄与を<br />
+      s<sub>i-1</sub> の中に含めてしまいたい
+      <ul>
+	<li>算数的に（形式的に）いえば
+	  <center>
+	    <br />
+	    s’<sub>i-1</sub>
+	    = s<sub>i-1</sub> + U<sup>-1</sup> <font color="red">C c<sub>i</sub></font>
+	    <br />
+	    　
+	  </center>
+	  みたいなものを準備すればよい
+	</li>
+	<li>もっと形式論を言うと、
+	  <center>
+	    <br />
+	    C’ = U<sup>-1</sup> <font color="red">C c<sub>i</sub></font>
+	    <br />
+	    　
+	  </center>
+	  みたいなものが、そもそも C だったとすれば、単に
+	  <center>
+	    <br />
+	    s’<sub>i-1</sub>
+	    = s<sub>i-1</sub> + <font color="red">C’ c<sub>i</sub></font>
+	    <br />
+	    　
+	  </center>
+	  と hidden state に（加算的に）補正すればよい、ということになりそう
+	</li>
+      </ul>
+    </li>
+    <li>と解決かなと思うけれど、
+      <ul>
+	<li>そうすると
+	  proposed updated state s<sup>~</sup><sub>i</sub> の式が微妙になる...
+	</li>
+      </ul>
+    </li>
+      
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-13">（２）proposed updated staate s<sup>~</sup><sub>i</sub> の式について</h3>
+
+  <ul>
+    <li>上の疑問点の他に、式自体によく分からない点がある</li>
+    <li>PyTorch のドキュメントの式
+      <center>
+	<a href="Screen Shot 2021-09-29 at 11.28.21.png"><!-- 850x100 -->
+	  <img src="Screen Shot 2021-09-29 at 11.28.21_thumb.jpg" width="600" height="71" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>Bahdanau et al. の式
+      <center>
+	<a href="Screen Shot 2021-09-29 at 11.28.29.png"><!-- 932x125 -->
+	  <img src="Screen Shot 2021-09-29 at 11.28.29_thumb.jpg" width="600" height="80" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>積の記号について
+      <ul>
+	<li>GRU の「*」は Hadamard 積</li>
+	<li>論文の「○」は element-wise 積</li>
+	<li>Hadamard 積とは何か？というと element-wise 積です
+	  (cf. <a href="https://en.wikipedia.org/wiki/Hadamard_product_(matrices)">wikipedia</a>)
+	  <center>
+	    <a href="Screen Shot 2021-09-29 at 11.36.43.png"><!-- 2791x843 -->
+	      <img src="Screen Shot 2021-09-29 at 11.36.43_thumb.jpg" width="800" height="242" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>ちなみに記号「⊙」も Hadamard 積としてよく使われる
+	（LaTeX の \odot）</li>
+      </ul>
+    </li>
+    <li>よく分からないのは、この式が結局、何を計算しろと言っているのか、ということ
+      <ul>
+	<li>添字は（ベクトルの成分とかではないので）全て省く</li>
+	<li>比べるべきなのは<br />
+	  （ hidden state を <b>h</b> に、係数行列を <b>W</b>に統一して）
+	  <center>
+	    <br />
+	    <b>r</b> * ( <b>W</b> <b>h</b> )
+	    　　＝＝　　
+	    <b>W</b> [ <b>r</b> * <b>h</b> ]
+	    　　？
+	    <br />
+	    　
+	  </center>
+	</li>
+	<li>ベクトルと行列の成分の足をあからさまに書くと
+	  <center>
+	    <br />
+	    Σ<sub>j</sub>
+	    <font color="red">r<sub>i</sub></font> W<sub>ij</sub> h<sub>j</sub>
+	    　　＝＝　　
+	    Σ<sub>j</sub>
+	    W<sub>ij</sub> <font color="red">r<sub>j</sub></font> h<sub>j</sub>
+	    　　？
+	    <br />
+	    　
+	  </center>
+	  （Einstein の和の規約は使わない（element-wise 積があるので））
+	</li>
+	<li>素朴に見ると、この２つの式は別物ですよね</li>
+	<li>Bahdanau et al. の著者たちは、実は GRU の開発者でもあるので、<br />
+	  疑わしいのは PyTorch のドキュメントですが
+	  <ul>
+	    <li>実際に論文 (<a href="https://arxiv.org/abs/1406.1078">arXiv:1406.1078</a>; <a href="arxiv-1406.1078_GRU.pdf">local copy</a>) を見ると
+	      <center>
+		<a href="Screen Shot 2021-09-29 at 12.00.53.png"><!-- 2751x1296 -->
+		  <img src="Screen Shot 2021-09-29 at 12.00.53_thumb.jpg" width="600" height="283" style="border: 2px #ccc solid;" /></a>
+		<br />
+		<table border="0">
+		  <tr>
+		    <td valign="top">
+		      <a href="Screen Shot 2021-09-29 at 12.02.33.png"><!-- 708x1299 -->
+			<img src="Screen Shot 2021-09-29 at 12.02.33_thumb.jpg" width="327" height="600" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		    <td valign="top">
+		      <a href="Screen Shot 2021-09-29 at 12.01.49.png"><!-- 1111x923 -->
+			<img src="Screen Shot 2021-09-29 at 12.01.49_thumb.jpg" width="400" height="332" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		  </tr>
+		</table>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+	<li>できること（するべきこと、でも、まだできてないこと）
+	  <ul>
+	    <li>PyTorch の実装はどうなっているのか？</li>
+	    <li>Keras など他の実装はどうなっているのか？</li>
+	    <li>この両者で、結果に違いは生じるのか？</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-14">Alignment Model の詳細</h3>
+
+  <ul>
+    <li>曖昧な点が残ってますが、とりあえず進みます、つまり
+      <ul>
+	<li>GRU の内部には（今は）立ち入らない</li>
+	<li>Decoder の hidden state s<sub>i-1</sub> に
+	  context vector c<sub>i</sub> の補正を（加算的に）入れる</li>
+      </ul>
+      ということを飲み込んで、という意味
+    </li>
+    <li>つまり、残ってるのは context vector c<sub>i</sub> の計算
+      <ul>
+	<li>s<sub>i-1</sub> と h<sub>j</sub> が与えたれたとして</li>
+	<li>e<sub>ij</sub> = a( s<sub>i-1</sub>, h<sub>j</sub> )</li>
+	<li>α<sub>ij</sub> = softmax<sub>j</sub>( e<sub>ij</sub> )</li>
+	<li>c<sub>i</sub> = Σ<sub>j</sub> α<sub>ij</sub> h<sub>j</sub></li>
+      </ul>
+    </li>
+    <li>つまり Alignment Model が分かれば良い、と
+      <center>
+	<br />
+	e<sub>ij</sub> = a( s<sub>i-1</sub>, h<sub>j</sub> )
+	<br />
+	　
+      </center>
+    </li>
+    <li><b>A.1.2 ALIGNMENT MODEL</b> を見ると
+      <center>
+	<a href="Screen Shot 2021-09-29 at 12.13.09.png"><!-- 1950x553 -->
+	  <img src="Screen Shot 2021-09-29 at 12.13.09_thumb.jpg" width="800" height="227" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>ありました
+	  <center>
+	    <br />
+	    a( s<sub>i-1</sub>, h<sub>j</sub> )
+	    =
+	    v<sub>a</sub><sup>T</sup>
+	    tanh( W<sub>a</sub> s<sub>i-1</sub>
+	    + U<sub>a</sub> h<sub>j</sub> )
+	    <br />
+	    　
+	  </center>
+	</li>
+	<li>ここで以下はパラメータ（学習対象）
+	  <ul>
+	    <li>v<sub>a</sub> : n 次元ベクトル</li>
+	    <li>W<sub>a</sub> : (n x n) 次元行列</li>
+	    <li>U<sub>a</sub> : (n x 2n) 次元行列</li>
+	  </ul>
+	  下つきの添字 a は、Alignment Model のパラメータ、というくらいの意味
+	</li>
+	<li>数学的な（というほどではないが）注意点
+	  <ul>
+	    <li>上にもコメントしたけど</li>
+	    <li>ベクトルが２つ、 x と y があるとき、<br />
+	      ある種類の notation では
+	      <center>
+		<br />
+		x<sup>T</sup> y
+		<br />
+		　
+	      </center>
+	      という表記は、この２つのベクトルの内積を意味する
+	    </li>
+	    <li>その心は
+	      <ul>
+		<li>x<sup>T</sup> は、縦ベクトルを意味する</li>
+		<li>y は横ベクトル</li>
+		<li>したがって x<sup>T</sup> y を、ベクトルの要素を羅列して書くと
+		  <center>
+		    <br />
+		    <table border="0">
+		      <tr>
+			<td valign="top">
+			  <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+			    <tr><td>x<sub>1</sub></td></tr>
+			    <tr><td>x<sub>2</sub></td></tr>
+			    <tr><td>:</td></tr>
+			    <tr><td>:</td></tr>
+			    <tr><td>x<sub>n</sub></td></tr>
+			  </table>
+			</td>
+			<td valign="top">
+			  <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+			    <tr>
+			      <td>y<sub>1</sub></td>
+			      <td>y<sub>2</sub></td>
+			      <td> . . </td>
+			      <td> . . </td>
+			      <td>y<sub>n</sub></td>
+			    </tr>
+			  </table>
+			</td>
+			<td valign="center">
+			  　=　
+			  x<sub>1</sub> y<sub>1</sub>
+			  + x<sub>2</sub> y<sub>2</sub>
+			  + ...
+			  + x<sub>n</sub> y<sub>n</sub>
+			</td>
+		      </tr>
+		    </table>
+		    <br />
+		    　
+		  </center>
+		</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</li>
+	<li>まとめると、 Alignment Model のやってることは
+	  <center>
+	    <br />
+	    a( s<sub>i-1</sub>, h<sub>j</sub> )
+	    =
+	    v<sub>a</sub><sup>T</sup>
+	    tanh( W<sub>a</sub> s<sub>i-1</sub>
+	    + U<sub>a</sub> h<sub>j</sub> )
+	    <br />
+	    　
+	  </center>
+	  <ul>
+	    <li>Decoder の（ひとつ前のステップの） hidden states s<sub>i-1</sub> を n 次元ベクトルに変換</li>
+	    <li>Encoder の hidden states h<sub>j</sub> を n 次元ベクトルに変換</li>
+	    <li>それぞれ足して tanh() を適用（非線形性と、 -1 から 1 に押さえる）</li>
+	    <li>この n 次元ベクトルの各要素に adjustable parameter を掛ける</li>
+	  </ul>
+	</li>
+	<li>この値（スカラーであることに注意） e<sub>ij</sub> が
+	  <ul>
+	    <li>入力の j 番目の文字と<br />
+	      出力の i 番目の文字の<br />
+	      間の関係を表すパラメータ
+	    </li>
+	  </ul>
+	</li>
+	<li>この e<sub>ij</sub> は、エネルギー（みたいなもの）
+	  という風に見ることもできる
+	  <ul>
+	    <li>なぜなら<br />
+	      指数関数 exp() に入れて<br />
+	      規格化して<br />
+	      確率 (weight) として使うことから
+	    </li>
+	    <li>（論文にもちらっと書いてある）
+	      <center>
+		<a href="Screen Shot 2021-09-29 at 12.48.29.png"><!-- 2012x1135 -->
+		  <img src="Screen Shot 2021-09-29 at 12.48.29_thumb.jpg" width="800" height="451" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part1-toc">第１部「<a href="#reading">秋の夜長は読書（論文を読もう）</a>」　目次</h3>
+  <ul>
+    <li><a href="#part1-1">（新シリーズ）「２０２１年版 NLP を完全に理解する」
+	を開始しよう</a></li>
+    <li><a href="#part1-2">Transformer 論文を読んでみた</a></li>
+    <li><a href="#part1-3">構想を立ててみた</a></li>
+    <li><a href="#part1-4">本日のお題：Seq2Seq への Attention の導入の最初の論文を精読しよう</a></li>
+    <li><a href="#part1-5">論文の読み方</a></li>
+    <li><a href="#part1-6">Abstract を精読</a></li>
+    <li><a href="#part1-7">論文の構成を見ていこう</a></li>
+    <li><a href="#part1-8">論文を読む 2.1 節 - Encoder-Decoder の説明</a></li>
+    <li><a href="#part1-9">論文を読む 3.1 節 - Context Vector と Alignment Model の説明</a></li>
+    <li><a href="#part1-10">論文を読む 3.2 節 - Encoder の Bidirectional RNN の説明</a></li>
+    <li><a href="#part1-11">困ったときの Appendix</a></li>
+    <li><a href="#part1-12">気になる点（１）RNN (GRU) に Attention を入れる方法について</a></li>
+    <li><a href="#part1-13">気になる点（２）proposed updated staate s<sup>~</sup><sub>i</sub> の式について</a></li>
+    <li><a href="#part1-14">Alignment Model の詳細</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="coding">
+    <div style="font-size: 50px; font-weight: bolder;">
+      第２部
+      <br />
+      秋の夜長はコーディング
+    </div>
+  </center>
+
+  <h3 id="part2-1">さて、実装しましょう！</h3>
+
+  <ul>
+    <li>必要な情報が全て出揃ったので、あとは実装するだけですね！</li>
+
+    <li>決定事項
+      <ul>
+	<li>Encoder: PyTorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">nn.GRU</a> を bidirectional で</li>
+	<li>Decoder: PyTorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">nn.GRU</a> を unidirectional で</li>
+	<li>そこに Attention mechanism を入れる</li>
+      </ul>
+    </li>
+    <li>最初に Attention なしの plain な Seq2Seq モデルを実装しましょう</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-2">Seq2Seq モデルの実装</h3>
+  <ul>
+    <li>Seq2Seq の構成<br />
+      <a href="https://arxiv.org/abs/1508.04025">arxiv: 1508.04025</a>
+      (<a href="arxiv-1508.04025_attention-discussions.pdf">local copy</a>)
+      より
+      <center>
+	<a href="Screen Shot 2021-09-29 at 15.17.32.png"><!-- 1442x1204 -->
+	  <img src="Screen Shot 2021-09-29 at 15.17.32_thumb.jpg" width="600" height="501" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>この論文は Stanford のグループのもので<br />
+	  Attention mechanism について（Bahdanau et al. 以外の方法も含め）<br />
+	  比較検討している論文
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <center>
+    <table border="0">
+      <tr>
+	<td width="40%" valign="top">
+      <h4>パラメータ</h4>
+      <ul>
+	<li>bs : バッチサイズ</li>
+	<li>maxlen_in : 入力文字列の長さ</li>
+	<li>maxlen_out : 出力文字列の長さ</li>
+        <li>enc_num_emb : 入力のトークンの種類</li>
+        <li>dec_num_emb : 出力のトークンの種類</li>
+        <li>enc_emb_dim : 入力の word vectors の次元</li>
+        <li>dec_emb_dim : 出力の word vectors の次元</li>
+	<li>hidden_size : Encoder の hidden layer のサイズ</li>
+	<li>n_layers : Encoder, Decoder の hidden layer の層の数</li>
+	<li>bidirectional : Encoder が bidirectional の時 True<br />
+	  （デフォルトは False）</li>
+      </ul>
+	</td>
+	<td with="60%" valign="top">
+      <pre>
+	<code class="python">
+class Seq2SeqGRU(nn.Module):
+    def __init__(
+        self,
+        enc_num_emb, enc_emb_dim,
+        dec_num_emb, dec_emb_dim,
+        hidden_size, n_layers=2,
+        bidirectional=False,
+    ):
+        super(Seq2SeqGRU, self).__init__()
+
+        self.n_layers = n_layers
+        self.hidden_size = hidden_size
+        self.bidirectional = bidirectional
+        self.d_dir = 2 if bidirectional else 1
+        self.dec_num_emb = dec_num_emb
+
+        d_nh = self.d_dir * hidden_size
+
+        self.enc_emb = nn.Embedding(enc_num_emb, enc_emb_dim)
+        self.enc = nn.GRU(
+            enc_emb_dim,
+            hidden_size,
+            num_layers=n_layers,
+            bidirectional=bidirectional,
+            batch_first=True,
+        )
+
+        self.dec_emb = nn.Embedding(dec_num_emb, dec_emb_dim)
+        self.dec = nn.GRU(
+            dec_emb_dim,
+            d_nh,
+            num_layers=n_layers,
+        self.dec_lin = nn.Linear(hidden_size, dec_num_emb)
+        </code>
+      </pre>
+	</td>
+      </tr>
+    </table>
+  </center>
+
+  <center>
+    <table border="0">
+      <tr>
+	<td width="50%" valign="top">
+      <h4>変数、パラメータ</h4>
+      <ul>
+	<li>入力文字列： inp [bs, maxlen_in]</li>
+	<li>出力文字列（正解）： label [bs, maxlen_out]</li>
+      </ul>
+      <h4>パラメータ</h4>
+      <ul>
+	<li>tf : teacher forcing の割合</li>
+      </ul>
+	</td>
+	<td with="50%" valign="top">
+      <pre>
+	<code class="python">
+    def forward(self, inp, label=None, tf=0.0):
+        bs, seq_len = inp.shape
+        hidden = torch.zeros(
+            self.d_dir*self.n_layers,
+            bs,
+            self.hidden_size
+        ).to(device)
+
+        # ENCODING -----------------------------------------------
+        emb_inp = self.enc_emb(inp)
+        enc_outp, hidden = self.enc(emb_inp, hidden)
+        # enc_outp [bs, L, 2*hidden_size]
+
+        # preparation for decoding -------------------------------
+        # hidden [2*n_layers, bs, hidden]
+        hidden = hidden.reshape(
+            self.d_dir, self.n_layers, bs, self.hidden_size
+        ).permute(1, 2, 0, 3).reshape(
+            self.n_layers, bs, -1
+        )
+        # => hidden [n_layers, bs, 2*hidden]
+
+        dec_inp = torch.LongTensor([SOS]*bs).view(1, -1).to(device)
+        # => (1, bs), where L=1 is seq. length
+
+        outputs = torch.empty((0, bs, self.dec_num_emb)).to(device)
+
+        # DECODING -----------------------------------------------
+        for i in range(maxlen_out):
+            emb_inp = self.dec_emb(dec_inp)
+            dec_outp, hidden = self.dec(emb_inp, hidden)
+            # => dec_outp[1, bs, 2*hidden_size]
+            outp = self.dec_lin(dec_outp.squeeze(0))
+            # => outp[bs, dec_num_emb]
+
+            outputs = torch.cat((outputs, outp.view(1, bs, -1)), dim=0)
+
+            if label is None or (i / maxlen_out) < tf:
+                p = F.softmax(outp, dim=-1)
+                dec_inp = torch.argmax(p, dim=-1).view(1, -1)
+            else:
+                dec_inp = label[:, i].view(1, -1)
+
+        return outputs
+        </code>
+      </pre>
+	</td>
+      </tr>
+    </table>
+  </center>
+
+  <center>
+    <a href="IMG_8548.jpg"><!-- 3174x1760 -->
+      <img src="IMG_8548_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+    <a href="IMG_8549.jpg"><!-- 3459x1744 -->
+      <img src="IMG_8549_thumb.jpg" width="600" height="303" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-3">Encoding 部分</h3>
+
+  <center>
+    <a href="IMG_8548.jpg"><!-- 3174x1760 -->
+      <img src="IMG_8548_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>inp [bs, maxlen_in] に [0, 1, 2, 3] が入っている
+      <ul>
+	<li>整数 0, 1, 2, 3, が文字 'A',  'B',  'C',  'D' に対応しているとする</li>
+	<li>（文字を数字に置き換えることを Token 化 （ tokenize する）という）</li>
+      </ul>
+    </li>
+    <li><a href="https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html">nn.Embedding</a> によって Token 化された文字列をベクトル列にする
+      <pre>
+	<code class="python">
+        emb_inp = self.enc_emb(inp)
+        </code>
+      </pre>
+      <ul>
+	<li>テンソル emb_inp のサイズは [bs, enc_emb_dim]</li>
+      </ul>
+    </li>
+    <li>入力テンソル emb_inp を RNN に食わせて Encoding 処理を行う
+      <pre>
+	<code class="python">
+        enc_outp, hidden = self.enc(emb_inp, hidden)
+        </code>
+      </pre>
+      <ul>
+	<li><a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">nn.GRU</a> は２つの入力をもらい、２つの出力を返す
+	</li>
+	<li>Inputs
+	  <ul>
+	    <li>input : 入力テンソル（ emb_inp が渡される）<br />
+	      今 Encoder は batch_first=True で定義したので<br />
+	      サイズは [bs, enc_emb_dim]
+	    </li>
+	    <li>h_0 : 初期の hidden states (optional)（ hidden が渡される）<br />
+	      サイズは [d_dir * n_layers, bs, hidden_size]</li>
+	    <li>（ここで d_dir は bidirectional なら 2、 unidirectional なら 1）</li>
+	  </ul>
+	</li>
+	<li>Outputs
+	  <ul>
+	    <li><font color="red">output : 出力テンソル（全ステップの、最終層の hidden states）（ enc_outp に代入）</font><br />
+	      今 Encoder は batch_first=True で定義したので<br />
+	      サイズは [bs, seq_len, d_dir * hidden_size]
+	    </li>
+	    <li><font color="green">h_n : 全ての層の、最終ステップでの hidden states （ hidden に代入）</font><br />
+	      サイズは [d_dir * n_layers, bs, hidden_size]</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>以上で Encoding は終わり（全ての入力文字に対しての計算）</li>
+
+    <li>上の <a href="#part1-10">3.2 節 - Encoder の Bidirectional RNN の説明</a>
+      でみたように Bidirectional で Encode する
+      <center>
+	<a href="Screen Shot 2021-09-29 at 2.23.51.png"><!-- 1942x1061 -->
+	  <img src="Screen Shot 2021-09-29 at 2.23.51_thumb.jpg" width="600" height="328" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>論文では forward と backward を２行にして「Annotation」 h<sub>j</sub>
+	  と定義していた
+	  <center>
+	    <br />
+	    <table border="0">
+	      <tr>
+		<td valign="center">
+		  <b>h</b> =　
+		</td>
+		<td valign="top">
+		  <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+		    <tr>
+		      <td>
+			h<sup>→</sup><sub>1</sub>
+		      </td>
+		      <td>
+			h<sup>→</sup><sub>2</sub>
+		      </td>
+		      <td>
+			...
+		      </td>
+		      <td>
+			h<sup>→</sup><sub>nh</sub>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>
+			h<sup>←</sup><sub>1</sub>
+		      </td>
+		      <td>
+			h<sup>←</sup><sub>2</sub>
+		      </td>
+		      <td>
+			...
+		      </td>
+		      <td>
+			h<sup>←</sup><sub>nh</sub>
+		      </td>
+		    </tr>
+		  </table>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	  <br />
+	</li>
+	<li>つまりテンソル <b>h</b> のサイズは
+	  [bs, n_layers, 2, hidden_size] みたいなものを想定</li>
+	<li>一方 PyTorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">nn.GRU</a> の出力の hidden のサイズは
+	  [d_dir * n_layers, bs, hidden_size]</li>
+	<li>全ての要素は揃っているが、最初の成分が d_dir * n_layers と
+	  まとめられてしまっている
+	  <ul>
+	    <li>ソースコードのコメントによると、以下のようにして
+	      普通に reshape できるようだ
+	      <pre><code class="python">
+		  hidden.view(d_dir, n_layers, bs, hidden_size)
+	      </code></pre>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-4">Encoder から Decoding への引継ぎ</h3>
+
+  <center>
+    <a href="IMG_8549.jpg"><!-- 3459x1744 -->
+      <img src="IMG_8549_thumb.jpg" width="600" height="303" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>Encoder の結果を引き継いで、出力文字列を生成するのが Decoder
+      <ul>
+	<li>Encoder とは異なり、１文字ずつ生成（予測）していく</li>
+	<li>その際、次の文字の生成には、直前の予測結果を入力として使う</li>
+	<li>teacher forcing というテクニックは、
+	  学習時、正解データを入力として使うことでモデルの学習を助けるもの</li>
+      </ul>
+    </li>
+    <li>Encoder の結果は、以下の２つ
+      <ul>
+	<li><font color="green">hidden</font>: Encoder の
+	  最終ステップの全層の hidden states<br />
+	  サイズは [d_dir * n_layers, bs, hidden_size]</li>
+    	<li><font color="red">enc_outp</font>: Encoder の
+	  全ステップの、最終層の hidden states<br />
+	  サイズは [bs, seq_len, d_dir * hidden_size]</li>
+      </ul>
+    </li>
+    <li>Decoder には、１文字ずつ渡していく</li>
+    <li>Decoder の入力パラメータは
+      <ul>
+	<li>入力文字列（１文字のみ）： dec_inp -> emb_inp</li>
+	<li>初期 hidden states : <font color="green">hidden</font></li>
+      </ul>
+    </li>
+    <li>Encoder の <font color="green">hidden</font> を
+      Decoder の <font color="green">hidden</font> に、きちんと渡す必要がある
+      <ul>
+	<li>plain な Seq2Seq では（論文にも書いてあった通り）<br />
+	  context vector として最終ステップの Encoder の hidden states を使う
+	  <center>
+	    <a href="Screen Shot 2021-09-29 at 16.44.37.png"><!-- 1948x769 -->
+	      <img src="Screen Shot 2021-09-29 at 16.44.37_thumb.jpg" width="600" height="237" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>さて、どうやって<br />
+	  bidirectional な Encoder の hidden states と<br />
+	  unidirectional な Decoder の hidden states を<br />
+	  整合させますか？
+	  <ul>
+	    <li>要するに、次元を合わせろ、ということ</li>
+	    <li>Encoder が情報２倍持ってるので、<br />
+	      hidden_size を２倍にするのが自然（だよね？）</li>
+	  </ul>
+	</li>
+	<li>それが、これ
+	  <pre><code class="python">
+        # hidden [2*n_layers, bs, hidden]
+        hidden = hidden.reshape(
+            self.d_dir, self.n_layers, bs, self.hidden_size
+        ).permute(1, 2, 0, 3).reshape(
+            self.n_layers, bs, -1
+        )
+        # => hidden [n_layers, bs, 2*hidden]
+	  </code></pre>
+	</li>
+	<li>（正直、あんまり自信がない。みんな、こんなことやってるのかな？）</li>
+      </ul>
+    </li>
+    <li>つまり、そういうことで、 Decoder のパラメータ設定は、以下のようになってる
+      <pre><code class="python">
+        d_nh = self.d_dir * hidden_size
+
+        self.dec_emb = nn.Embedding(dec_num_emb, dec_emb_dim)
+        self.dec = nn.GRU(
+            dec_emb_dim,
+            d_nh,
+            num_layers=n_layers,
+        self.dec_lin = nn.Linear(hidden_size, dec_num_emb)
+      </code></pre>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-5">Decoding の処理</h3>
+
+  <center>
+    <a href="IMG_8549.jpg"><!-- 3459x1744 -->
+      <img src="IMG_8549_thumb.jpg" width="600" height="303" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>Decoder には、１文字ずつ渡していく</li>
+    <li>Decoder の入力パラメータは
+      <ul>
+	<li>入力文字列（１文字のみ）： dec_inp -> emb_inp</li>
+	<li>初期 hidden states : <font color="green">hidden</font></li>
+      </ul>
+    </li>
+    <li><font color="green">hidden</font> の引継ぎは、既に見た</li>
+    <li>入力文字列については、１文字目は SOS (start of sentence) をセットする
+      <pre><code class="python">
+        dec_inp = torch.LongTensor([SOS]*bs).view(1, -1).to(device)
+        # => (1, bs), where L=1 is seq. length
+      </code></pre>
+    </li>
+    <li>１文字ずつ処理していくので、結果を全て保存するように準備
+      <pre><code class="python">
+        outputs = torch.empty((0, bs, self.dec_num_emb)).to(device)
+      </code></pre>
+    </li>
+    <li>出力文字に対するループの中での処理
+      <ul>
+	<li>文字 (token) から word vector にして RNN に渡す
+	  <pre><code class="python">
+            emb_inp = self.dec_emb(dec_inp)
+            dec_outp, hidden = self.dec(emb_inp, hidden)
+            # => dec_outp[1, bs, 2*hidden_size]
+	  </code></pre>
+	</li>
+	<li>生の出力は hidden_size のベクトルなので、出力 token のサイズに変換
+	  <pre><code class="python">
+            outp = self.dec_lin(dec_outp.squeeze(0))
+	  </code></pre>
+	  （これを logit とする。<br />
+	  つまり softmax とって argmax すると token が得られる）
+	</li>
+	<li>各ステップの結果を保存
+	  <pre><code class="python">
+            outputs = torch.cat((outputs, outp.view(1, bs, -1)), dim=0)
+	  </code></pre>
+	</li>
+	<li>次の入力文字をセットして、ループを終わる
+	  <pre><code class="python">
+            if label is None or (i / maxlen_out) > tf:
+                p = F.softmax(outp, dim=-1)
+                dec_inp = torch.argmax(p, dim=-1).view(1, -1)
+            else:
+                dec_inp = label[:, i].view(1, -1)
+	  </code></pre>
+	</li>
+	<li>teacher forcing をしない場合は、
+	  outp から token を決めてセット</li>
+	<li>teacher forcing する場合は、
+	  正解データ label から次の文字を取り出してセット</li>
+      </ul>
+    </li>
+    <li>できた！
+      <ul>
+	<li>でもまだ Attention なし</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-6">Attention の実装</h3>
+
+  <ul>
+    <li>ご想像の通り、実装はしてみました
+      <ul>
+	<li>Bahdanau et al. (2015) のものだけでなく<br />
+	  Luong et al. (2015)
+	  <a href="https://arxiv.org/abs/1508.04025">arxiv: 1508.04025</a>
+	  (<a href="arxiv-1508.04025_attention-discussions.pdf">local copy</a>)
+	  に紹介されている４種類のものまで
+	  <center>
+	    <a href="Screen Shot 2021-09-29 at 17.42.03.png"><!-- 1972x1304 -->
+	      <img src="Screen Shot 2021-09-29 at 17.42.03_thumb.jpg" width="800" height="529" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2021-09-29 at 17.42.09.png"><!-- 1970x1298 -->
+	      <img src="Screen Shot 2021-09-29 at 17.42.09_thumb.jpg" width="800" height="527" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>で、こちらもご想像の通り、なんか今一、ピンときてないんですね</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>コード</h4>
+  <pre>
+    <code class="python">
+class Seq2SeqAttnGRU(nn.Module):
+    def __init__(
+        self,
+        enc_num_emb, enc_emb_dim,
+        dec_num_emb, dec_emb_dim,
+        hidden_size, n_layers=2,
+        bidirectional=False,
+        attn_type='orig',
+        only_top=False,
+    ):
+        '''
+        attn_types
+           'orig': 
+           'dot': 
+           'general': 
+           'concat': 
+           'none': no attention
+        '''
+        super(Seq2SeqAttnGRU, self).__init__()
+
+        # Seq2Seq 部分は省略
+
+        # attention
+        self.attn_type = attn_type
+        self.only_top = only_top
+        if self.attn_type != 'none':
+            if self.attn_type in ('orig', 'general'):
+                self.W1 = nn.Linear(d_nh, d_nh)
+            elif self.attn_type == 'concat':
+                self.W1 = nn.Linear(2*d_nh, d_nh)
+
+            self.W2 = nn.Linear(d_nh, d_nh)
+            self.v = nn.Parameter(torch.randn(d_nh))
+            
+            if not only_top:
+                self.Wc = nn.Linear(1, n_layers)
+    </code>
+  </pre>
+  <pre>
+    <code class="python">
+    def forward(self, inp, label=None, tf=0.0):
+            
+        # ENCODING -----------------------------------------------
+        # Seq2Seq 部分は省略
+            
+        attns = None
+
+        # attention
+        if self.attn_type != 'none':
+            enc_outp = enc_outp.permute(1, 0, 2)
+        
+            if self.attn_type in ['orig', 'general']:
+                # enc_outp [L, bs, D*nh] (permuted)
+                # W1 [D*nh, D*nh]
+                W1enc_outp = self.W1(enc_outp)
+                # => [L, bs, D*nh]
+            attns = torch.empty((0, seq_len, bs)).to(device)
+
+        # DECODING -----------------------------------------------
+        for i in range(maxlen_out):
+            emb_inp = self.dec_emb(dec_inp)
+            dec_outp, hidden = self.dec(emb_inp, hidden)
+            # => dec_outp[1, bs, 2*hidden_size]
+            outp = self.dec_lin(dec_outp.squeeze(0))
+            # => outp[bs, dec_num_emb]
+
+            # attention
+            if self.attn_type != 'none':
+                if self.attn_type == 'orig':
+                    # dec_outp [1, bs, D*nh]
+                    # W2 [D*nh, D*nh]
+                    W2dec_outp = self.W2(dec_outp) # => [1, bs, D*nh]
+                    z = torch.tanh(W1enc_outp + W2dec_outp) # => [L, bs, D*nh]
+
+                    zz = torch.matmul(z, self.v) # => [L, bs]
+                elif self.attn_type == 'dot':
+                    # enc_outp [L, bs, D*nh] (permuted)
+                    # dec_outp [1, bs, D*nh]
+                    zz = torch.bmm(
+                        enc_outp.permute(1, 0, 2),
+                        dec_outp.permute(1, 2, 0)
+                    ).permute(1, 0, 2).squeeze(-1)
+                    # => [L, bs]
+                elif self.attn_type == 'general':
+                    # W1enc_outp [L, bs, D*nh]
+                    zz = torch.bmm(
+                        W1enc_outp.permute(1, 0, 2),
+                        dec_outp.permute(1, 2, 0)
+                    ).permute(1, 0, 2).squeeze(-1)
+                    # => [L, bs]
+                elif self.attn_type == 'concat':
+                    # enc_outp [L, bs, D*nh] (permuted)
+                    # dec_outp [1, bs, D*nh]
+                    zz = torch.cat((
+                        enc_outp,
+                        dec_outp.expand_as(enc_outp)
+                    ), dim=-1)
+                    #print(f'(1) zz {zz.shape}')
+                    # (1) zz torch.Size([16, 128, 512])
+                    # => [L, bs, 2*D*nh]
+                    zz = self.W1(zz)
+                    #print(f'(2) zz {zz.shape}')
+                    # (2) zz torch.Size([16, 128, 256])
+                    # => [L, bs, D*nh]
+                    zz = torch.tanh(zz) # => [L, bs, D*nh]
+                    zz = torch.matmul(zz, self.v) # => [L, bs]
+
+                a = torch.softmax(zz, dim=0) # => [L, bs]
+                #print(f'a {a.shape}')
+                #a torch.Size([16, 128])
+
+                attns = torch.cat((attns, a.unsqueeze(0)), dim=0)
+
+                # enc_outp [L, bs, D*nh] (permuted)
+                d = (enc_outp * a.unsqueeze(-1)).sum(0)
+                # => [bs, D*nh]
+                if self.only_top:
+                    hidden[-1] += d
+                else:
+                    # apply to all layers
+                    d = self.Wc(d.unsqueeze(-1))
+                    # => [bs, D*nh, n_layers]
+                    hidden += d.permute(2, 0, 1)
+                    # hidden [n_layers, bs, 2*hidden]
+
+
+            outputs = torch.cat((outputs, outp.view(1, bs, -1)), dim=0)
+
+            if label is None or (i / maxlen_out) > tf:
+                p = F.softmax(outp, dim=-1)
+                dec_inp = torch.argmax(p, dim=-1).view(1, -1)
+            else:
+                dec_inp = label[:, i].view(1, -1)
+
+        return outputs, attns
+    </code>
+  </pre>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part2-7">いくつかの結果</h3>
+
+  <ul>
+    <li>Seq2Seq の課題として、今回は２つの問題を扱った
+      <ul>
+	<li>Spelling Bee - 英単語の読みの辞書データを使って、
+	  読みから単語のスペルを予測する問題</li>
+	<li>フランス語から英語への翻訳 - 対訳データセット
+	  （EU の議事録）を使った翻訳課題</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Spelling Bee</h4>
+
+  <center>
+    <a href="Screen Shot 2021-09-29 at 17.55.20.png"><!-- 2801x1426 -->
+      <img src="Screen Shot 2021-09-29 at 17.55.20_thumb.jpg" width="800" height="407" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.55.30.png"><!-- 2802x1426 -->
+      <img src="Screen Shot 2021-09-29 at 17.55.30_thumb.jpg" width="800" height="407" style="border: 2px #ccc solid;" /></a>
+
+    <a href="Screen Shot 2021-09-29 at 17.48.30.png"><!-- 2808x1429 -->
+      <img src="Screen Shot 2021-09-29 at 17.48.30_thumb.jpg" width="800" height="407" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.48.45.png"><!-- 2802x1432 -->
+      <img src="Screen Shot 2021-09-29 at 17.48.45_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.49.03.png"><!-- 2799x1425 -->
+      <img src="Screen Shot 2021-09-29 at 17.49.03_thumb.jpg" width="800" height="407" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.49.12.png"><!-- 2802x1430 -->
+      <img src="Screen Shot 2021-09-29 at 17.49.12_thumb.jpg" width="800" height="408" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <h4>フランス語から英語への翻訳</h4>
+
+  <center>
+    <a href="Screen Shot 2021-09-29 at 17.59.20.png"><!-- 2797x1431 -->
+      <img src="Screen Shot 2021-09-29 at 17.59.20_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+
+    <a href="Screen Shot 2021-09-29 at 17.50.18.png"><!-- 2800x1430 -->
+      <img src="Screen Shot 2021-09-29 at 17.50.18_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.51.41.png"><!-- 2800x1430 -->
+      <img src="Screen Shot 2021-09-29 at 17.51.41_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2021-09-29 at 17.52.06.png"><!-- 2799x1427 -->
+      <img src="Screen Shot 2021-09-29 at 17.52.06_thumb.jpg" width="800" height="408" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part2-toc">第２部「<a href="#reading">秋の夜長はコーディング</a>」　目次</h3>
+  <ul>
+    <li><a href="#part2-1">さて、実装しましょう！</a></li>
+    <li><a href="#part2-2">Seq2Seq モデルの実装</a></li>
+    <li><a href="#part2-3">Encoding 部分</a></li>
+    <li><a href="#part2-4">Encoder から Decoding への引継ぎ</a></li>
+    <li><a href="#part2-5">Decoding の処理</a></li>
+    <li><a href="#part2-6">Attention の実装</a></li>
+    <li><a href="#part2-7">いくつかの結果</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF １０月２７日開催の予定です。</li>
+    <li>ZAF 講演者、 ZAM 執筆者、絶賛、第募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li><a href="#part0">前座</a>
+      <ul>
+	<li><a href="#podcast">ポッドキャスト復活！</a>
+	  <ul>
+	    <li><a href="#podcast-1">新しい編集方針</a></li>
+	    <li><a href="#podcast-2">ということで、８月末から、即実行！</a></li>
+	    <li><a href="#podcast-3">ポッドキャスト、みなさん、どうやって聞いてますか？</a></li>
+	    <li><a href="#podcast-4">反響は？</a></li>
+	    <li><a href="#podcast-5">Podcast Freaks</a></li>
+	    <li><a href="#podcast-6">Podcast Ranking</a></li>
+	    <li><a href="#podcast-7">反響は...よく分からない</a></li>
+	    <li><a href="#podcast-8">ところで YouTube - SELECTIONS 作った</a></li>
+	  </ul>
+	</li>
+	<li><a href="#zam">One More Thing</a>
+	  - ZAM もがんばります</li>
+      </ul>
+    </li>
+    <li>第１部「<a href="#reading">秋の夜長は読書（論文を読もう）</a>」
+      <ul>
+	<li><a href="#part1-1">（新シリーズ）「２０２１年版 NLP を完全に理解する」
+	    を開始しよう</a></li>
+	<li><a href="#part1-2">Transformer 論文を読んでみた</a></li>
+	<li><a href="#part1-3">構想を立ててみた</a></li>
+	<li><a href="#part1-4">本日のお題：Seq2Seq への Attention の導入の最初の論文を精読しよう</a></li>
+	<li><a href="#part1-5">論文の読み方</a></li>
+	<li><a href="#part1-6">Abstract を精読</a></li>
+	<li><a href="#part1-7">論文の構成を見ていこう</a></li>
+	<li><a href="#part1-8">論文を読む 2.1 節 - Encoder-Decoder の説明</a></li>
+	<li><a href="#part1-9">論文を読む 3.1 節 - Context Vector と Alignment Model の説明</a></li>
+	<li><a href="#part1-10">論文を読む 3.2 節 - Encoder の Bidirectional RNN の説明</a></li>
+	<li><a href="#part1-11">困ったときの Appendix</a></li>
+	<li><a href="#part1-12">気になる点（１）RNN (GRU) に Attention を入れる方法について</a></li>
+	<li><a href="#part1-13">気になる点（２）proposed updated staate s<sup>~</sup><sub>i</sub> の式について</a></li>
+	<li><a href="#part1-14">Alignment Model の詳細</a></li>
+      </ul>
+    </li>
+    <li>第２部「<a href="#reading">秋の夜長はコーディング</a>」
+      <ul>
+	<li><a href="#part2-1">さて、実装しましょう！</a></li>
+	<li><a href="#part2-2">Seq2Seq モデルの実装</a></li>
+	<li><a href="#part2-3">Encoding 部分</a></li>
+	<li><a href="#part2-4">Encoder から Decoding への引継ぎ</a></li>
+	<li><a href="#part2-5">Decoding の処理</a></li>
+	<li><a href="#part2-6">Attention の実装</a></li>
+	<li><a href="#part2-7">いくつかの結果</a></li>
+      </ul>
+    </li>
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
