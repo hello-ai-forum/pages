@@ -1,0 +1,1576 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2021/10/27)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2021/10/27</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20211027-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20211027-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF ２０２１年１０月２７日
+    </div>
+    <div style="font-size: 40px;">＜今回のテーマ＞</div>
+    <div style="font-size: 80px;">
+      秋の夜長は
+      <div style="font-weight: bolder;">
+	コーディング
+      </div>
+      <div style="font-weight: bolder;">
+	パート２
+      </div>
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li><b>前座</b> [6:30 - 7:00]
+      <ul>
+	<li><a href="#podcast">毎日更新、ポッドキャスト</a></li>
+	<li><a href="#zenkei-ai-selections">毎日更新、YouTube ビデオ</a></li>
+      </ul>
+    </li>
+
+    <li>メイン『２０２１年版 NLP を完全に理解する』第２回<br />
+      Seq2Seq に戻って Attention を完全に理解する
+      <ul>
+	<li><b>第１部</b> [7:00 - 8:00]
+	  <a href="#nlp">理論編（論文を読む）</a>
+	</li>
+
+	<li><b>第２部</b> [8:00 - 9:00]
+	  <a href="#coding">実践編（プログラミング）</a>
+	</li>
+
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part0">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座
+    </div>
+  </center>
+  <h2 id="podcast">毎日更新、ポッドキャスト</h2>
+
+  <ul>
+    <li>ポッドキャスト、その後、毎日更新中！<br />
+      <a href="Screen Shot 2021-10-26 at 21.11.21.png"><!-- 2677x1334 -->
+	<img src="Screen Shot 2021-10-26 at 21.11.21_thumb.jpg" width="600" height="299" style="border: 2px #ccc solid;" /></a>
+      <a href="Screen Shot 2021-10-26 at 21.11.28.png"><!-- 2679x1326 -->
+	<img src="Screen Shot 2021-10-26 at 21.11.28_thumb.jpg" width="600" height="297" style="border: 2px #ccc solid;" /></a>
+      <ul>
+	<li>８月の ZAF の後 (8/27 Fri) から、ほぼ毎日更新</li>
+	<li>9/19 (Sun) 以降は完璧に毎日、更新中</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-progress">進行状況</h3>
+  <ul>
+    <li id="podcast-s13">9/26 から：シーズン１３ (ZAF-2101）<br />
+      <a href="https://youtu.be/apd3_sRNfQA">
+	<img src="ZAF-2101-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/x6JIGC2Qeuk">
+	<img src="ZAF-2101-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/VIKvzrUY1bs">
+	<img src="ZAF-2101-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/xLiQW9ZmoME">
+	<img src="ZAF-2101-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/rEGDwA8Kd4Y">
+	<img src="ZAF-2101-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/5XQfJ7XSk6Q">
+	<img src="ZAF-2101-06_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/jbxN1Xk4qLs">
+	<img src="ZAF-2101-07_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li id="podcast-s14">10/3 から：シーズン１４ (ZAF-2102）<br />
+      <a href="https://youtu.be/7tmj1TSbDIY">
+	<img src="ZAF-2102-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/Gu6Ky_sNlTc">
+	<img src="ZAF-2102-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/q_hFj0cMw6U">
+	<img src="ZAF-2102-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/k4Jb5Hf-2yQ">
+	<img src="ZAF-2102-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/uSHkYoJzwT4">
+	<img src="ZAF-2102-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/9RMa9C6UAAY">
+	<img src="ZAF-2102-06_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/M1Mbil-jPI4">
+	<img src="ZAF-2102-07_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/0Ietc0Jfzfw">
+	<img src="ZAF-2102-08_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/5QnQYQpRpTY">
+	<img src="ZAF-2102-09_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/4CTfJJZdhDM">
+	<img src="ZAF-2102-10_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li id="podcast-s15">10/13 から：シーズン１５ (ZAF-2103）<br />
+      <a href="https://youtu.be/EqzUiq3muA0">
+	<img src="ZAF-2103-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/nAU0ZdlBs30">
+	<img src="ZAF-2103-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/hvTFhM77a-Y">
+	<img src="ZAF-2103-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/l1CdsXIeEwM">
+	<img src="ZAF-2103-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/I7couzedQGE">
+	<img src="ZAF-2103-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/L9fXFVlKXw4">
+	<img src="ZAF-2103-06_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/wnKW22_qMU8">
+	<img src="ZAF-2103-07_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/d0Hk115IUyY">
+	<img src="ZAF-2103-08_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/Iww1lH47vCk">
+	<img src="ZAF-2103-09_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/Xwtemb13KYI">
+	<img src="ZAF-2103-10_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/XcGronglrVI">
+	<img src="ZAF-2103-11_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/gZpbCE7y-Q0">
+	<img src="ZAF-2103-12_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/27Y5cMNBlY0">
+	<img src="ZAF-2103-13_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/A7UvvfyW0Yo">
+	<img src="ZAF-2103-14_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/BHa2rUoJqzI">
+	<img src="ZAF-2103-15_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li id="podcast-s16">10/28 から：シーズン１６ (ZAF-2104） 配信予定
+      <center>
+	<div style="font-size: 60px; font-weight: bold;">
+	  <br />
+	  遂に明かされる！<br />
+	  なぜ「コンピュータ会話教室」第１回が<br />
+	  「for ループ」だったのか！！<br />
+	  <br />	  
+	  乞うご期待！
+	</div>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="zenkei-ai-selections">ZENKEI AI SELECTIONS</h3>
+  <p>振り返り</p>
+  <p>（ポッドキャスト　シーズン９からは、対応する YouTube ビデオもあります）</p>
+  <ul>
+    <li id="selections-2009">ポッドキャスト　シーズン９ (ZAF2009)<br />
+      <a href="https://youtu.be/pdxIfm7jzpc">
+	<img src="ZENKEI_AI_FORUM_zoom_20200930-01-1280x720_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/ik8CW9N-Jwg">
+	<img src="ZENKEI_AI_FORUM_zoom_20200930-02-1280x720_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/EZO6EkUY88M">
+	<img src="ZENKEI_AI_FORUM_zoom_20200930-03-1280x720_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/74Qbvt-2wS0">
+	<img src="ZENKEI_AI_FORUM_zoom_20200930-04-1280x720_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/K5oy1oxygUQ">
+	<img src="ZENKEI_AI_FORUM_zoom_20200930-05-1280x720_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+    <li id="selections-2010">ポッドキャスト　シーズン１０ (ZAF2010)<br />
+      <a href="https://youtu.be/sqkI88psb0U">
+	<img src="ZENKEI_AI_FORUM_zoom_20201028-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/VlcJDF7TXiI">
+	<img src="ZENKEI_AI_FORUM_zoom_20201028-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/R7XomIyAkOE">
+	<img src="ZENKEI_AI_FORUM_zoom_20201028-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/edeISFd2-qo">
+	<img src="ZENKEI_AI_FORUM_zoom_20201028-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/bzC19N_N_-U">
+	<img src="ZENKEI_AI_FORUM_zoom_20201028-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+    <li id="selections-2011">ポッドキャスト　シーズン１１ (ZAF2011)<br />
+      <a href="ZAF2011-00.jpg"><!-- 1280x720 -->
+	<img src="ZAF2011-00_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <br />
+      <a href="https://youtu.be/pYQ9hFG1d7k">
+	<img src="ZAF2011-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/al32idnRc9A">
+	<img src="ZAF2011-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/rjaMjeak2ws">
+	<img src="ZAF2011-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/hQ2DMzFO5FY">
+	<img src="ZAF2011-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/2gs_Wp_Rb2E">
+	<img src="ZAF2011-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/5gQwQAmBJLQ">
+	<img src="ZAF2011-06_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+    <li id="selections-2012">ポッドキャスト　シーズン１２ (ZAF2012)<br />
+      <a href="ZAF2012-00.jpg"><!-- 1280x720 -->
+	<img src="ZAF2012-00_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <br />
+      <a href="https://youtu.be/0MxGjqrtid0">
+	<img src="ZAF2012-01_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/_NLUEZO1B8Q">
+	<img src="ZAF2012-02_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/GfzF9GUxuhg">
+	<img src="ZAF2012-03_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/UVyYFyD7R9M">
+	<img src="ZAF2012-04_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/V6TcQLmUuV4">
+	<img src="ZAF2012-05_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/ASUhD50VB1o">
+	<img src="ZAF2012-06_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+      <a href="https://youtu.be/X7d8JLv4EZA">
+	<img src="ZAF2012-07_thumb.jpg" width="400" height="225" style="border: 2px #ccc solid;" /></a>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="podcast-ranking">Podcast Ranking</h3>
+  <p>それで、毎日更新の成果はあったのか？</p>
+  <center>
+    <a href="Screen Shot 2021-09-22 at 19.33.29.png"><!-- 1772x1437 -->
+      <img src="Screen Shot 2021-09-22 at 19.33.29_thumb.jpg" width="800" height="649" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li><a href="https://podcastranking.jp/1504899046">Podcast Ranking</a><br />
+      これまでの最高順位は
+      <ul>
+	<li>「自然科学」で１１位</li>
+	<li>「科学」で８０位</li>
+	<li>９月２２日でのランキングが最高</li>
+      </ul>
+    </li>
+    <li>最近の動向はこんな感じ
+      <center>
+	<a href="Screen Shot 2021-10-27 at 1.19.10.png"><!-- 1552x771 -->
+	  <img src="Screen Shot 2021-10-27 at 1.19.10_thumb.jpg" width="800" height="397" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part0-toc"><a href="#part0">前座</a>　目次</h3>
+  <ul>
+    <li><a href="#podcast">毎日更新、ポッドキャスト</a>
+      <ul>
+	<li><a href="#podcast-s13">シーズン１３ (ZAF-2101）</a></li>
+	<li><a href="#podcast-s14">シーズン１４ (ZAF-2102）</a></li>
+	<li><a href="#podcast-s15">シーズン１５ (ZAF-2103）</a></li>
+	<li><a href="#podcast-s16">シーズン１６ (ZAF-2104）予告</li>
+      </ul>
+    </li>
+    <li><a href="#zenkei-ai-selections">毎日更新、YouTube ビデオ</a>
+      <ul>
+	<li><a href="#selections-2009">ポッドキャスト　シーズン９ (ZAF2009)</a></li>
+	<li><a href="#selections-2010">ポッドキャスト　シーズン１０ (ZAF2010)</a></li>
+	<li><a href="#selections-2011">ポッドキャスト　シーズン１１ (ZAF2011)</a></li>
+	<li><a href="#selections-2012">ポッドキャスト　シーズン１２ (ZAF2012)</a></li>
+      </ul>
+    </li>
+    <li><a href="#podcast-ranking">毎日更新の成果はあったのか？</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      『２０２１年版 NLP を完全に理解する』第２回
+      <br />
+      Seq2Seq に戻って<br />
+      完全に理解する<br />
+      　
+      <h2 id="nlp">第１部：理論編<br />（論文を読む）</h2>
+    </div>
+  </center>
+
+  <h3 id="nlp-intro">イントロダクション</h3>
+
+  <ul>
+    <li>前回の復習
+      <ul>
+	<li>Transformer 勉強するぞ、から
+	  <ul>
+	    <li>論文 "Attention Is All You Need" は、読んだ</li>
+	    <li>腹落ちしない</li>
+	    <li>（まだ手は動かしてない）</li>
+	  </ul>
+	</li>
+	<li>Attention を理解しよう、と
+	  <ul>
+	    <li>Bahdanau, Cho, Bengio
+	      <br />
+	      "Neural Machine Translation By Jointly Learning To Align and Translate"
+	      <br />
+	      を精読</li>
+	  </ul>
+	</li>
+	<li>実装した</li>
+	<li>計算した</li>
+	<li>attention の効果、出ない...</li>
+      </ul>
+    </li><!-- 前回の復讐 -->
+
+    <li>今回
+      <ul>
+	<li>Seq2Seq まで戻って、きちんとやろう
+	  <ul>
+	    <li>すると GRU をきちんと理解することが必要になって</li>
+	    <li>すると、そもそも RNN できちんと bidirectional が
+	      分かってないことが分かって</li>
+	  </ul>
+	</li>
+	<li>と、海の底にまで潜ってきて、無事に海面に戻ってきた（はず）</li>
+      </ul>
+    </li><!-- 今回 -->
+
+    <li>Seq2Seq with Attention 完全に理解した</li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nlp-papers">今回読む論文</h3>
+
+  <ul>
+    <li>（１）Bahdanau, Cho, Bengio (2014)
+      - 前回読んだ論文（Seq2Seq with Attention）</li>
+    <li>（２） Schuster &amp; Paliwal (1997)
+      - Bidirectional RNN の論文</li>
+    <li>（３） Cho et al. (2014)
+      - 今回読むメインの論文（Seq2Seq）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nlp-bahdanau">前回読んだ Bahdanau, Cho, Bengio の補足</h3>
+
+  <ul>
+    <li><a href="https://zenkei-ai-forum.github.io/papers/ZAF202109/ichiki/index.html">ZAF-2109</a> で精読した論文
+      <ul>
+	<li>&quot;<a href="https://zenkei-ai-forum.github.io/papers/ZAF202109/ichiki/index.html#part1-4">Neural Machine Translation By Jointly Learning To Align and Translate</a>&quot;
+	  <br />
+	  by Bahdanau, Cho, Bengio
+	  <a href="https://arxiv.org/abs/1409.0473">arxiv: 1409.0473</a>
+	  (<a href="arxiv-1409.0473_NMT-bengio.pdf">local copy</a>)
+	  <center>
+	    <a href="https://zenkei-ai-forum.github.io/papers/ZAF202109/ichiki/index.html#part1-4">
+	      <img src="Screen Shot 2021-10-27 at 12.59.36_thumb.jpg" width="800" height="371" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li id="nlp-bahdanau-1">（１）RNN (GRU) に Attention を入れる方法について
+      <ul>
+	<li>コメント</li>
+	<li>既存の RNN (GRU) を使う方法として
+	  hidden と context を concat する方法は、いいのか？</li>
+	<li>cf. <a href="https://d2l.ai/chapter_recurrent-modern/seq2seq.html"></a>
+	  <br />
+	  <a href="Screen Shot 2021-10-27 at 1.54.21.png"><!-- 2311x1429 -->
+	    <img src="Screen Shot 2021-10-27 at 1.54.21_thumb.jpg" width="600" height="371" style="border: 2px #ccc solid;" /></a>
+	</li>
+      </ul>
+    </li>
+
+    <li id="nlp-bahdanau-2">（２）proposed updated state s~i の式について
+      <ul>
+	<li>この違いは、意味が多少変わってくる</li>
+	<li>r という「リセット」が、何に対する「リセット」なのか、という意味</li>
+	<li>実際の処理上、影響がどれくらいあるのかは、あまりきにしなくてもいいかな</li>
+	<li>実際に比較した結果は、大きな違いは見られなかった</li>
+      </ul>
+    </li>
+    <li>以上２点は、先月のコメント</li>
+    <li>以下、追加のコメント</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li id="nlp-bahdanau-3">（３）decoder の出力の処理の部分を、前回はすっかりスキップしてた
+      <ul>
+	<li>Ian Goodfellow の Maxout を使うっていうところ
+	  <center>
+	    （本文）<br />
+	    <a href="Screen Shot 2021-10-27 at 13.06.42.png"><!-- 2752x1298 -->
+	      <img src="Screen Shot 2021-10-27 at 13.06.42_thumb.jpg" width="800" height="377" style="border: 2px #ccc solid;" /></a>
+	    <br /><br />
+	    （Appendix）<br />
+	    <a href="Screen Shot 2021-10-27 at 13.07.10.png"><!-- 2756x1303 -->
+	      <img src="Screen Shot 2021-10-27 at 13.07.10_thumb.jpg" width="800" height="378" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>（今日読む論文 Cho et al. のところで詳述）</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li id="nlp-bahdanau-4">（４）実装部分で、 bidirectional の hidden states の展開の仕方が間違っていた
+      <ul>
+	<li>（実装編で詳述）</li>
+	<li>ちなみに、ここで引用されていた BiRNN の論文を、次にきちんと読む
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 13.06.14.png"><!-- 2754x1302 -->
+	      <img src="Screen Shot 2021-10-27 at 13.06.14_thumb.jpg" width="800" height="378" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nlp-bidirectional">Bidirectional RNN の論文</h3>
+
+  <ul>
+    <li>(Schuster & Paliwal, 1997)<br />
+      &quot;<b>Bidirectional recurrent neural networks</b>&quot;<br />
+      IEEE Transactions on Signal Processing, 45(11), 2673–2681.
+      <center>
+	<a href="Screen Shot 2021-10-27 at 13.14.28.png"><!-- 2755x1295 -->
+	  <img src="Screen Shot 2021-10-27 at 13.14.28_thumb.jpg" width="600" height="282" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2021-10-27 at 13.14.49.png"><!-- 2757x1299 -->
+	  <img src="Screen Shot 2021-10-27 at 13.14.49_thumb.jpg" width="600" height="283" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>Bahdanau, Cho, Bengio の論文に BiRNN の出典として引用されていた論文</li>
+
+    <li>multi-layer にするとき、さて、どう実装するのか……
+      <ul>
+	<li>という話は、実装編で</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nlp-seq2seq">Cho et al. 2014 - Seq2Seq 論文を精読</h3>
+
+  <ul>
+    <li>(Cho et al., 2014b)<br />
+      <a href="https://arxiv.org/abs/1406.1078">arxiv: 1406.1078</a>
+      (<a href="arxiv-1406.1078_bengio.pdf">local copy</a>)
+      <br />
+      &quot;<b>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation</b>&quot;
+      <br />
+      (Cho, ..., Bahdanau, ..., Bengio)
+      <center>
+	<a href="Screen Shot 2021-10-27 at 13.38.24.png"><!-- 2796x1298 -->
+	  <img src="Screen Shot 2021-10-27 at 13.38.24_thumb.jpg" width="800" height="371" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>著者名を見ると分かる通り、この論文は Bahdanau, Cho, Bengio の
+	  Attention の論文の前身</li>
+      </ul>
+    </li>
+    <li>この論文自体には、歴史的にいうと２つのポイントがあって
+      <ul>
+	<li>１つは Seq2Seq の提案
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 13.38.36.png"><!-- 2788x1302 -->
+	      <img src="Screen Shot 2021-10-27 at 13.38.36_thumb.jpg" width="800" height="374" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>もう１つは GRU という RNN モデルの提案
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 13.38.50.png"><!-- 2791x1305 -->
+	      <img src="Screen Shot 2021-10-27 at 13.38.50_thumb.jpg" width="600" height="281" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2021-10-27 at 13.39.11.png"><!-- 2791x1299 -->
+	      <img src="Screen Shot 2021-10-27 at 13.39.11_thumb.jpg" width="600" height="279" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>前回、 Bahdanau, Cho, Bengio を精読した時に遭遇した GRU の詳細
+      <ul>
+	<li>この元論文 (Cho et al.) で確認すると、</li>
+	<li>（１） GRU の定義は本文で与えられている（上のスクショ）</li>
+	<li>（２） Seq2Seq の Encoder 部分は、本文の形式で与えられている
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 13.39.44.png"><!-- 2791x1299 -->
+	      <img src="Screen Shot 2021-10-27 at 13.39.44_thumb.jpg" width="800" height="372" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>（３） Seq2Seq の Decoder 部分は、
+	  （当然 context vector も入ってきて）
+	  pytorch 形式の GRU になっている
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 13.40.02.png"><!-- 2794x1298 -->
+	      <img src="Screen Shot 2021-10-27 at 13.40.02_thumb.jpg" width="800" height="372" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>前回、 Bahdanau, Cho, Bengio を精読した時にスキップした
+      最終ステップの処理は、同等のものが（ちょっと詳しく）書かれてある
+      <center>
+	<a href="Screen Shot 2021-10-27 at 13.40.10.png"><!-- 2789x1301 -->
+	  <img src="Screen Shot 2021-10-27 at 13.40.10_thumb.jpg" width="800" height="373" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>ただし、まだ分からない点が残ってる</li>
+	<li>行列 <b>G</b> を分割している部分のポイントが全く分からない</li>
+      </ul>
+    </li>
+
+    <li>（詳しくは、実装編で）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part1-toc"><a href="#nlp">第１部：理論編（論文を読む）</a>　目次</h3>
+  <ul>
+    <li><a href="#nlp-intro">イントロダクション</a></li>
+    <li><a href="#nlp-papers">今回読む論文</a></li>
+    <li><a href="#nlp-bahdanau">Bahdanau, Cho, Bengio の論文の補足</a>
+      <ul>
+	<li><a href="#nlp-bahdanau-1">（１）RNN (GRU) に Attention を入れる方法について</a></li>
+	<li><a href="#nlp-bahdanau-2">（２）proposed updated state s~i の式について</a></li>
+	<li><a href="#nlp-bahdanau-3">（３）decoder の出力の処理の部分を、前回はすっかりスキップしてた</a></li>
+	<li><a href="#nlp-bahdanau-4">（４）実装部分で、 bidirectional の hidden states の展開の仕方が間違っていた</a></li>
+      </ul>
+    </li>
+    <li><a href="#nlp-bidirectional">Bidirectional RNN の論文</a></li>
+    <li><a href="#nlp-seq2seq">Cho et al. 2014 - Seq2Seq 論文を精読</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      『２０２１年版 NLP を完全に理解する』第２回
+      <br />
+      Seq2Seq に戻って<br />
+      完全に理解する<br />
+      　
+      <h2 id="coding">第２部：実践編<br />（プログラミング）</h2>
+    </div>
+  </center>
+
+  <ul>
+    <li>（１）Bidirectional RNN を完全に理解する
+    </li>
+    <li>（２）RNN (GRU) への context vector の導入方法
+    </li>
+    <li>（３）Maxout ユニットについて
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="coding-bidirectional">Bidirectional RNN を完全に理解する</h3>
+
+  <ul>
+    <li>(Schuster & Paliwal, 1997)<br />
+      &quot;<b>Bidirectional recurrent neural networks</b>&quot;<br />
+      IEEE Transactions on Signal Processing, 45(11), 2673–2681.
+      <center>
+	<a href="Screen Shot 2021-10-27 at 13.14.28.png"><!-- 2755x1295 -->
+	  <img src="Screen Shot 2021-10-27 at 13.14.28_thumb.jpg" width="600" height="282" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2021-10-27 at 13.14.49.png"><!-- 2757x1299 -->
+	  <img src="Screen Shot 2021-10-27 at 13.14.49_thumb.jpg" width="600" height="283" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>スクラッチから RNN を実装する<br />
+      （ことで、Bidirectional RNN を完全に理解章）
+      <ul>
+	<li>pytorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.RNN.html">torch.nn.RNN</a> には、すでに bidirectional オプションが付いている
+	  <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="torch.nn.RNN-01.jpg"><!-- 1729x1654 -->
+		    <img src="torch.nn.RNN-01_thumb.jpg" width="600" height="574" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  <a href="torch.nn.RNN-02.jpg"><!-- 1720x1433 -->
+		    <img src="torch.nn.RNN-02_thumb.jpg" width="600" height="500" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	</li>
+	<li>このレイヤーは、その他に num_layers も指定できる<br />
+	  （多層 RNN を構成できる）
+	</li>
+
+	<li>pytorch の実装には、RNN の最小ユニット <a href="https://pytorch.org/docs/stable/generated/torch.nn.RNNCell.html">torch.nn.RNNCell</a> もある
+	  <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 16.10.37.png"><!-- 1662x1232 -->
+	  <img src="Screen Shot 2021-10-27 at 16.10.37_thumb.jpg" width="600" height="445" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 16.10.59.png"><!-- 1650x1406 -->
+	  <img src="Screen Shot 2021-10-27 at 16.10.59_thumb.jpg" width="600" height="511" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	</li>
+
+      </ul>
+    </li><!-- スクラッチから RNN を実装する -->
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="coding-bidirectional-comparison">pytorch との一対一の比較</h3>
+
+  <h4 id="coding-bidirectional-RNNCell">RNN (RNNCell)</h4>
+  
+  <ul>
+    <li>RNNCell レベルでの実装 (myRNNCell)
+      <center>
+	<a href="Screen Shot 2021-10-27 at 14.39.46.png"><!-- 1267x1192 -->
+	  <img src="Screen Shot 2021-10-27 at 14.39.46_thumb.jpg" width="600" height="564" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>torch.nn.RNNCell との比較
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 14.40.03.png"><!-- 956x1065 -->
+		<img src="Screen Shot 2021-10-27 at 14.40.03_thumb.jpg" width="539" height="600" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 14.40.09.png"><!-- 1000x468 -->
+		<img src="Screen Shot 2021-10-27 at 14.40.09_thumb.jpg" width="600" height="281" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-bidirectional-RNNCell1">Bidirectional 1-Layer レベル</h4>
+  
+  <ul>
+    <li>（これは pytorch には存在しない）
+      <ul>
+	<li>比較は RNN で num_layers=1 として行う</li>
+      </ul>
+    </li>
+
+    <li>myRNN1
+      <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="myRNN1-01.jpg"><!-- 1640x2098 -->
+		    <img src="myRNN1-01_thumb.jpg" width="625" height="800" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  <a href="myRNN1-02.jpg"><!-- 1643x1514 -->
+		    <img src="myRNN1-02_thumb.jpg" width="600" height="553" styl		</td>
+	      </tr>
+	    </table>
+      </center>
+    </li>
+
+    <li>torch.nn.RNN (num_layers=1) との比較
+      <ul>
+	<li>２つのモデルを構成
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 14.41.06.png"><!-- 1657x1187 -->
+	      <img src="Screen Shot 2021-10-27 at 14.41.06_thumb.jpg" width="600" height="430" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2021-10-27 at 14.41.15.png"><!-- 1440x1016 -->
+	      <img src="Screen Shot 2021-10-27 at 14.41.15_thumb.jpg" width="600" height="423" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>pytorch のモデルの weights を myrnn にセット
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 14.41.22.png"><!-- 1252x557 -->
+	      <img src="Screen Shot 2021-10-27 at 14.41.22_thumb.jpg" width="600" height="267" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>同じ入力ベクトルに対して、それぞれの出力を比較
+	  <center>
+	    <a href="Screen Shot 2021-10-27 at 14.41.50.png"><!-- 1279x1145 -->
+	      <img src="Screen Shot 2021-10-27 at 14.41.50_thumb.jpg" width="600" height="537" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2021-10-27 at 14.41.57.png"><!-- 1249x1187 -->
+	      <img src="Screen Shot 2021-10-27 at 14.41.57_thumb.jpg" width="600" height="570" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-bidirectional-RNN">Bidirectional multi-Layer レベル</h4>
+
+  <ul>
+    <li>つまり torch.nn.RNN との比較</li>
+
+    <li>myRNN
+      <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="myRNN-01.jpg"><!-- 1267x2434 -->
+		    <img src="myRNN-01_thumb.jpg" width="625" height="1200" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  <a href="myRNN-02.jpg"><!-- 1580x877 -->
+		    <img src="myRNN-02_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+      </center>
+    </li>
+
+    <li>torch.nn.RNN との比較
+      <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 14.42.55.png"><!-- 1640x1195 -->
+	  <img src="Screen Shot 2021-10-27 at 14.42.55_thumb.jpg" width="600" height="437" style="border: 2px #ccc solid;" /></a>
+	<br />
+	<a href="Screen Shot 2021-10-27 at 14.43.02.png"><!-- 1359x1185 -->
+	  <img src="Screen Shot 2021-10-27 at 14.43.02_thumb.jpg" width="600" height="523" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 14.43.17.png"><!-- 1098x1185 -->
+	  <img src="Screen Shot 2021-10-27 at 14.43.17_thumb.jpg" width="556" height="600" style="border: 2px #ccc solid;" /></a>
+	<br />
+	<a href="Screen Shot 2021-10-27 at 14.43.11.png"><!-- 1196x1183 -->
+	  <img src="Screen Shot 2021-10-27 at 14.43.11_thumb.jpg" width="600" height="593" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+      </center>
+    </li>
+
+  </ul>
+  
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-bidirectional-GRU">GRU に対して、同様に</h4>
+
+  <ul>
+    <li>pytorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRUCell.html">torch.nn.GRUCell</a>
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	<a href="Screen Shot 2021-10-27 at 16.11.36.png"><!-- 1665x1244 -->
+	  <img src="Screen Shot 2021-10-27 at 16.11.36_thumb.jpg" width="600" height="448" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td>　</td>
+	    <td valign="top">
+	<a href="Screen Shot 2021-10-27 at 16.11.42.png"><!-- 1651x1422 -->
+	  <img src="Screen Shot 2021-10-27 at 16.11.42_thumb.jpg" width="600" height="517" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+    <li>pytorch の <a href="https://pytorch.org/docs/stable/generated/torch.nn.GRU.html">torch.nn.GRU</a>
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="torch.nn.GRU-01.jpg"><!-- 1665x1933 -->
+		<img src="torch.nn.GRU-01_thumb.jpg" width="517" height="600" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td>　</td>
+	    <td valign="top">
+	      <a href="torch.nn.GRU-02.jpg"><!-- 1674x1477 -->
+		<img src="torch.nn.GRU-02_thumb.jpg" width="600" height="529" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+  </ul>
+
+
+  <center>
+  <table border="0">
+    <tr>
+      <td valign="top">
+	myGRUCell
+	<center>	
+	  <a href="myGRUCell-00.jpg"><!-- 1254x1618 -->
+	    <img src="myGRUCell-00_thumb.jpg" width="605" height="780" style="border: 2px #ccc solid;" /></a>
+	</center>
+      </td>
+		<td>　</td>
+      <td valign="top">
+	myGRU1
+	<center>
+	  <a href="myGRU1-00.jpg"><!-- 1659x3547 -->
+	    <img src="myGRU1-00_thumb.jpg" width="608" height="1300" style="border: 2px #ccc solid;" /></a>
+	</center>
+      </td>
+    </tr>
+  </table>
+  </center>
+
+  <ul>
+    <li>myGRU
+      <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="myGRU-01.jpg"><!-- 1253x2436 -->
+		    <img src="myGRU-01_thumb.jpg" width="617" height="1200" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  <a href="myGRU-02.jpg"><!-- 1592x875 -->
+		    <img src="myGRU-02_thumb.jpg" width="600" height="330" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-bidirectional-comment">（コメント）RNN レイヤーのバイアスについて</h4>
+
+  <ul>
+    <li>RNN レイヤーは feedforward NN (fully connected layer, nn.Linear)
+      の単純な拡張になっている</li>
+    <li><a href="https://en.wikipedia.org/wiki/Feedforward_neural_network">feedforward NN</a> (fully connected layer, nn.Linear)
+      <center>
+	<br />
+	<b>y</b> = f( <b>W</b>・<b>x</b> + <b>b</b> )
+	<br />
+	　
+      </center>
+      <ul>
+	<li>入力： <b>x</b></li>
+	<li>出力： <b>y</b></li>
+	<li>アクティベーション（非線形関数）： f()</li>
+	<li>パラメータ： <b>W</b>, <b>b</b></li>
+      </ul>
+    </li>
+    <li>RNN （例えば <a href="https://pytorch.org/docs/stable/generated/torch.nn.RNNCell.html">torch.nn.RNNCell</a> ）
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 16.10.37.png"><!-- 1662x1232 -->
+		<img src="Screen Shot 2021-10-27 at 16.10.37_thumb.jpg" width="600" height="445" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td>　</td>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 16.10.59.png"><!-- 1650x1406 -->
+		<img src="Screen Shot 2021-10-27 at 16.10.59_thumb.jpg" width="600" height="511" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+      <br />
+      <center>
+	<br />
+	<b>h’</b> = tanh(
+	<b>W</b><sub>x</sub>・<b>x</b> + <b>b</b><sub>x</sub>
+	+
+	<b>W</b><sub>h</sub>・<b>h</b> + <b>b</b><sub>h</sub>
+	)
+	<br />
+	　
+      </center>
+      <ul>
+	<li>入力： <b>x</b>, <b>h</b></li>
+	<li>出力： <b>h’</b></li>
+	<li>アクティベーション（非線形関数）： tanh()</li>
+	<li>パラメータ：
+	  <b>W</b><sub>x</sub>, <b>b</b><sub>x</sub>,
+	  <b>W</b><sub>h</sub>, <b>b</b><sub>h</sub>
+	</li>
+      </ul>
+    </li>
+    <li>疑問：バイアス項 <b>b</b><sub>x</sub> と <b>b</b><sub>h</sub>
+      は冗長ではないか？
+      <ul>
+	<li>つまり <b>b</b><sub>x</sub> か <b>b</b><sub>h</sub>
+	  の１つを残せば十分じゃないか？</li>
+	<li>bias オプションがあるが、
+	  False の場合、両方とも（？）落とすようになるみたい</li>
+      </ul>
+    </li>
+
+    <li>この構造は、基本的に GRU も同様</li>
+    <li>まぁ、大した違いではないですが</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="coding-RNN-with-context">RNN (GRU) への context vector の導入方法</h3>
+
+  <ul>
+    <li>Seq2Seq の構造についての考察
+      <center>
+	<a href="Screen Shot 2021-10-27 at 16.58.20.png"><!-- 1289x1257 -->
+	  <img src="Screen Shot 2021-10-27 at 16.58.20_thumb.jpg" width="600" height="585" style="border: 2px #ccc solid;" /></a>
+      </center>
+      (Cho et al. の Fig. 1 より)
+      <ul>
+	<li>上の図の<font color="red">赤丸</font>で囲ったそれぞれの「RNN ユニット」に注目する</li>
+	<li>Encoder の RNN ユニットは<b>２つの入力に対して１つの出力</b>を持つ
+	  <ul>
+	    <li>入力： <b>x</b>, <b>h</b></li>
+	    <li>出力： <b>h</b></li>
+	    <li>（論文より）
+	      <center>
+		<a href="Screen Shot 2021-10-27 at 17.03.40.png"><!-- 2790x1232 -->
+		  <img src="Screen Shot 2021-10-27 at 17.03.40_thumb.jpg" width="600" height="265" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+
+	<li>Decoder の RNN ユニットは<b>３つの入力に対して１つの出力</b>を持つ
+	  <ul>
+	    <li>入力： <b>y</b>, <b>h</b>, <b>c</b></li>
+	    <li>出力： <b>h</b></li>
+	    <li>（論文より）
+	      <center>
+		<a href="Screen Shot 2021-10-27 at 17.03.48.png"><!-- 2781x1293 -->
+		  <img src="Screen Shot 2021-10-27 at 17.03.48_thumb.jpg" width="600" height="279" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-RNN-with-context-question">実装上の問い</h4>
+  <ul>
+    <li>既存の RNN ユニット（２入力、１出力）を使って Decoder を実装したい</li>
+
+    <li id="coding-RNN-with-context-plan1">方法１：３つの入力を何らかの処理を行って「入力２つ」の形にする
+      <ul>
+	<li>前回ぼくが形式的に喋った方法も、その１つ<br />
+	  （<a href="https://zenkei-ai-forum.github.io/papers/ZAF202109/ichiki/index.html#part1-12">RNN (GRU) に Attention を入れる方法について</a>）</li>
+
+	<li>２つのベクトルを concat して（大きな）１つのベクトルにして<br />
+	  ２入力、１出力の形にする方法について</li>
+
+	<li>（簡単のため RNN で考える）</li>
+
+	<li>（選択１）<b>c</b> を <b>h</b> に concat するか？
+	  <ul>
+	    <li>plain な RNN は（バイアス項は簡単のため落とす）
+	      <center>
+		<br />
+		<b>h’</b> = tanh(
+		<b>W</b><sub>x</sub>・<b>x</b>
+		+
+		<b>W</b><sub>h</sub>・<b>h</b>
+		)
+		<br />
+		　
+	      </center>
+	      <ul>
+		<li>入力： <b>x</b></li>
+		<li>出力： <b>y</b></li>
+		<li>パラメータ：
+		  <b>W</b><sub>x</sub>, <b>W</b><sub>h</sub>
+		</li>
+	      </ul>
+	    </li>
+	    <li>行列のサイズは
+	      <ul>
+		<li><b>W</b><sub>x</sub>: (hidden_size, input_size)</li>
+		<li><b>W</b><sub>h</sub>: (hidden_size, hidden_size)</li>
+	      </ul>
+	    </li>
+	    <li>なので concat されたベクトル
+	      <center>
+		<b>p</b> = concat(<b>h</b>, <b>c</b>)
+	      </center>
+	      を作って、 RNN に渡すことを考えると
+	      <center>
+		<a href="IMG_8638.jpg"><!-- 1210x747 -->
+		  <img src="IMG_8638_thumb.jpg" width="600" height="370" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+	<li>（選択２）<b>c</b> を <b>x</b> に concat するか？
+	  <ul>
+	    <li><a href="https://d2l.ai/chapter_recurrent-modern/seq2seq.html">DIVE INTO DEEP LEARNING - Sequence to Sequence Learning</a>
+	      <br />
+	      <a href="Screen Shot 2021-10-27 at 1.54.21.png"><!-- 2311x1429 -->
+		<img src="Screen Shot 2021-10-27 at 1.54.21_thumb.jpg" width="600" height="371" style="border: 2px #ccc solid;" /></a>
+	    </li>
+	    <li>うん、確かにこの方法だと、数学的には同じ形になりそうだ<br />
+	      （ただし RNN の場合、あと 1-layer の場合）
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <ul>
+    <li id="coding-RNN-with-context-plan2">方法２：３つの入力を処理する RNN ユニットを実装する
+      <ul>
+	<li>結局、これが一番確実だ
+	  <ul>
+	    <li>（本当のことを言うと<br />
+	      これをするために、上で RNN と GRU をスクラッチから実装した訳だが）
+	    </li>
+	  </ul>
+	</li>
+	<li>以下のような myGRUContext 系のクラスを実装する
+	  <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  myGRUContextCell<br />
+		  <a href="myGRUContextCell.jpg"><!-- 1357x1807 -->
+		    <img src="myGRUContextCell_thumb.jpg" width="601" height="800" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  myGRUContext1<br />
+		  <a href="myGRUContext1.jpg"><!-- 1515x3618 -->
+		    <img src="myGRUContext1_thumb.jpg" width="607" height="1450" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	</li>
+	<li>myGRUContext
+	  <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="myGRUContext-01.jpg"><!-- 1022x2215 -->
+		    <img src="myGRUContext-01_thumb.jpg" width="600" height="1300" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td>　</td>
+		<td valign="top">
+		  <a href="myGRUContext-02.jpg"><!-- 1557x1095 -->
+		    <img src="myGRUContext-02_thumb.jpg" width="600" height="422" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	</li>
+
+      </ul>
+    </li><!-- 方法２：３つの入力を処理する RNN ユニットを実装する -->
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-RNN-with-context-implementation">実装</h4>
+
+  <ul>
+    <li>方法２で実装した GRUContext を（Decoder に）使って実装
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      Seq2Seq<br />
+	      <a href="Seq2SeqChoEtal2014-00.jpg"><!-- 1663x3969 -->
+		<img src="Seq2SeqChoEtal2014-00_thumb.jpg" width="608" height="1450" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td>　</td>
+	    <td valign="top">
+	      Seq2Seq with Attention<br />
+	      <a href="Seq2SeqAttnGRU-00.jpg"><!-- 1684x4939 -->
+		<img src="Seq2SeqAttnGRU-00_thumb.jpg" width="597" height="1750" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="coding-maxout">Maxout ユニットについて</h3>
+
+  <ul>
+    <li>前回 (<a href="https://zenkei-ai-forum.github.io/papers/ZAF202109/ichiki/index.html">ZAF-2109</a>)
+      すっかりスキップしてた decoder の出力の処理の部分
+      <ul>
+	<li>Ian Goodfellow の Maxout を使うっていうところ
+	  <center>
+	    （本文）<br />
+	    <a href="Screen Shot 2021-10-27 at 13.06.42.png"><!-- 2752x1298 -->
+	      <img src="Screen Shot 2021-10-27 at 13.06.42_thumb.jpg" width="800" height="377" style="border: 2px #ccc solid;" /></a>
+	    <br /><br />
+	    （Appendix）<br />
+	    <a href="Screen Shot 2021-10-27 at 13.07.10.png"><!-- 2756x1303 -->
+	      <img src="Screen Shot 2021-10-27 at 13.07.10_thumb.jpg" width="800" height="378" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+    <li>その論文の元論文である Cho et al. (2014) に、
+      この最終ステップの処理は、同等のものが（ちょっと詳しく）書かれてある
+      <center>
+	<a href="Screen Shot 2021-10-27 at 13.40.10.png"><!-- 2789x1301 -->
+	  <img src="Screen Shot 2021-10-27 at 13.40.10_thumb.jpg" width="800" height="373" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>ただし、まだ分からない点が残ってる</li>
+	<li>行列 <b>G</b> を分割している部分のポイントが全く分からない</li>
+      </ul>
+    </li>
+
+    <li>論文を読んで、理解した範囲で、以下のように実装してみた
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.24.39.png"><!-- 1588x1195 -->
+	  <img src="Screen Shot 2021-10-27 at 18.24.39_thumb.jpg" width="600" height="452" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.24.19.png"><!-- 1704x1096 -->
+	  <img src="Screen Shot 2021-10-27 at 18.24.19_thumb.jpg" width="600" height="386" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+      </center>
+    </li>
+
+    <li>ただし Maxout を使わない場合と比較して、大きく改善するようには見えない</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="coding-results">結果</h3>
+
+  <h4 id="coding-results-spelling-bee">Spelling Bee</h4>
+
+  <ul>
+    <li>no attention
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 18.14.42.png"><!-- 2151x1145 -->
+		<img src="Screen Shot 2021-10-27 at 18.14.42_thumb.jpg" width="600" height="319" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 18.14.49.png"><!-- 2154x1184 -->
+		<img src="Screen Shot 2021-10-27 at 18.14.49_thumb.jpg" width="600" height="330" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	      <a href="Screen Shot 2021-10-27 at 18.14.56.png"><!-- 2147x1112 -->
+		<img src="Screen Shot 2021-10-27 at 18.14.56_thumb.jpg" width="600" height="311" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>with attention
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 18.13.38.png"><!-- 2143x1151 -->
+		<img src="Screen Shot 2021-10-27 at 18.13.38_thumb.jpg" width="600" height="322" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+	      <a href="Screen Shot 2021-10-27 at 18.13.47.png"><!-- 2143x1079 -->
+		<img src="Screen Shot 2021-10-27 at 18.13.47_thumb.jpg" width="600" height="302" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	      <a href="Screen Shot 2021-10-27 at 18.14.00.png"><!-- 2148x1119 -->
+		<img src="Screen Shot 2021-10-27 at 18.14.00_thumb.jpg" width="600" height="313" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h4 id="coding-results-translation">翻訳</h4>
+
+  <ul>
+    <li>no attention
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.06.23.png"><!-- 2147x1150 -->
+	  <img src="Screen Shot 2021-10-27 at 18.06.23_thumb.jpg" width="600" height="321" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.06.36.png"><!-- 2147x1026 -->
+	  <img src="Screen Shot 2021-10-27 at 18.06.36_thumb.jpg" width="600" height="287" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	<a href="Screen Shot 2021-10-27 at 18.06.45.png"><!-- 2151x1203 -->
+	  <img src="Screen Shot 2021-10-27 at 18.06.45_thumb.jpg" width="600" height="336" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>with attention
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.07.00.png"><!-- 2148x1132 -->
+	  <img src="Screen Shot 2021-10-27 at 18.07.00_thumb.jpg" width="600" height="316" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+	<a href="Screen Shot 2021-10-27 at 18.07.06.png"><!-- 2144x1055 -->
+	  <img src="Screen Shot 2021-10-27 at 18.07.06_thumb.jpg" width="600" height="295" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	<a href="Screen Shot 2021-10-27 at 18.07.13.png"><!-- 2151x1203 -->
+	  <img src="Screen Shot 2021-10-27 at 18.07.13_thumb.jpg" width="600" height="336" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h3 id="part2-toc"><a href="#coding">第２部：実践編（プログラミング）</a>　目次</h3>
+  <ul>
+    <li><a href="#coding-bidirectional">Bidirectional RNN を完全に理解する</a>
+      <ul>
+	<li><a href="#coding-bidirectional-comparison">pytorch との一対一の比較</a>
+	  <ul>
+	    <li><a href="#coding-bidirectional-RNNCell">RNN (RNNCell)</a></li>
+	    <li><a href="#coding-bidirectional-RNNCell1">Bidirectional 1-Layer レベル</a></li>
+	    <li><a href="#coding-bidirectional-RNN">Bidirectional multi-Layer レベル</a></li>
+	    <li><a href="#coding-bidirectional-GRU">GRU に対して、同様に</a></li>
+	  </ul>
+	</li>
+	<li><a href="#coding-bidirectional-comment">（コメント）RNN レイヤーのバイアスについて</a></li>
+      </ul>
+    </li>
+    <li><a href="#coding-RNN-with-context">RNN (GRU) への context vector の導入方法</a>
+      <ul>
+	<li><a href="#coding-RNN-with-context-question">実装上の問い</a>
+	  <ul>
+	    <li><a href="#coding-RNN-with-context-plan1">方法１：３つの入力を何らかの処理を行って「入力２つ」の形にする</a></li>
+	    <li><a href="#coding-RNN-with-context-plan2">方法２：３つの入力を処理する RNN ユニットを実装する</a></li>
+	  </ul>
+	</li>
+	<li><a href="#coding-RNN-with-context-implementation">実装</a></li>
+      </ul>
+    </li>
+    <li><a href="#coding-maxout">Maxout ユニットについて</a></li>
+    <li><a href="#coding-results">結果</a>
+      <ul>
+	<li><a href="#coding-results-spelling-bee">Spelling Bee</a></li>
+	<li><a href="#coding-results-translation">翻訳</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF １１月２４日開催の予定です。</li>
+    <li>ZAF 講演者、 ZAM 執筆者、絶賛、第募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li><a href="#part0">前座</a>
+      <ul>
+	<li><a href="#podcast">毎日更新、ポッドキャスト</a>
+	  <ul>
+	    <li><a href="#podcast-s13">シーズン１３ (ZAF-2101）</a></li>
+	    <li><a href="#podcast-s14">シーズン１４ (ZAF-2102）</a></li>
+	    <li><a href="#podcast-s15">シーズン１５ (ZAF-2103）</a></li>
+	    <li><a href="#podcast-s16">シーズン１６ (ZAF-2104）予告</li>
+	  </ul>
+	</li>
+	<li><a href="#zenkei-ai-selections">毎日更新、YouTube ビデオ</a>
+	  <ul>
+	    <li><a href="#selections-2009">ポッドキャスト　シーズン９ (ZAF2009)</a></li>
+	    <li><a href="#selections-2010">ポッドキャスト　シーズン１０ (ZAF2010)</a></li>
+	    <li><a href="#selections-2011">ポッドキャスト　シーズン１１ (ZAF2011)</a></li>
+	    <li><a href="#selections-2012">ポッドキャスト　シーズン１２ (ZAF2012)</a></li>
+	  </ul>
+	</li>
+	<li><a href="#podcast-ranking">毎日更新の成果はあったのか？</a></li>
+      </ul>
+    </li>
+
+    <li>メイン『２０２１年版 NLP を完全に理解する』第２回<br />
+      Seq2Seq に戻って Attention を完全に理解する
+      <ul>
+	<li><b>第１部</b> <a href="#nlp">理論編（論文を読む）</a>
+	  <ul>
+	    <li><a href="#nlp-intro">イントロダクション</a></li>
+	    <li><a href="#nlp-papers">今回読む論文</a></li>
+	    <li><a href="#nlp-bahdanau">Bahdanau, Cho, Bengio の論文の補足</a>
+	      <ul>
+		<li><a href="#nlp-bahdanau-1">（１）RNN (GRU) に Attention を入れる方法について</a></li>
+		<li><a href="#nlp-bahdanau-2">（２）proposed updated state s~i の式について</a></li>
+		<li><a href="#nlp-bahdanau-3">（３）decoder の出力の処理の部分を、前回はすっかりスキップしてた</a></li>
+		<li><a href="#nlp-bahdanau-4">（４）実装部分で、 bidirectional の hidden states の展開の仕方が間違っていた</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#nlp-bidirectional">Bidirectional RNN の論文</a></li>
+	    <li><a href="#nlp-seq2seq">Cho et al. 2014 - Seq2Seq 論文を精読</a></li>
+	  </ul>
+	</li>
+
+	<li><b>第２部</b> <a href="#coding">実践編（プログラミング）</a>
+	  <ul>
+	    <li><a href="#coding-bidirectional">Bidirectional RNN を完全に理解する</a>
+	      <ul>
+		<li><a href="#coding-bidirectional-comparison">pytorch との一対一の比較</a>
+		  <ul>
+		    <li><a href="#coding-bidirectional-RNNCell">RNN (RNNCell)</a></li>
+		    <li><a href="#coding-bidirectional-RNNCell1">Bidirectional 1-Layer レベル</a></li>
+		    <li><a href="#coding-bidirectional-RNN">Bidirectional multi-Layer レベル</a></li>
+		    <li><a href="#coding-bidirectional-GRU">GRU に対して、同様に</a></li>
+		  </ul>
+		</li>
+		<li><a href="#coding-bidirectional-comment">（コメント）RNN レイヤーのバイアスについて</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#coding-RNN-with-context">RNN (GRU) への context vector の導入方法</a>
+	      <ul>
+		<li><a href="#coding-RNN-with-context-question">実装上の問い</a>
+		  <ul>
+		    <li><a href="#coding-RNN-with-context-plan1">方法１：３つの入力を何らかの処理を行って「入力２つ」の形にする</a></li>
+		    <li><a href="#coding-RNN-with-context-plan2">方法２：３つの入力を処理する RNN ユニットを実装する</a></li>
+		  </ul>
+		</li>
+		<li><a href="#coding-RNN-with-context-implementation">実装</a></li>
+	      </ul>
+	    </li>
+	    <li><a href="#coding-maxout">Maxout ユニットについて</a></li>
+	    <li><a href="#coding-results">結果</a>
+	      <ul>
+		<li><a href="#coding-results-spelling-bee">Spelling Bee</a></li>
+		<li><a href="#coding-results-translation">翻訳</a></li>
+	      </ul>
+	    </li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      おまけ
+      <br />
+      <h3>ポッドキャスト<br />
+	ZENKEI AI SELECTIONS<br />
+	　コンテンツ一覧</h3>
+    </div>
+  </center>
+
+  <ul>
+    <li><a href="#selections-2009">ポッドキャスト　シーズン９ (ZAF2009)</a>
+      <ul>
+	<li><a href="https://youtu.be/pdxIfm7jzpc">（前座）『音楽と数理』でとりあげた「素敵なハーモニー」</a></li>
+	<li><a href="https://youtu.be/ik8CW9N-Jwg">技術書典のはなし（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/EZO6EkUY88M">Robots in Fiction （古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/74Qbvt-2wS0">技術書典９　ドタバタ出典記-前半（市來）</a></li>
+	<li><a href="https://youtu.be/K5oy1oxygUQ">技術書典９　ドタバタ出典記- 後半（市來）</a></li>
+      </ul>
+    </li>
+    <li><a href="#selections-2010">ポッドキャスト　シーズン１０ (ZAF2010)</a>
+      <ul>
+	<li><a href="https://youtu.be/sqkI88psb0U">（前座）ひとり雑談 - miniGPTやStyleGAN2 VS みんなのAI -</a></li>
+	<li><a href="https://youtu.be/VlcJDF7TXiI">ZAF のめざすもの、めざさないもの（前半）</a></li>
+	<li><a href="https://youtu.be/R7XomIyAkOE">ZAF のめざすもの、めざさないもの（後半）</a></li>
+	<li><a href="https://youtu.be/edeISFd2-qo">これまでの ZENKEI AI FORUM（前半）</a></li>
+	<li><a href="https://youtu.be/bzC19N_N_-U">これまでの ZENKEI AI FORUM（後半）</a></li>
+      </ul>
+    </li>
+    <li><a href="#selections-2011">ポッドキャスト　シーズン１１ (ZAF2011)</a>
+      <ul>
+	<li><a href="https://youtu.be/pYQ9hFG1d7k">（前座）今日のテーマは「実践」です</a></li>
+	<li><a href="https://youtu.be/al32idnRc9A">（前座）新企画「数理クイズ」</a></li>
+	<li><a href="https://youtu.be/rjaMjeak2ws">ニューラルネットの基本的なテクニック（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/hQ2DMzFO5FY">技術書典１０への抱負（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/2gs_Wp_Rb2E">最近の話題から Vision Transformer （市來）</a></li>
+	<li><a href="https://youtu.be/5gQwQAmBJLQ">最近の話題から BYOL （市來）</a></li>
+      </ul>
+    </li>
+    <li><a href="#selections-2012">ポッドキャスト　シーズン１２ (ZAF2012)</a>
+      <ul>
+	<li><a href="https://youtu.be/0MxGjqrtid0">（前座）技術書典１０の新著『厳密な計算』</a></li>
+	<li><a href="https://youtu.be/_NLUEZO1B8Q">AIによる生体認証（１） Whale Identification （古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/GfzF9GUxuhg">AIによる生体認証（２） Siameseニューラルネット（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/UVyYFyD7R9M">AIによる生体認証（３）宝石の家を作る、とpix2pixちゃん（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/V6TcQLmUuV4">数理クイズの解説篇（市來）</a></li>
+	<li><a href="https://youtu.be/ASUhD50VB1o">高次元空間のベクトルについて（市來）</a></li>
+	<li><a href="https://youtu.be/X7d8JLv4EZA">（隠し球）東海道五十四次プロジェクトの進捗（市來）</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#podcast-s13">シーズン１３ (ZAF-2101）</a>
+      <ul>
+	<li><a href="https://youtu.be/apd3_sRNfQA">（前座）George Daniels と Brad Mehldau お分けします</a></li>
+	<li><a href="https://youtu.be/x6JIGC2Qeuk">AIは流体力学を解けるのか？とラズパイPicoのはなし（市來）</a></li>
+	<li><a href="https://youtu.be/VIKvzrUY1bs">技術書典１０のはなし（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/xLiQW9ZmoME">DALL·Eの紹介（古川郁衣さん）</a></li>
+	<li><a href="https://youtu.be/rEGDwA8Kd4Y">技術書典１０のまとめ（市來）</a></li>
+	<li><a href="https://youtu.be/5XQfJ7XSk6Q">本のおまけと雑誌創刊宣言！（市來）</a></li>
+	<li><a href="https://youtu.be/jbxN1Xk4qLs">技術書典１０に参加してみて（中野裕さん）</a></li>
+      </ul>
+    </li>
+    <li><a href="#podcast-s14">シーズン１４ (ZAF-2102）</a>
+      <ul>
+	<li><a href="https://youtu.be/7tmj1TSbDIY">シーズン１４のイントロダクション</a></li>
+	<li><a href="https://youtu.be/Gu6Ky_sNlTc">追悼 Chick Corea</a></li>
+	<li><a href="https://youtu.be/q_hFj0cMw6U">祝 Perseverance 火星着陸！</a></li>
+	<li><a href="https://youtu.be/k4Jb5Hf-2yQ">ZAMを何で書くか問題</a></li>
+	<li><a href="https://youtu.be/uSHkYoJzwT4">数理（小）ネタ</a></li>
+	<li><a href="https://youtu.be/9RMa9C6UAAY">最近の話題から NFNets（前半）</a></li>
+	<li><a href="https://youtu.be/M1Mbil-jPI4">最近の話題から NFNets（後半）論文は読みましょう</a></li>
+	<li><a href="https://youtu.be/0Ietc0Jfzfw">ZAM創刊の裏話（１）前兆／共感</a></li>
+	<li><a href="https://youtu.be/5QnQYQpRpTY">ZAM創刊の裏話（２）閃き／計画／公開！</a></li>
+	<li><a href="https://youtu.be/4CTfJJZdhDM">ZAM創刊の裏話（３）好きこそものの上手なれ</a></li>
+      </ul>
+    </li>
+    <li><a href="#podcast-s15">シーズン１５ (ZAF-2103）</a>
+      <ul>
+	<li><a href="https://youtu.be/EqzUiq3muA0">ZAM創刊号の印刷版きました！</a></li>
+	<li><a href="https://youtu.be/nAU0ZdlBs30">ZAM 印刷版の自慢と２月号のチラ見せ</a></li>
+	<li><a href="https://youtu.be/hvTFhM77a-Y">（新企画）コンピュータ会話教室（１）イントロ</a></li>
+	<li><a href="https://youtu.be/l1CdsXIeEwM">（新企画）コンピュータ会話教室（２）for ループ</a></li>
+	<li><a href="https://youtu.be/I7couzedQGE">（新企画）コンピュータ会話教室（３）ベクトルと行列</a></li>
+	<li><a href="https://youtu.be/L9fXFVlKXw4">（新企画）コンピュータ会話教室（４）突然の数理クイズ</a></li>
+	<li><a href="https://youtu.be/wnKW22_qMU8">（新企画）コンピュータ会話教室（５）伝わったかな？</a></li>
+	<li><a href="https://youtu.be/d0Hk115IUyY">東海道５Ｘ（１）構想など（ホンダナオさん）</a></li>
+	<li><a href="https://youtu.be/Iww1lH47vCk">東海道５Ｘ（２）よさげな浮世絵風建築画像と偽文字（ホンダナオさん）</a></li>
+	<li><a href="https://youtu.be/Xwtemb13KYI">東海道５Ｘ（３）写真と線画（ホンダナオさん）</a></li>
+	<li><a href="https://youtu.be/XcGronglrVI">東海道五十X プロジェクト（１）CycleGAN の紹介（大島圭祐さん）</a></li>
+	<li><a href="https://youtu.be/gZpbCE7y-Q0">東海道五十X プロジェクト（２）情景画像と浮世絵で検証（大島圭祐さん）</a></li>
+	<li><a href="https://youtu.be/27Y5cMNBlY0">東海道五十X プロジェクト（３）TransGaGa の紹介（大島圭祐さん）</a></li>
+	<li><a href="https://youtu.be/A7UvvfyW0Yo">東海道五十X プロジェクト（４）ベクシンスキーの絵（大島圭祐さん）</a></li>
+	<li><a href="https://youtu.be/BHa2rUoJqzI">東海道５Ｘの総括：ディスカッション</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
