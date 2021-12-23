@@ -3,6 +3,10 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://zenkei-ai-forum.github.io/pages/
+* ZAF 2021/12 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202112/ichiki/)
+  * 2021年の振り返り、浮世絵チャレンジ PoemGAN
+* ZAF 2021/11 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202111/ichiki/)
+  * 最近の話題から
 * ZAF 2021/10 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202110/ichiki/)
   * 秋の夜長は読書とコーディング２
 * ZAF 2021/09 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202109/ichiki/)
