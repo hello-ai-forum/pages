@@ -1,0 +1,996 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2022/01/26)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2022/01/26</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20220126-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20220126-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF ２０２２年１月２６日
+    </div>
+    <div style="font-size: 40px;">＜いちきの今年のテーマ＞</div>
+    <div style="font-size: 80px;">
+      ２０２２年は、ゆるく、インプット
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li><b>前座</b>
+      <ul>
+	<li><a href="#podcast">2022年のポッドキャスト</a></li>
+	<li><a href="#techbookfest">技術書典１２</a></li>
+      </ul>
+    </li>
+
+    <li><b>第１部</b>
+      <ul>
+	<li><a href="#techbookfest-side1">（脱線）「同人誌」とは？</a></li>
+      </ul>
+    </li>
+
+    <li><b>第２部</b>
+      <ul>
+	<li><a href="#image-classification">2022年の画像分類</a></li>
+	<li><a href="#image-classification-gorojima">実践 五郎島 ８階級分類課題</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 50px; font-weight: bolder;">
+      コロナ対策、今一度、がんばりましょう！
+    </div>
+  </center>
+
+  <ul>
+    <li>気がつくと、第６波（？）の真っ只中ですね
+      <center>
+	<a href="https://www.stopcovid19.jp/">
+	  <img src="Screen Shot 2022-01-26 at 15.03.46_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+	<a href="https://www.stopcovid19.jp/">
+	  <img src="Screen Shot 2022-01-26 at 15.04.31_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>今回のできごとで知ったこと
+      <ul>
+	<li>オミクロン株（さんざん言い古されたことですが）
+	  <center>
+	    Ω (ω) は O-MEGA （オ - メガ） でかい オー
+	    <br />
+	    Ο (ο) は o-micron （オ - ミクロン） ちっちゃい オー
+	  </center>
+	  ギリシャ文字は、数学でよく出てきます
+	</li>
+      </ul>
+    </li>
+    <li>思えば、２０２０年３月の ZENKEI AI FORUM から、ですね
+      <center>
+	<a href="https://youtu.be/iAuJc5UuI_A?t=60">
+	  <img src="Screen Shot 2022-01-26 at 15.17.07_thumb.jpg" width="800" height="613" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="podcast">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座
+      <br />
+      2022年のポッドキャスト
+    </div>
+  </center>
+
+  <ul>
+    <li>今年からは、週１回の更新にしようと思います
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-01-26 at 15.45.25.png"><!-- 2676x1363 -->
+		<img src="Screen Shot 2022-01-26 at 15.45.25_thumb.jpg" width="600" height="306" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-01-26 at 15.45.44.png"><!-- 2674x1419 -->
+		<img src="Screen Shot 2022-01-26 at 15.45.44_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+
+    <li>その結果、あれれ、
+      とうとう「自然科学」カテゴリーで２００位圏外に落ちてしまいましたね
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-01-25 at 21.42.40.png"><!-- 2684x1415 -->
+		<img src="Screen Shot 2022-01-25 at 21.42.40_thumb.jpg" width="600" height="316" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-01-25 at 21.42.46.png"><!-- 1495x881 -->
+		<img src="Screen Shot 2022-01-25 at 21.42.46_thumb.jpg" width="600" height="354" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+      
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座
+      <br />
+      技術書典１２
+    </div>
+    <a href="https://techbookfest.org/">
+      <img src="Screen Shot 2021-12-22 at 15.45.48_thumb.jpg" width="600" height="320" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>ただいま絶賛開催中です！（１月３０日まで）</li>
+
+    <li>今回は、われわれサークル「<a href="https://techbookfest.org/organization/5707555191914496">ZENKEI AI FORUM</a>」は、新刊ありません、すみません
+      <center>
+	<a href="https://techbookfest.org/organization/5707555191914496">
+	  <img src="Screen Shot 2022-01-26 at 11.39.18_thumb.jpg" width="800" height="393" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>これまでの既刊５冊は、絶賛頒布中です！よろしくおねがいします！！
+      <center>
+	<a href="https://techbookfest.org/organization/5707555191914496">
+	  <img src="Screen Shot 2022-01-26 at 11.39.21_thumb.jpg" width="800" height="311" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>『ZAM 季報 VOL.1』の紙版、本日（1/26/2022) 無事に追加できました！
+      <center>
+	<a href="https://techbookfest.org/product/4813001968320512">
+	  <img src="Screen Shot 2022-01-26 at 16.15.19_thumb.jpg" width="800" height="421" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>ちなみに今回「電子＋紙セット」は、
+	  <center>
+	    <div style="font-size: 30px;">
+	      電子＋紙セットは会期終了後 2月14日以降にまとめて発送となります。
+	      <br />
+	      技術書典グッズくじでオリジナルグッズも全員プレゼント！
+	    </div>
+	    <a href="Screen Shot 2022-01-26 at 16.25.11.png"><!-- 2681x1417 -->
+	      <img src="Screen Shot 2022-01-26 at 16.25.11_thumb.jpg" width="600" height="317" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  らしいです！
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest-side1">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （脱線）「同人誌」とは？
+    </div>
+    <div style="font-size: 40px;">
+      その１：柳田国男
+    </div>
+  </center>
+
+  <ul>
+    <li>ちょっと（？）脱線します</li>
+    <li>技術書典といえば、技術同人誌ですね</li>
+
+    <li>ところで同人誌というものは、一体なんなのだろうか？とふと思った</li>
+
+    <li>今日的な答えとしては
+      <ul>
+	<li>二次創作系の漫画？</li>
+	<li>コミケというところでやりとりされている本？</li>
+      </ul>
+    </li>
+    <li>もうちょっと硬めの答えとしては
+      <ul>
+	<li>ISBN ついてない本？</li>
+	<li>出版社を介さないで出す本？</li>
+	<li>自費出版の本？
+	  <ul>
+	    <li>脱線に脱線を重ねますが、
+	      今日（というのは、これを準備してる 1/25 の夜中）
+	      のツイッター曰く、<br />
+	      柳田国男も自費出版だ、と
+	      <center>
+		<a href="https://twitter.com/GrimoireBook/status/1485341366783823873">
+		  <img src="Screen Shot 2022-01-25 at 23.18.54_thumb.jpg" width="591" height="600" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	      
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <center>
+    <div style="font-size: 30px; font-weight: bolder;">
+      「同人誌」 = 「自費出版本」
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest-side2">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （脱線）「同人誌」とは？
+    </div>
+    <div style="font-size: 40px;">
+      その２：俵万智
+    </div>
+  </center>
+
+  <ul>
+    <li>一方で、そもそも論としては、当たり前のことですが、
+      <center>
+	<div style="font-size: 30px; font-weight: bolder;">
+	  同人が出す本
+	</div>
+      </center>
+      というのが「正しい」答えでしょう
+    </li>
+
+    <li>そうこうしているとき、ふと、以下のニュース記事を目にしました
+      <center>
+	<a href="https://www.asahi.com/articles/ASPDX56TSPDJUCVL00V.html">
+	  <img src="Screen Shot 2022-01-25 at 22.58.55_thumb.jpg" width="600" height="507" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>俵万智といえば、短歌ですね</li>
+	<li>短歌といえば、歌会なんですね</li>
+	<li>で、歌会といえば、歌集なんですね</li>
+	<li>記事にも、
+	  <blockquote>
+	    ――……「ホスト歌会」などこれまで短歌に縁がなかった人たちへの指導も積極的に続けていますね。
+	    <br /><br />
+	    新宿・歌舞伎町のホストのみなさんとは、一昨年に「ホスト万葉集」「ホスト万葉集　巻の二」と<br />
+	    2冊の歌集を編んだ後も、Zoomで毎月、歌会を重ねています。
+	  </blockquote>
+	  とある
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <center>
+    <div style="font-size: 30px; font-weight: bolder;">
+      「同人誌」 = 「歌集」
+      <br />
+      （「ZENKEI AI FORUM」 = 「歌会」）
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest-side3">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （脱線）「同人誌」とは？
+    </div>
+    <div style="font-size: 40px;">
+      その３：芭蕉
+    </div>
+  </center>
+
+  <ul>
+    <li>そうこうしていると、また別の（個人的な）気持ちの流れから、<br />
+      俳句というものに、ちょっと関心が高まっていて
+      <ul>
+	<li>そういえば、 ZENKEI AI FORUM 的にも<br />
+	  PoemGAN の話とか<br />
+	  そのために、日々、俳句を詠む暮らしをはじめた人たちとか<br />
+	  ありましたね</li>
+      </ul>
+    </li>
+    <li>で、俳句の世界には
+      <ul>
+	<li>俳句結社というものがあって、</li>
+	<li>俳句結社は、句会というものを催し、</li>
+	<li>句会の俳句を出版した結社誌というものがあるらしい
+	  <ul>
+	    <li>結社誌はリーダー（選者）がまとめるものらしい</li>
+	  </ul>
+	</li>
+	<li>俳句結社のメンバーは同人と呼ばれ、</li>
+	<li>メンバーが持ち寄って出す同人誌というものもあるらしい</li>
+      </ul>
+    </li><!-- で、俳句の世界には -->
+    <li>で、なんと天下の Wikipedia に<br />
+      <a href="https://ja.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5%E7%B5%90%E7%A4%BE%E3%83%BB%E7%B5%90%E7%A4%BE%E8%AA%8C%E3%81%AE%E4%B8%80%E8%A6%A7">俳句結社・結社誌の一覧</a>
+      <center>
+	<a href="https://ja.wikipedia.org/wiki/%E4%BF%B3%E5%8F%A5%E7%B5%90%E7%A4%BE%E3%83%BB%E7%B5%90%E7%A4%BE%E8%AA%8C%E3%81%AE%E4%B8%80%E8%A6%A7">
+	  <img src="Screen Shot 2022-01-25 at 23.12.56_thumb.jpg" width="800" height="425" style="border: 2px #ccc solid;" /></a>
+      </center>
+      なんというエントリーがある！
+    </li>
+  </ul>
+
+  <center>
+    <div style="font-size: 30px; font-weight: bolder;">
+      「同人誌」 = 「結社誌」
+      <br />
+      （「ZENKEI AI FORUM」 = 「俳句結社」）
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest-side4">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （脱線）「同人誌」とは？
+    </div>
+    <div style="font-size: 40px;">
+      その４：松岡正剛
+    </div>
+  </center>
+
+  <ul>
+    <li>またまた脱線ですが、<br />
+      自費出版といえば、ぼくはなぜか松岡正剛を思い出してました
+      <ul>
+	<li>炭男
+	  <ul>
+	    <li>今みると『鬼滅の刃』風ですが</li>
+	  </ul>
+	</li>
+	<li>この出来事は、自費出版という風にこれまで見てたのですが、<br />
+	  多分、俳句結社の流れだったのかな（そういう要素もあったのだろう）<br />
+	  と、今回あらためて思った（それだけ）</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest-side5">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （脱線）「同人誌」とは？
+    </div>
+    <div style="font-size: 40px;">
+      その５：瀧本哲史
+    </div>
+  </center>
+
+  <ul>
+    <li>脱線つづきですが、<br />
+      結社といえば、ちょっと前に ZENKEI AI FORUM でも話に出ましたね
+      <ul>
+	<li>2020年6月24日の ZENKEI AI FORUM
+	  (<a href="https://youtu.be/tWvm7LmXKhE?t=2773">YouTube</a>)
+	  <center>
+	    <a href="https://youtu.be/tWvm7LmXKhE?t=2773">
+	      <img src="Screen Shot 2022-01-25 at 23.55.47_thumb.jpg" width="800" height="647" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-01-25 at 23.32.32.png"><!-- 2550x1437 -->
+	      <img src="Screen Shot 2022-01-25 at 23.32.32_thumb.jpg" width="800" height="451" style="border: 2px #ccc solid;" /></a>
+	    <br />
+	    <br />
+	    <div style="font-size: 50px;">
+	      瀧本哲史著『君に友だちはいらない』
+	    </div>
+	    <br />
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  <a href="IMG_9243.jpg"><!-- 4032x1997 -->
+		    <img src="IMG_9243_thumb.jpg" width="600" height="297" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+		  <a href="IMG_9242.jpg"><!-- 3423x2271 -->
+		    <img src="IMG_9242_thumb.jpg" width="600" height="398" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	    <a href="Screen Shot 2022-01-25 at 23.33.26.png"><!-- 2551x1431 -->
+	      <img src="Screen Shot 2022-01-25 at 23.33.26_thumb.jpg" width="800" height="449" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-01-25 at 23.33.33.png"><!-- 2551x1430 -->
+	      <img src="Screen Shot 2022-01-25 at 23.33.33_thumb.jpg" width="800" height="448" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <center>
+    <div style="font-size: 30px; font-weight: bolder;">
+      ZENKEI AI FORUM は（秘密）結社でしたね！
+    </div>
+  </center>
+
+  <br />
+  <br />
+
+  <center>
+    <div style="font-size: 40px; font-weight: bolder;">
+      まとめ
+    </div>
+    <div style="font-size: 40px;">
+      「同人誌」は、やっぱり、奥（歴史）が深いですね！
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="image-classification">
+    <div style="font-size: 50px; font-weight: bolder;">
+      2022年の画像分類
+    </div>
+  </center>
+
+  <ul>
+    <li>実は、過去の YouTube ビデオ ZENKEI AI FORUM SELECTIONS の中で、<br />
+      ２０２０年１１月の「最近の話題から」として紹介した<br />
+      Vision Transformer の回が、人気が高いようです
+      <center>
+	<a href="https://youtu.be/2gs_Wp_Rb2E">
+	  <img src="Screen Shot 2022-01-26 at 15.23.23_thumb.jpg" width="800" height="528" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>github: <a href="https://github.com/lucidrains/vit-pytorch">lucidrains/vit-pytorch</a>
+      <br />
+      <a href="https://github.com/lucidrains/vit-pytorch">
+	<img src="Screen Shot 2022-01-26 at 16.38.26_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+    </li>
+    <li>そのときの解析結果
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.39.12.png"><!-- 2804x1426 -->
+	  <img src="Screen Shot 2022-01-26 at 16.39.12_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.39.27.png"><!-- 2809x1424 -->
+	  <img src="Screen Shot 2022-01-26 at 16.39.27_thumb.jpg" width="330" height="167" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="image-classification-convnext">
+    <div style="font-size: 50px; font-weight: bolder;">
+      ConvNeXt
+    </div>
+    <div style="font-size: 40px;">
+      Conv Net の逆襲
+    </div>
+  </center>
+
+  <ul>
+    <li>Qiita: <a href="https://qiita.com/TeamN/items/edee1b3803a1d77fc252">Transformer(ViT)系より良いConvだけのネットワーク出たよ（画像認識向け）</a>
+      <br />
+      (@TeamN posted at 2022-01-12 updated at 2022-01-13)
+      <br />
+      <a href="https://qiita.com/TeamN/items/edee1b3803a1d77fc252">
+	<img src="Screen Shot 2022-01-26 at 12.26.35_thumb.jpg" width="600" height="419" style="border: 2px #ccc solid;" /></a>
+      <ul>
+	<li><a href="https://arxiv.org/abs/2201.03545">arxiv: 2201.03545</a>
+	  (<a href="arxiv-2201.03545-convnet2020.pdf">local copy</a>)
+	  <br />
+	  <table border="0">
+	    <tr>
+	      <td valign="top">
+		<a href="Screen Shot 2022-01-26 at 12.31.56.png"><!-- 2339x1168 -->
+		  <img src="Screen Shot 2022-01-26 at 12.31.56_thumb.jpg" width="600" height="300" style="border: 2px #ccc solid;" /></a>
+	      </td>
+	      <td valign="top">
+		<a href="Screen Shot 2022-01-26 at 12.33.54.png"><!-- 1620x1194 -->
+		  <img src="Screen Shot 2022-01-26 at 12.33.54_thumb.jpg" width="600" height="442" style="border: 2px #ccc solid;" /></a>
+	      </td>
+	    </tr>
+	  </table>
+	</li>
+	<li>github: <a href="https://github.com/facebookresearch/ConvNeXt">facebookresearch/ConvNeXt</a>
+	  <br />
+	  <a href="https://github.com/facebookresearch/ConvNeXt">
+	    <img src="Screen Shot 2022-01-26 at 12.35.58_thumb.jpg" width="600" height="441" style="border: 2px #ccc solid;" /></a>
+	</li>
+
+	<li>コメント<br />
+	  <a href="Screen Shot 2022-01-26 at 12.26.54.png"><!-- 1304x1430 -->
+	    <img src="Screen Shot 2022-01-26 at 12.26.54_thumb.jpg" width="547" height="600" style="border: 2px #ccc solid;" /></a>
+	  <a href="Screen Shot 2022-01-26 at 12.27.03.png"><!-- 1342x1429 -->
+	    <img src="Screen Shot 2022-01-26 at 12.27.03_thumb.jpg" width="563" height="600" style="border: 2px #ccc solid;" /></a>
+	</li>
+
+      </ul>
+    </li><!-- Qiita: Transformer(ViT)系より良いConvだけのネットワーク出たよ -->
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="image-classification-efficient-v2">
+    <div style="font-size: 50px; font-weight: bolder;">
+      EfficientNet V2
+    </div>
+    <div style="font-size: 40px;">
+      EfficientNet の進化
+    </div>
+  </center>
+
+  <ul>
+    <li>Qiita: <a href="https://qiita.com/omiita/items/1d96eae2b15e49235110">2021年最強になるか！？最新の画像認識モデルEfficientNetV2を解説</a>
+      <br />
+      (@omiita posted at 2021-04-13 updated at 2021-04-14)
+      <br />
+      <a href="https://qiita.com/omiita/items/1d96eae2b15e49235110">
+	<img src="Screen Shot 2022-01-26 at 12.24.14_thumb.jpg" width="600" height="424" style="border: 2px #ccc solid;" /></a>
+      <ul>
+	<li><a href="https://arxiv.org/abs/2104.00298">arxiv: 2104.00298</a>
+	  (<a href="arxiv-2104.00298_efficientnet-v2.pdf">local copy</a>)
+	  <br />
+	  <table border="0">
+	    <tr>
+	      <td valign="top">
+		<a href="Screen Shot 2022-01-26 at 12.30.38.png"><!-- 2338x1066 -->
+		  <img src="Screen Shot 2022-01-26 at 12.30.38_thumb.jpg" width="600" height="274" style="border: 2px #ccc solid;" /></a>
+	      </td>
+	      <td valign="top">
+		<a href="Screen Shot 2022-01-26 at 12.30.27.png"><!-- 1615x980 -->
+		  <img src="Screen Shot 2022-01-26 at 12.30.27_thumb.jpg" width="600" height="364" style="border: 2px #ccc solid;" /></a>
+	      </td>
+	    </tr>
+	  </table>
+	</li>
+      </ul>
+    </li><!-- Qiita: 最新の画像認識モデルEfficientNetV2を解説 -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="image-classification-swin">
+    <div style="font-size: 50px; font-weight: bolder;">
+      Swin Transformer
+    </div>
+    <div style="font-size: 40px;">
+      Vision Transformer の進化
+    </div>
+  </center>
+
+  <ul>
+
+    <li>github: <a href="https://github.com/microsoft/Swin-Transformer">microsoft/Swin-Transformer</a>
+      <br />
+      <a href="https://github.com/microsoft/Swin-Transformer">
+	<img src="Screen Shot 2022-01-26 at 16.37.55_thumb.jpg" width="600" height="318" style="border: 2px #ccc solid;" /></a>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="image-classification-regnext">
+    <div style="font-size: 50px; font-weight: bolder;">
+      RegNet
+    </div>
+    <div style="font-size: 40px;">
+      torchvision の新バージョン
+    </div>
+  </center>
+
+  <ul>
+    <li>PyTorch をアップデートしてみました
+      <ul>
+	<li>version 0.11.0 が出てますね</li>
+      </ul>
+    </li>
+    <li><a href="https://pytorch.org/vision/stable/models.html">TORCHVISION.MODELS</a> を見てみると、なんか新しいモデルが増えている！
+      <center>
+	<a href="Screen Shot 2022-01-26 at 15.32.45.png"><!-- 2803x1427 -->
+	  <img src="Screen Shot 2022-01-26 at 15.32.45_thumb.jpg" width="600" height="305" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>RegNet ってなんだ？
+      <center>
+	<a href="Screen Shot 2022-01-26 at 15.33.28.png"><!-- 2801x1418 -->
+	  <img src="Screen Shot 2022-01-26 at 15.33.28_thumb.jpg" width="600" height="304" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <a href="https://arxiv.org/abs/2003.13678">arxiv: 2003.13678</a>
+      (<a href="arxiv-2003.13678_regnet.pdf">local copy</a>)
+      <br />
+      <table border="0">
+	<tr>
+	  <td valign="top">
+	    <a href="Screen Shot 2022-01-26 at 15.33.35.png"><!-- 2344x1165 -->
+	      <img src="Screen Shot 2022-01-26 at 15.33.35_thumb.jpg" width="600" height="298" style="border: 2px #ccc solid;" /></a>
+	  </td>
+	  <td valign="top">
+	    <a href="Screen Shot 2022-01-26 at 15.33.48.png"><!-- 1618x1024 -->
+	      <img src="Screen Shot 2022-01-26 at 15.33.48_thumb.jpg" width="600" height="380" style="border: 2px #ccc solid;" /></a>
+	  </td>
+	</tr>
+      </table>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="image-classification-gorojima">
+    <div style="font-size: 50px; font-weight: bolder;">
+      実践
+    </div>
+    <div style="font-size: 40px;">
+      五郎島 ８階級分類課題
+    </div>
+  </center>
+
+  <hr />
+
+  <center>
+    <div style="font-size: 40px;">
+      ConvNeXt
+    </div>
+  </center>
+  <ul>
+    <li>インストール<br />
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.31.32.png"><!-- 2802x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.31.32_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-convnext-tiny">結果 ConvNeXt tiny<br />
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.32.32.png"><!-- 2807x1427 -->
+	  <img src="Screen Shot 2022-01-26 at 16.32.32_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.33.05.png"><!-- 2807x1432 -->
+	  <img src="Screen Shot 2022-01-26 at 16.33.05_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.33.13.png"><!-- 2807x1424 -->
+	  <img src="Screen Shot 2022-01-26 at 16.33.13_thumb.jpg" width="330" height="167" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-convnext-small">結果 ConvNeXt small<br />
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.33.32.png"><!-- 2805x1425 -->
+	  <img src="Screen Shot 2022-01-26 at 16.33.32_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.33.48.png"><!-- 2808x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.33.48_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.33.53.png"><!-- 2804x1424 -->
+	  <img src="Screen Shot 2022-01-26 at 16.33.53_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <hr />
+
+  <center>
+    <div style="font-size: 40px;">
+      EfficientNet V2
+    </div>
+  </center>
+  <ul>
+    <li>インストール
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.34.11.png"><!-- 2804x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.34.11_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-efficientnet-v2-s">結果 EfficientNet V2 s
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.34.29.png"><!-- 2803x1425 -->
+	  <img src="Screen Shot 2022-01-26 at 16.34.29_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.35.02.png"><!-- 2805x1430 -->
+	  <img src="Screen Shot 2022-01-26 at 16.35.02_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.35.10.png"><!-- 2807x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.35.10_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <hr />
+
+  <center>
+    <div style="font-size: 40px;">
+      Swin Transformer
+    </div>
+  </center>
+  <ul>
+    <li>インストール
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.35.49.png"><!-- 2805x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.35.49_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-swin">結果 (swin_tiny_patch4_window7_224)
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.36.32.png"><!-- 2804x1430 -->
+	  <img src="Screen Shot 2022-01-26 at 16.36.32_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.36.48.png"><!-- 2805x1425 -->
+	  <img src="Screen Shot 2022-01-26 at 16.36.48_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.36.55.png"><!-- 2804x1431 -->
+	  <img src="Screen Shot 2022-01-26 at 16.36.55_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <hr />
+
+  <center>
+    <div style="font-size: 40px;">
+      RegNet
+    </div>
+  </center>
+  <ul>
+    <li>torchvision に、いろいろ入っている
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.40.13.png"><!-- 2810x877 -->
+	  <img src="Screen Shot 2022-01-26 at 16.40.13_thumb.jpg" width="330" height="103" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-regnet-y-8">RegNet Y 8
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.40.26.png"><!-- 2806x1427 -->
+	  <img src="Screen Shot 2022-01-26 at 16.40.26_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.40.40.png"><!-- 2805x1428 -->
+	  <img src="Screen Shot 2022-01-26 at 16.40.40_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.40.47.png"><!-- 2803x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.40.47_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li id="res-regnet-y-16">RegNet Y 16
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.41.05.png"><!-- 2803x1422 -->
+	  <img src="Screen Shot 2022-01-26 at 16.41.05_thumb.jpg" width="330" height="167" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.41.16.png"><!-- 2804x1421 -->
+	  <img src="Screen Shot 2022-01-26 at 16.41.16_thumb.jpg" width="330" height="167" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.41.26.png"><!-- 2806x1429 -->
+	  <img src="Screen Shot 2022-01-26 at 16.41.26_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <hr />
+
+  <center>
+    <div style="font-size: 40px;">
+      ViT
+    </div>
+  </center>
+  <ul>
+    <li id="res-vit">今回、改めて計算し直してみた結果
+      <center>
+	<a href="Screen Shot 2022-01-26 at 16.37.24.png"><!-- 2807x1432 -->
+	  <img src="Screen Shot 2022-01-26 at 16.37.24_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.38.47.png"><!-- 2811x1424 -->
+	  <img src="Screen Shot 2022-01-26 at 16.38.47_thumb.jpg" width="330" height="167" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-01-26 at 16.38.55.png"><!-- 2806x1428 -->
+	  <img src="Screen Shot 2022-01-26 at 16.38.55_thumb.jpg" width="330" height="168" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <hr />
+
+  <center id="res-summary">
+    <div style="font-size: 40px;">
+      まとめ
+    </div>
+  </center>
+
+  <center>
+  <table border="1" style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+    <tr>
+      <th>モデル</th>
+      <th>間違い</th>
+      <th>精度</th>
+      <th>クラス別</th>
+    </tr>
+
+    <tr>
+      <td><a href="#res-regnet-y-8">RegNet Y 8</a></td>
+      <td>42</td>
+      <td>94.710 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  96.36 ( 4 / 110)
+○秀長手	  91.67 (12 / 144)
+良	  96.59 ( 7 / 205)
+秀短手	  93.58 ( 7 / 109)
+秀長手	  96.92 ( 4 / 130)
+長	  95.12 ( 2 / 41)
+外	  93.33 ( 3 / 45)
+コロ	  70.00 ( 3 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-swin">Swin (swin_tiny_patch4_window7_224)</a></td>
+      <td>46</td>
+      <td>94.207 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  92.73 ( 8 / 110)
+○秀長手	  90.28 (14 / 144)
+良	  96.59 ( 7 / 205)
+秀短手	  94.50 ( 6 / 109)
+秀長手	  96.92 ( 4 / 130)
+長	  95.12 ( 2 / 41)
+外	  91.11 ( 4 / 45)
+コロ	  90.00 ( 1 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-regnet-y-16">RegNet Y 16</a></td>
+      <td>46</td>
+      <td>94.207 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  91.82 ( 9 / 110)
+○秀長手	  89.58 (15 / 144)
+良	  96.10 ( 8 / 205)
+秀短手	  96.33 ( 4 / 109)
+秀長手	  97.69 ( 3 / 130)
+長	  95.12 ( 2 / 41)
+外	  91.11 ( 4 / 45)
+コロ	  90.00 ( 1 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-convnext-tiny">ConvNeXt tiny</a></td>
+      <td>47</td>
+      <td>94.081 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  95.45 ( 5 / 110)
+○秀長手	  90.97 (13 / 144)
+良	  95.61 ( 9 / 205)
+秀短手	  91.74 ( 9 / 109)
+秀長手	  96.92 ( 4 / 130)
+長	  95.12 ( 2 / 41)
+外	  93.33 ( 3 / 45)
+コロ	  80.00 ( 2 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-convnext-small">ConvNeXt small</a></td>
+      <td>47</td>
+      <td>94.081 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  91.82 ( 9 / 110)
+○秀長手	  93.75 ( 9 / 144)
+良	  96.59 ( 7 / 205)
+秀短手	  91.74 ( 9 / 109)
+秀長手	  96.15 ( 5 / 130)
+長	  95.12 ( 2 / 41)
+外	  88.89 ( 5 / 45)
+コロ	  90.00 ( 1 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-efficientnet-v2-s">EfficientNet V2 s</a></td>
+      <td>55</td>
+      <td>93.073 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  87.27 (14 / 110)
+○秀長手	  92.36 (11 / 144)
+良	  95.12 (10 / 205)
+秀短手	  95.41 ( 5 / 109)
+秀長手	  94.62 ( 7 / 130)
+長	  95.12 ( 2 / 41)
+外	  88.89 ( 5 / 45)
+コロ	  90.00 ( 1 / 10)</div></pre></td>
+    </tr>
+    <tr>
+      <td><a href="#res-vit">ViT</a></td>
+      <td>79</td>
+      <td>90.050 %</td>
+      <td><pre><div style="font-size: 12px;">○秀短手	  92.73 ( 8 / 110)
+○秀長手	  92.36 (11 / 144)
+良	  88.29 (24 / 205)
+秀短手	  89.91 (11 / 109)
+秀長手	  90.00 (13 / 130)
+長	  97.56 ( 1 / 41)
+外	  84.44 ( 7 / 45)
+コロ	  60.00 ( 4 / 10)</div></pre></td>
+    </tr>
+
+  </table>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF は 2022 年２月２３日開催の予定です。<br />
+      （実は祝日ですね）
+    </li>
+    <li>いつもの通り、 ZAF 講演者、 ZAM 執筆者、絶賛、大募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li><a href="#podcast">前座 2022年のポッドキャスト</a></li>
+    <li><a href="#techbookfest">前座 技術書典１２</a></li>
+    <li>（脱線）「同人誌」とは？
+      <ul>
+	<li><a href="#techbookfest-side1">その１：柳田国男</a></li>
+	<li><a href="#techbookfest-side2">その２：俵万智</a></li>
+	<li><a href="#techbookfest-side3">その３：芭蕉</a></li>
+	<li><a href="#techbookfest-side4">その４：松岡正剛</a></li>
+	<li><a href="#techbookfest-side5">その５：瀧本哲史</a></li>
+      </ul>
+    </li>
+    <li><a href="#image-classification">2022年の画像分類</a>
+      <ul>
+	<li><a href="#image-classification-convnext">ConvNeXt</a>
+	  Conv Net の逆襲</li>
+	<li><a href="#image-classification-efficient-v2">EfficientNet V2</a>
+	  EfficientNet の進化	
+	<li><a href="#image-classification-swin">Swin Transformer</a>
+	  Vision Transformer の進化</li>
+	<li><a href="#image-classification-regnext">RegNet</a>
+	  torchvision の新バージョン</li>
+      </ul>
+    </li>
+    <li><a href="#image-classification-gorojima">実践 五郎島 ８階級分類課題</a>
+      <ul>
+	<li><a href="#res-convnext-tiny">ConvNeXt tiny</a></li>
+	<li><a href="#res-convnext-small">ConvNeXt small</a></li>
+	<li><a href="#res-efficientnet-v2-s">EfficientNet V2 s</a></li>
+	<li><a href="#res-swin">Swin (swin_tiny_patch4_window7_224)</a></li>
+	<li><a href="#res-regnet-y-8">RegNet Y 8</a></li>
+	<li><a href="#res-regnet-y-16">RegNet Y 16</a></li>
+	<li><a href="#res-vit">ViT</a></li>
+	<li><a href="#res-summary">まとめ</a></li>
+      </ul>
+    </li>
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
