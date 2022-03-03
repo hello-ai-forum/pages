@@ -1,0 +1,2977 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2022/02/23)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="text/javascript" id="MathJax-script" async
+	    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2022/02/23</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20220223-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20220223-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF ２０２２年２月２３日
+    </div>
+    <div style="font-size: 40px;">＜本日のテーマ＞</div>
+    <div style="font-size: 80px;">
+      祝日も AI やるよ！
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li><b>前座</b>
+      <ul>
+	<li><a href="#artist">前座の前座：アーティスト</a></li>
+	<li><a href="#techbookfest12">技術書典１２のまとめ</a></li>
+	<li><a href="#center-shiken">2022年のセンター試験、数学 I に挑戦</a></li>
+      </ul>
+    </li>
+
+    <li><b>第１部</b>
+      <ul>
+	<li><a href="#kaggle">久しぶりに Kaggle に挑戦</a>
+      </ul>
+    </li>
+
+    <li><b>第２部</b>
+      <ul>
+	<li><a href="#arcface">ArcFace - 難しい画像分類への応用として</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="artist">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座の前座
+      <br />
+      アーティスト（？）
+    </div>
+  </center>
+
+  <ul>
+    <li>先日、ツイッターのタイムラインに、以下の投稿が流れてきました
+      <center>
+	<a href="https://twitter.com/Katsunori_UJIIE/status/1495297282165841923">
+	  <img src="Screen Shot 2022-02-23 at 15.58.14_thumb.jpg" width="600" height="585" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>知らなかったけど、
+	  <center>
+	    <br />
+	    <div style="font-size: 40px; font-weight: bold;">
+	      次世代のインディーズ系音楽配信サービス、<br />
+	      ブロックチェーンによる<br />
+	      アーティストの新たなマネタイズ方法
+	    </div>
+	    <br />
+	  </center>
+	  ブロックチェーンによる音楽配信サービスというものがあるのか、と
+	</li>
+      </ul>
+    </li>
+
+    <li>ということで、<br />
+      <b>ブロックチェーン</b>とか <b>NFT</b> とか<br />
+      （技術的）興味あるし、<br />
+      ってことで、いきなりですが
+      <center>
+	<a href="https://twitter.com/ichiki_k/status/1495328396678602752">
+	  <img src="Screen Shot 2022-02-23 at 15.22.09_thumb.jpg" width="572" height="600" style="border: 2px #ccc solid;" /></a>
+	<br />
+	<div style="font-size: 40px; font-weight: bold;">
+	  AUDIUS デビューしました！
+	</div>
+	<br />
+	<a href="https://audius.co/ichiki_k">
+	  <img src="Screen Shot 2022-02-23 at 15.31.13_thumb.jpg" width="800" height="381" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>「でも、あなたアーティストなの？」<br />
+      「配信する音楽あるの？」<br />
+      と思いますよね？
+    </li>
+    <li>心配ご無用！<br />
+      かれこれ５年以上前、ふと「作曲してみよう！」と思った時があって、<br />
+      とりあえず３曲ちょっと、手持ちのネタがあるのです！
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="https://twitter.com/ichiki_k/status/779969329550860288">
+		<img src="Screen Shot 2022-02-23 at 15.27.42_thumb.jpg" width="600" height="457" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	      <a href="https://twitter.com/ichiki_k/status/881437259219611648">
+		<img src="Screen Shot 2022-02-23 at 15.27.51_thumb.jpg" width="600" height="238" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+    </li>
+    <li>そのときは
+      <center>
+	<br />
+	<div style="font-size: 40px; font-weight: bold;">
+	  soundcloud デビューしました！
+	</div>
+	<br />
+	<a href="https://soundcloud.com/user-413596115/sets/my-songs-20170702">
+	  <img src="Screen Shot 2022-02-23 at 15.26.17_thumb.jpg" width="800" height="397" style="border: 2px #ccc solid;" /></a>
+      </center>
+      と、はしゃいでました
+    </li>
+    <li>ということで、そのときのアルバム（３曲しかない）でデビュー
+      <center>
+	<a href="https://audius.co/ichiki_k/album/my-songs-20170702-102662">
+	  <img src="Screen Shot 2022-02-23 at 15.29.56_thumb.jpg" width="800" height="368" style="border: 2px #ccc solid;" /></a>
+
+	<a href="Screen Shot 2022-02-23 at 16.19.46.png"><!-- 1900x861 -->
+	  <img src="Screen Shot 2022-02-23 at 16.19.46_thumb.jpg" width="800" height="363" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 16.19.52.png"><!-- 1889x858 -->
+	  <img src="Screen Shot 2022-02-23 at 16.19.52_thumb.jpg" width="800" height="363" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 16.19.58.png"><!-- 1899x844 -->
+	  <img src="Screen Shot 2022-02-23 at 16.19.58_thumb.jpg" width="800" height="356" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>今の時代、アーティスト（変なカタカナ語だと思ってますが）なんて<br />
+      言ったモン勝ちですからね<br />
+      ぼくも今日からは堂々とアーティストを名乗ろう（かな？）
+    </li>
+
+    <li>ところで、上の曲のカバー写真を見てて、思い出しました<br />
+      むかし 500px というサイトに写真アップしていたこと
+      <center>
+	<a href="Screen Shot 2022-02-23 at 15.37.09.png"><!-- 2619x1401 -->
+	  <img src="Screen Shot 2022-02-23 at 15.37.09_thumb.jpg" width="1300" height="695" style="border: 2px #ccc solid;" /></a>
+
+	<a href="Screen Shot 2022-02-23 at 15.38.48.png"><!-- 2557x1069 -->
+	  <img src="Screen Shot 2022-02-23 at 15.38.48_thumb.jpg" width="1000" height="418" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 15.38.54.png"><!-- 2557x1115 -->
+	  <img src="Screen Shot 2022-02-23 at 15.38.54_thumb.jpg" width="1000" height="436" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 15.39.02.png"><!-- 2557x1218 -->
+	  <img src="Screen Shot 2022-02-23 at 15.39.02_thumb.jpg" width="1000" height="476" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>これで今日から堂々と写真家も名乗ろう（かな？）</li>
+
+    <li>そんなこと言えば、そうそう、ぼくは作家でもあるんだった！
+      <center>
+	<a href="https://zenkei.booth.pm/items/2386424">
+	  <img src="Screen Shot 2022-02-23 at 16.27.27_thumb.jpg" width="650" height="354" style="border: 2px #ccc solid;" /></a>
+	<a href="https://zenkei.booth.pm/items/2660728">
+	  <img src="Screen Shot 2022-02-23 at 16.27.39_thumb.jpg" width="650" height="351" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>ということで、技術書典の話につながりますっ</li>
+
+  </ul>
+
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="techbookfest12">
+    <div style="font-size: 50px; font-weight: bolder;">
+      技術書典１２のまとめ
+      <br />
+      <a href="https://techbookfest.org/">
+	<img src="Screen Shot 2021-12-22 at 15.45.48_thumb.jpg" width="600" height="320" style="border: 2px #ccc solid;" /></a>
+    </div>
+  </center>
+
+  <ul>
+    <li>開催期間は、１月２２日（土）から１月３０日（日）まででした。
+      <ul>
+	<li>つまり、前回の ZAF （１月２６日）は開催中でした。</li>
+      </ul>
+    </li>
+
+    <li>ということで、今回のまとめです
+      <center>
+	<table border="0">
+	  <tr>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-02-21 at 17.14.47.png"><!-- 2588x1352 -->
+		<img src="Screen Shot 2022-02-21 at 17.14.47_thumb.jpg" width="600" height="313" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	    <td valign="top">
+	      <a href="Screen Shot 2022-02-21 at 17.15.00.png"><!-- 2603x1090 -->
+		<img src="Screen Shot 2022-02-21 at 17.15.00_thumb.jpg" width="600" height="251" style="border: 2px #ccc solid;" /></a>
+	    </td>
+	  </tr>
+	</table>
+      </center>
+      <ul>
+	<li>ゼロからはじめる AI： 72 冊</li>
+	<li>音楽と数理： 14 冊（電子９冊、紙５冊）</li>
+	<li>Jupyter Book: 8 冊</li>
+	<li>厳密な計算： 5 冊（電子４冊、紙１冊）</li>
+	<li>ZAM 季報 VOL.1： 0 冊</li>
+      </ul>
+    </li>
+    <li>いつものように、時系列にならべてみました
+      <ul>
+	<li>技術書典１２期間中
+	  <center>
+	    <img src="techbookfest12-sales-01_thumb.jpg" width="600" height="289" style="border: 2px #ccc solid;" />
+	    <img src="techbookfest12-sales-02_thumb.jpg" width="600" height="289" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+	<li>初参加の技術書典９から今回まで
+	  <center>
+	    <img src="techbookfest12-sales-all-01_thumb.jpg" width="600" height="291" style="border: 2px #ccc solid;" />
+	    <br />
+	    <img src="techbookfest12-sales-all-02_thumb.jpg" width="600" height="293" style="border: 2px #ccc solid;" />
+	    <br />
+	    <img src="techbookfest12-sales-all-03_thumb.jpg" width="600" height="304" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3>技術書典の売り上げの解析について</h3>
+  <ul>
+    <li>ちなみに、このグラフは、技術書典の管理サイトに表示される
+      「売上管理」の「販売履歴」のページ
+      <center>
+	<a href="techbookfest-sales.png"><!-- 2617x1300 -->
+	  <img src="techbookfest-sales_thumb.jpg" width="600" height="298" style="border: 2px #ccc solid;" /></a>
+      </center>
+      のテキストをコピペしたデータ
+      <center>
+	<a href="Screen Shot 2022-02-21 at 17.39.26.png"><!-- 2296x1013 -->
+	  <img src="Screen Shot 2022-02-21 at 17.39.26_thumb.jpg" width="600" height="265" style="border: 2px #ccc solid;" /></a>
+      </center>
+      を、
+      以下のような python で書いた parser
+      <center>
+	<a href="techbookfest-sales-parser.png"><!-- 2302x2148 -->
+	  <img src="techbookfest-sales-parser_thumb.jpg" width="600" height="560" style="border: 2px #ccc solid;" /></a>
+      </center>
+      でまとめた結果を、
+      matplotlib でプロットしたものです。<br />
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="techbookfest12-comments">技術書典１２の感想</h3>
+  <ul>
+    <li>新刊がなかったこともあって、<br />
+      各種イベント（刺されアワード）への応募をしなかったり、<br />
+      そもそも SNS 上であんまり宣伝しなかったので、<br />
+      これまでのイベントの中でも一番売り上げ少なかった……
+    </li>
+  </ul>
+  
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <a href="Screen Shot 2022-02-21 at 18.06.07.png"><!-- 2302x1058 -->
+      <img src="Screen Shot 2022-02-21 at 18.06.07_thumb.jpg" width="800" height="368" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>（無料ということもあるけど）<br />
+      『ゼロからはじめる AI』は、すごい
+    </li>
+    <li>技術書典９からの累計ダウンロード数は 1,000 冊を超えました！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <a href="Screen Shot 2022-02-21 at 18.06.33.png"><!-- 2301x1037 -->
+      <img src="Screen Shot 2022-02-21 at 18.06.33_thumb.jpg" width="800" height="361" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>『Jupyter Book でAIの解説本を書く方法』もコンスタントに出ますね</li>
+    <li>こちらも技術書典１０からの累計頒布数は 50 冊を超えました！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <p>（ぼくの書いてる数理本について）</p>
+
+  <center>
+    <a href="Screen Shot 2022-02-21 at 18.06.25.png"><!-- 2299x1094 -->
+      <img src="Screen Shot 2022-02-21 at 18.06.25_thumb.jpg" width="800" height="381" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>やっぱり『音楽と数理』の方が受けがいいみたい</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <a href="Screen Shot 2022-02-21 at 18.06.40.png"><!-- 2305x1151 -->
+      <img src="Screen Shot 2022-02-21 at 18.06.40_thumb.jpg" width="800" height="399" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>『厳密な計算』も、個人的には、良く書けたと思うんだけどなぁ……</li>
+    <li>あと、紙の本は人気ないなぁ……ぼくは断然、紙派なんだけど<br />
+      （やっぱり「技術書典」故なのか？）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <a href="Screen Shot 2022-02-21 at 18.06.14.png"><!-- 2302x1155 -->
+      <img src="Screen Shot 2022-02-21 at 18.06.14_thumb.jpg" width="800" height="401" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>理解できないのは『ZAM 季報 VOL.1』が、今回、一冊も出なかったこと……</li>
+
+    <li>特に、紙版を（今回は名目上の「新刊」として）出したんだけど……</li>
+    <li>フルカラーの浮世絵がいっぱいって、あんまり魅力じゃないのかな？</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="techbookfest12-new-prices">
+    <div style="font-size: 50px; font-weight: bolder;">
+      ZAM 季報の価格を改定！
+    </div>
+    <br />
+    <div style="font-size: 40px;">
+      ということで、 ZAM 季報の価格を改定することにした。
+    </div>
+    <br />
+  </center>
+  <ul>
+    <li>紙版を継続販売している BOOTH にて、<br />
+      これまで 2,000 円としていた『ZAM 季報 VOL.1』を、なんと
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  1,500 円に値下げ！
+	</div>
+      </center>
+    </li>
+    <li>あわせて、手元に残っている『月刊 ZAM』の印刷版の価格も<br />
+      1,000 円としていたところを
+      <center>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  800 円に値下げ！
+	</div>
+      </center>
+      しました
+      <center>
+	<a href="Screen Shot 2022-02-21 at 18.08.00.png"><!-- 2612x734 -->
+	  <img src="Screen Shot 2022-02-21 at 18.08.00_thumb.jpg" width="800" height="225" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-21 at 18.08.05.png"><!-- 2608x838 -->
+	  <img src="Screen Shot 2022-02-21 at 18.08.05_thumb.jpg" width="800" height="257" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-21 at 18.08.09.png"><!-- 2602x848 -->
+	  <img src="Screen Shot 2022-02-21 at 18.08.09_thumb.jpg" width="800" height="261" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>技術書典サイトで継続販売中の「電子版」『ZAM 季報 VOL.1』も値下げ<br />
+      これまで 1,000 円としていた値段を
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  750 円に値下げ！
+	</div>
+	<a href="ZAM-VOL1.png"><!-- 2302x1155 -->
+	  <img src="ZAM-VOL1_thumb.jpg" width="800" height="401" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br />
+
+  <center>
+    <div style="font-size: 50px; font-weight: bolder;">
+      まとめ
+    </div>
+    <br />
+    <div style="font-size: 40px; font-weight: bolder;">
+      技術書典１３には新刊を出すぞ！
+      <br />
+      みんさんも、執筆してみませんか？
+    </div>
+    <br />
+    <br />
+  </center>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="center-shiken">
+    <div style="font-size: 50px; font-weight: bolder;">
+      2022年のセンター試験
+      <br />
+      数学 I に挑戦前座
+    </div>
+  </center>
+
+  <ul>
+    <li>中日新聞のサイト
+      <a href="https://edu.chunichi.co.jp/pages/kyotsu2022/">https://edu.chunichi.co.jp/pages/kyotsu2022/</a>
+      <center>
+	<a href="Screen Shot 2022-02-21 at 19.13.30.png"><!-- 2609x1416 -->
+	  <img src="Screen Shot 2022-02-21 at 19.13.30_thumb.jpg" width="800" height="434" style="border: 2px #ccc solid;" /></a>
+      </center>
+      にある問題と解答を使いました。
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="center-shiken-preface">
+    <p>その前に、</p>
+    <br />
+    <div style="font-size: 40px; font-weight: bolder;">
+      そもそも、なぜ、センター試験？
+    </div>
+  </center>
+
+  <ul>
+    <li>ニュースで目にした</li>
+    <li>ぼくが別でやっている英会話サークル（英語結社！） <a href="https://speakez.web.fc2.com/">SpeakEZ NEO</a>
+      <center>
+	<a href="Screen Shot 2022-02-21 at 20.02.48.png"><!-- 2792x1427 -->
+	  <img src="Screen Shot 2022-02-21 at 20.02.48_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+      </center>
+      で、先日、ふと
+      <center>
+	<div style="font-size: 40px;">
+	  センター試験の英語をやってみよう！
+	</div>
+      </center>
+      とノリでやってみました
+      <center>
+	<a href="Screen Shot 2022-02-21 at 19.13.40.png"><!-- 2606x1074 -->
+	  <img src="Screen Shot 2022-02-21 at 19.13.40_thumb.jpg" width="800" height="330" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>今時はリスニングもあるんだね、とかいいながら</li>
+
+    <li>こう見えても、一応、海外（英語圏）に約１０年間くらしてたりしたので、
+      当然、
+      <center>
+	<br />
+	<div style="font-size: 40px;">
+	  １００点満点を目指して！
+	</div>
+	<br />
+      </center>
+      （結構、自信もあった）
+    </li>
+    <li>その結果……
+      <ul>
+	<li>リーティング
+	  <center>
+	    <a href="Screen Shot 2022-02-21 at 19.14.11.png"><!-- 1354x1282 -->
+	      <img src="Screen Shot 2022-02-21 at 19.14.11_thumb.jpg" width="800" height="757" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>リスニング　
+	  <center>
+	    <a href="Screen Shot 2022-02-21 at 19.14.25.png"><!-- 1359x1237 -->
+	      <img src="Screen Shot 2022-02-21 at 19.14.25_thumb.jpg" width="800" height="728" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 40px; font-weight: bolder;">
+      英語のテストの感想
+    </div>
+  </center>
+
+  <ul>
+    <li>リスニングの進行が、早い（ところがあって焦った）
+      <ul>
+	<li>というか、考える時間がどれくらいあるのか、事前に分からないの、
+	  結構プレッシャーだな、と</li>
+      </ul>
+    </li>
+    <li>リーティングは、会話ばっかりだな、と思った</li>
+    <li>というか、文法問題って１つもなかったけど、<br />
+      こういう出題に向けた高校の英語の受験勉強って、<br />
+      一体どうやってるんだろう？
+      <ul>
+	<li>（雰囲気翻訳のノリでやってたりするのか？）</li>
+      </ul>
+    </li>
+    <br /><br />
+    <li>とか言っても、自分の結果が、スゲ〜悔しかった</li>
+    <li>要するに、
+      <center>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  リベンジしよう
+	  <br />
+	  数学なら満点とれるだろう
+	</div>
+	<br />
+      </center>
+      という考えで、挑戦してみた、と
+      <ul>
+	<li>（一応、こう見えても、理学部物理学科で博士号をとって、
+	  研究者稼業も１０年以上やってたので）</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="center-shiken-math">
+    <div style="font-size: 40px; font-weight: bolder;">
+      2022年センター試験、数学 I チャレンジ
+    </div>
+    <a href="Screen Shot 2022-02-21 at 19.13.54.png"><!-- 2610x1085 -->
+      <img src="Screen Shot 2022-02-21 at 19.13.54_thumb.jpg" width="800" height="333" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>まずは結果から
+      <center>
+	<a href="Screen Shot 2022-02-21 at 19.18.47.png"><!-- 1362x1297 -->
+	  <img src="Screen Shot 2022-02-21 at 19.18.47_thumb.jpg" width="800" height="762" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q1-1">第１問〔１〕</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.14.46.png"><!-- 1355x1210 -->
+      <img src="Screen Shot 2022-02-21 at 19.14.46_thumb.jpg" width="600" height="536" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.14.52.png"><!-- 1357x1088 -->
+      <img src="Screen Shot 2022-02-21 at 19.14.52_thumb.jpg" width="600" height="481" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-01.jpg"><!-- 869x1172 -->
+	  <img src="note-01_thumb.jpg" width="445" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>代数の問題（式変形のテスト）、まぁ、力技でガンガン計算すればいいだろう。</li>
+    <li>(1)
+      <ul>
+	<li>まずは  \(ab + bc + ca\) の値を求めろ、と。
+	  <ul>
+	    <li>\(a+b+c = 1\) なので、両辺を自乗して
+	      \(\left(a^2+b^2+c^2\right)^2 = 1\) となる。</li>
+	    <li>左辺を展開して<br />
+	      \(a^2 + b^2 + c^2 + 2(ab + bc + ca)\)
+	      <ul>
+		<li>これは、公式覚えてなくても、計算すればよい</li>
+	      </ul>
+	    </li>
+	    <li>ここで \(a^2 + b^2 + c^2 = 13\) と与えられてるので、<br />
+	      \(13 + 2(ab + bc + ca) = 1\) となって、答え<br />
+	      \[
+	      ab + bc + ca = -6
+	      \]
+	    </li>
+	  </ul>
+	</li>
+	<li>次に \((a-b)^2 + (b-c)^2 + (c-a)^2\) の値を求めろ、と。
+	  <ul>
+	    <li>なんか上手いアイデアあるのかな、とも思うが、まずは展開しちまえ、と
+	      <br />
+	      \[
+	      (a-b)^2 + (b-c)^2 + (c-a)^2
+	      =
+	      2\left(a^2 + b^2 + c^2\right)
+	      -2\left(ab + bc + ca\right)
+	      \]
+	    </li>
+	    <li>ってことで、やっぱり、式の展開をきちんとできるかどうかの確認でしたね
+	      <br />
+	      \[
+	      (a-b)^2 + (b-c)^2 + (c-a)^2
+	      =
+	      2\cdot13 -2\cdot(-6)
+	      =
+	      38
+	      \]
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>(2) 条件①と②はそのままで、
+      さらに \(a-b = 2\sqrt{5}\) とする、と。
+      <ul>
+	<li>最終的には \((a-b)(b-c)(c-a)\) を求めさせたい、と</li>
+	<li>この３つの部分を、以下のように置く、と
+	  <ul>
+	    <li>\(x = b-c\)</li>
+	    <li>\(y = c-a\)</li>
+	    <li>\(z = a-b\) これは、まぁ、こうおいておく方がいいだろう、と。</li>
+	  </ul>
+	</li>
+	<li>３つは互い違いになってるので、３つまとめると、
+	  なにかときれいにならない<br />
+	  でも２つだけ、例えば \(x\) と \(y\) についてみると、<br />
+	  共に \(c\) を含んでるので  \(c\) を消せるので、<br />
+	  あぁ、それで \(a - c\) を与えてるのね、と<br />
+	  \[
+	  x + y = b - a = -(a-b) = -2\sqrt{5}
+	  \]
+	</li>
+	<li>次に \(x^2 + y^2\) を計算せよ、と<br />
+	  (1) で求めさせたのが、結局 \(x^2 + y^2 + z^2 = 38\) なので、<br />
+	  \[
+	  \begin{eqnarray}
+	  x^2 + y^2 &=& 38 - z^2\\
+	  &=&38 - \left(2\sqrt{5}\right)^2\\
+	  &=& 18
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>ここから \(x y z\) の値を求めよ、と</li>
+	<li>\(z\) は与えられてるので、\(xy\) の値が求まれば良い、<br />
+	  ということで \((x+y)^2\) を計算してみると<br />
+	  \(x^2 + y^2 + 2xy\) なので<br />
+	  \[
+	  \begin{eqnarray}
+	  xy &=& \frac{(x+y)^2 - \left(x^2 + y^2\right)}{2}\\
+	  &=& \frac{\left(-2\sqrt{5}\right)^2 - 18}{2}\\
+	  &=& 1
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>ってことで、答えは
+	  \[
+	  xyz = 2\sqrt{5}
+	  \]
+	</li>
+      </ul>
+    </li>
+  </ul><!-- 第１問〔１〕 -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q1-2">第１問〔２〕</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.15.05.png"><!-- 1358x1621 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.05_thumb.jpg" width="503" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.15.21.png"><!-- 1359x1299 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.21_thumb.jpg" width="600" height="574" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.15.28.png"><!-- 1355x1221 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.28_thumb.jpg" width="600" height="541" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-02a.jpg"><!-- 837x588 -->
+	  <img src="note-02a_thumb.jpg" width="600" height="422" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>太郎と花子の小芝居、いるのかな？<br />
+      とりあえず計算すれば終わりだ
+      <ul>
+	<li>２次方程式の解の公式、ぼくは記憶にあったのでそれだけ<br />
+	  もし記憶から飛んでたら、これ、どうやって導出したんだっけ？
+	  平方完成させる方針で式変形すれば行けるんだったっけな？<br />
+	  （公式忘れた大人の人たちは、がんばってください）</li>
+	<li>２次方程式 \(x^2 + px + r = 0\) の解は
+	  \[
+	  x = \frac{-p\pm\sqrt{p^2-4r}}{2}
+	  \]
+	</li>
+	<li>\(D_1\) は、いわゆる判別式、上のルートの中身で、
+	  こいつが負のときルートが虚数になるってやつ
+	  \[
+	  D_1 = p^2-4r
+	  \]
+	</li>
+	<li>「x軸と共有点を持つ」という表現が曖昧に思えるが、<br />
+	  「交点を持つ、あるいは接する」ってこと、つまり実根を持つ、<br />
+	  なのかな、と解釈して、<br />
+	  「２つのうち少なくとも１つは」の条件は、
+	  \[D_1 \ge 0 \text{ or } D_2 \ge 0\]
+	  （つまり⑧）
+	</li>
+	<li>その逆は
+	  \[D_1 < 0 \text{ and } D_2 < 0\]
+				       （つまり⓪）
+				       </li>
+	<li>このとき \(D_1 + D_2 < 0\) なので①</li>
+				   </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-1">第２問〔１〕</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.15.35.png"><!-- 1359x1642 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.35_thumb.jpg" width="497" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.15.46.png"><!-- 1359x1182 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.46_thumb.jpg" width="600" height="522" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.15.55.png"><!-- 1356x1575 -->
+      <img src="Screen Shot 2022-02-21 at 19.15.55_thumb.jpg" width="517" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-02b.jpg"><!-- 828x380 -->
+	  <img src="note-02b_thumb.jpg" width="600" height="275" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>これは、縦と横の縮尺が違うことに注意せよ、という問題（？）</li>
+    <li>つまり縦方向は４倍になっている（10<sup>5</sup> / 25,000）</li>
+    <li>その縮尺で角度が 16 度、ということで、<br />
+      求めるのが（sin とかじゃなくて） tan なので、
+      値を単純に 1/4 すればよいだけ</li>
+    <li>数表から tan 16<sup>o</sup> の値を読むと「0.2867」</li>
+    <li>その 1/4 は「0.0716...」なので \(0.072\) が答え</li>
+    <li>この値を数表の tan から読むと 4<sup>o</sup> と 5<sup>o</sup> の間<br />
+      （つまり②）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-2-1">第２問〔２〕(1)</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.16.03.png"><!-- 1356x752 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.03_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-02c.jpg"><!-- 840x315 -->
+	  <img src="note-02c_thumb.jpg" width="600" height="225" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>さて、問題の円に内接する三角形。<br />
+      ここまで順番に回答してきたが、ここで詰まる……</li>
+    <li>とはいえ、最初の sin を求めるのは（ cos の値が与えられているので）できる
+      <br />
+      つまり \(\sin^2 \angle\rm{ABC} + \cos^2 \angle\rm{ABC} = 1\) ですね、と
+      \[
+      \sin\angle\rm{ABC}
+      = \sqrt{1-\cos^2\angle\rm{ABC}}
+      = \sqrt{1 - \frac{3}{9}}
+      = \frac{\sqrt{6}}{3}
+      \]
+    </li>
+    <li>で、だ。ここで、 AC と BC の長さの比が与えられてるだけ。<br />
+      これで AB と AC の長さを出せ、と</li>
+    <li>普通の三角形で、２辺の長さとその成す角が決まれば、
+      三角形は一意に決まるのは知ってる。<br />
+      今は円に内接する、という余分な条件があるので、<br />
+      ２辺の長さじゃなくて、比さえ与えられれば、三角形が決まる、ということみたい</li>
+    <li>でも、これ、どう攻めるのか？</li>
+    <li>分からないので、次に進むことにする。（くやしい……）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-2-2">第２問〔２〕(2)</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.16.08.png"><!-- 1359x1224 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.08_thumb.jpg" width="600" height="540" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-03.jpg"><!-- 887x1093 -->
+	  <img src="note-03_thumb.jpg" width="487" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>さて、円に内接する三角形、ということは引き続きで、<br />
+      しかし与えられる条件は (1) のものは忘れて、新しく考えましょう、
+      ということだね。</li>
+    <li>今回の条件は、 AB = 5, AC = 4 と、
+      ２辺の長さ（だけ）が与えられている、か。</li>
+    <li>この条件だけで三角形が決まるってことか？</li>
+    <li>少なくとも \(\sin\angle\rm{ABC}\) と、<br />
+      A から BC に下ろした垂線の交点 D までの距離は、求まるらしい、<br />
+      この条件だけから……</li>
+    <li>全然、分からん……</li>
+    <li>これが問題の前半 (i)</li>
+    <li>後半 (ii) は、 AB と AC に対する条件を緩めて
+      \(2 AB + AC =14\) として、<br />
+      この場合になんと \(AD = p\ AB^2 + q\ AB\) みたいに \(AB\) の２次式で<br />
+      （しかも、マークシートの状況から、係数は簡単な分数で！）書けるだと？</li>
+    <li>最終的に、三角形の面積を求めさせてる。
+      つまり \(BC\) の長さも、この条件だけから求まるってことだよね？</li>
+    <li>前半 (i) も分からないので、 (ii) は分かるわけない
+      <ul>
+	<li>付記：試行錯誤してる段階で、気づいた。<br />
+	  (i) は (ii) の特別な場合、つまり含まれていた。<br />
+	  最初から気づくべきポイントでしたが
+	  （気づいたからといって、解法に関する手がかりではないけれど）</li>
+      </ul>
+    </li>
+    <li>一生懸命、円に内接する三角形の性質について、思い出そうとしているが、<br />
+      ここではとりあえず諦めて、先に進むことにした。（くやしい……）</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q3-1">第３問〔１〕</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.16.16.png"><!-- 1359x1611 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.16_thumb.jpg" width="506" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.16.25.png"><!-- 1365x722 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.25_thumb.jpg" width="600" height="317" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.16.30.png"><!-- 1355x477 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.30_thumb.jpg" width="600" height="211" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.16.34.png"><!-- 1363x1066 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.34_thumb.jpg" width="600" height="469" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-04.jpg"><!-- 763x1082 -->
+	  <img src="note-04_thumb.jpg" width="423" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>これも、第１問と似た問題というか、２次方程式の問題だな。
+      カリキュラム的に、別のカテゴリってことになってるのかな？</li>
+    <li>２次方程式を、１次式の積と捉えて考える、という話。
+      <ul>
+	<li>つまり \(l: y = ax + b\) と \(m: y = cx + d\)
+	  の２つの一次方程式（直線）があって、<br />
+	  それぞれの解（x 軸との交点）を s と t とする。<br />
+	  もちろん解けて、\(s = -\frac{b}{a}\) と
+	  \(t = -\frac{d}{c}\) となる。<br />
+	  当然 \(a\neq 0, c\neq 0\) （これらが 0 だと
+	  １次方程式は定数になるだけだからね）</li>
+	<li>便宜上の条件がいくつか導入されてるが、<br />
+	  \(s < t\) は、まぁ２つの直線の左右関係を一意にする程度の意味だけど、<br />
+		これらの直線が「 \(y > 0\) で y 軸と交わる」というのは、でかい仮定だな。<br />
+	    （式で言うと、当然 \(b > 0, d > 0\) ということになる）<br />
+	    このせいで（おかげで）場合分けが問題に示される（あ）（い）（う）（え）（お）
+	    で網羅されることになる。<br />
+	    つまり、もしこの図が問題に与えられずに、問題を解け、となったとしたら、
+	    学生さん結構大変だったんじゃないかな、と。</li>
+      </ul>
+    </li>
+    <li>(1) は、２次方程式の最大値、最小値のはなし。
+      <ul>
+	<li>２つの一次式の積、と言う形にまとめたので、見通しが良くなっていて<br />
+	  ２次方程式の解（x 軸との交点）２つが s と t になることは自明で、<br />
+	  最大 or 最小はそのちょうど中間にくることになる。</li>
+	<li>最大か最小かについては、
+	  x の値の３つの領域（というか、真ん中の領域 \(s \lt x \lt t\)）の符号を
+	  確認すればよい<br />
+	  正なら極大、負なら極小
+	</li>
+	<li>なので、(i) は \(x = 2\) で最大値、</li>
+	<li>(ii) は \(x = 7\) で最小値を持つ。</li>
+	<li>(2) も同様に考えれば良くて、<br />
+	  \(s = -1\) で「最大値」が \(x = 0\) となるのは \(t = 1\)、<br />
+	  \(x = 10\) となるのは（そこが -1 に対して中央になるのは）
+	  \(t = 21\) となるので、<br />
+	  t のとりうる範囲は \(-1 \lt t \lt 21\) ということになる。
+	</li>
+	<li>(3) は、上に行ったように s と t で区切られる３つの領域の
+	  各一次式の符号を考えれば分かる。<br />
+	  最大値をとるのは \(s \lt x \lt t\) で正となるものなので、（あ）だけ<br />
+	  最小値をとるのは、それ以外ということになる。
+	</li>
+	<li>最小値が正になるものは、今の場合、実根を２つ持つ２次方程式なので、なし<br />
+	  最小値が \(x\gt0\) になるものは、（い）と（え）の２つ。<br />
+	  あれだね、 s が負で t が正となるいやらしい場合が、
+	  各１次式が \(y\gt0\) で交わるという制限でなくなってて、
+	  気にしなくてよかった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-rest-01">ここで一息</h3>
+  <ul>
+    <li>予想外に苦戦して、時間がかなりかかった。
+      ここで一旦、終了にして、日常生活に戻り、<br />
+      翌日、ここから再開する</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q3-2">第３問〔２〕</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.16.46.png"><!-- 1359x1631 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.46_thumb.jpg" width="500" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.16.54.png"><!-- 1362x759 -->
+      <img src="Screen Shot 2022-02-21 at 19.16.54_thumb.jpg" width="600" height="334" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.05.png"><!-- 1362x1469 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.05_thumb.jpg" width="556" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.12.png"><!-- 1362x1117 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.12_thumb.jpg" width="600" height="492" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-05.jpg"><!-- 900x1191 -->
+	  <img src="note-05_thumb.jpg" width="453" height="600" style="border: 2px #ccc solid;" /></a>
+	<a href="note-06.jpg"><!-- 810x1164 -->
+	  <img src="note-06_thumb.jpg" width="418" height="600" style="border: 2px #ccc solid;" /></a>
+	<a href="note-07.jpg"><!-- 797x937 -->
+	  <img src="note-07_thumb.jpg" width="510" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>これも２次方程式のはなし。
+      ここでは２つの２次方程式、と言う話になっている（けど、２次方程式）。
+      <ul>
+	<li>後知恵的に振り返ると、<br />
+	  (1) は普通に２つの２次方程式の解の数に注意を向けるはなし、<br />
+	  (2) は解の数が４じゃなくて３の場合にどうなりますか？というはなし、<br />
+	  この (2) が、なんか難しかったぞ（なんかミスってるかな？）</li>
+      </ul>
+    </li>
+    <li>(1) は、普通にそれぞれの方程式を解いて、<br />
+      \(x^2 + 4x -4 = 0\) の解は \(x = -2\pm2\sqrt{2}\)<br />
+      \(x^2 - 4x +4 = 0\) の解は、こいつ実は重根で、<br />
+      実際、因数分解できて \((x-2)^2 = 0\) つまり \(x = 2\)<br />
+      なので２つ合わせて、解の数は３つ</li>
+    <li>(2) \(p=-6\) の時、２つの方程式の判別式を計算すると、<br />
+      \(D_1 = 9-q, D_2 = q^2+24\) となる。
+      <ul>
+	<li>解が３つ、というのが、２実根と重根だとすると、<br />
+	  \(D_1=0, D_2\gt 0\) or \(D_1\gt 0, D_2=0\) となる。</li>
+	<li>\(D_1=0, D_2\gt 0\) のとき、<br />
+	  \(q=9\) となり、これは \(D_2\gt 0\) を満たす。</li>
+	<li>\(D_1\gt 0, D_2=0\) のとき、<br />
+	  \(q = \sqrt{24}\) で、\(D_1 = 9-q \gt 0\) を満たす。<br />
+	  この２つか？でもこいつは整数じゃないぞ？（マークシートに書けない…）
+	  <ul>
+	    <li>とノートに書いているが、ここ、明らかに間違ってるね<br />
+	      \(D_2 = 0\) から \(q = \sqrt{-24}\) と虚数になります。<br />
+	      つまりこっちの条件を満たす実数 q は、存在しない。</li>
+	    <li>ノートでは、結局、この計算を破棄して、<br />
+	      「ガイドに従う」計算を続けてました。<br />
+	      （でも、そのラインも放棄してるな……）</li>
+	  </ul>
+	</li>
+	<li>ここで気づく、２実根が２つある場合に、
+	  その１つが重複している場合として、解の数が３つになる場合がある、と。</li>
+	<li>えーい、面倒だ、解が重複している条件を直接、書いちまえっ、と<br />
+	  \(3\pm\sqrt{9-q} = \frac{1}{2}(-q\pm\sqrt{q^2+24})\)<br />
+	  複合が左右あるので、まぁ４通りを計算しないといけないが、面倒だよね
+	</li>
+	<li>q の範囲として、\(9-q\gt0\) ってのがある。<br />
+	  つまり（マークシートで q は整数なので）
+	  q = 1, 2, 3, 4, 5, 6, 7, 8 をチェックすればよい！（ズル）
+	  <br />
+	  で、実際にノートにあるように計算した。<br />
+	  その結果、みつけた！ \(q = 5\) だ！
+	</li>
+	<li>ということで、(2) の答えは
+	  \(q = 5 \text{ or } 9\)
+	</li>
+      </ul>
+    </li>
+    <li>(3) は、２次関数の各係数の変化がグラフにどう現れるのかを問うている。
+      <ul>
+	<li>③のグラフ \(y=x^2 -6x + q\) で q を増やす、というのは、
+	  定数項を増やすということなので、<br />
+	  グラフは形状を保ったまま上に上がっていくだけ、（６）</li>
+	<li>④のグラフ \(y=x^2 +qx -6\) については、<br />
+	  頂点の場所を考えるために、解の公式から、<br />
+	  \(x = \frac{1}{2}(-q\pm\sqrt{q^2+24})\)<br />
+	  頂点の x 座標は \(x = -q\) なので、左右については左に（小さい方に）<br />
+	  縦方向の移動は、この値を代入すれば良くて、<br />
+	  \(y^* = q^2 - q^2 - 6 = -6\) と、q によらず一定、か<br />
+	  （ノートにもコメントした通り、幅は広くなるけど、グラフの選択肢にない…）<br />
+	  ということで、 q を増やすとグラフは左にシフト、なので（３）
+	  <ul>
+	    <li><font color="red">ここが間違い…</font><br />
+	      正解は（１）、なのか？（まだ分かってない…）
+	    </li>		  
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>(4) は、 q の範囲が (2) で求めた解の数が３つになる二つの場合の間で
+      変化するときの挙動について。
+      <ul>
+	<li>２次方程式で、下に凸なので、 y が負の領域というのは
+	  ２実根の間か、重根の点、ということになる。</li>
+	<li>q = 5 と q = 9 の時の状況は、ノートに書いた通り。</li>
+	<li>(3) でみた通りで、 q を 5 から増やしていくことを考えると、<br />
+	  グラフ③は上に上がるだけ
+	  （つまり２重根の状態から、重根の状態に移りゆく）<br />
+	  グラフ④は左にシフトしていきつつ、幅が広がる
+	</li>
+	<li>この時、グラフ③の２実根の間の領域を A、<br />
+	  グラフ④の２実根の間の領域を B とすると、<br />
+	  A と B は \(5\gt q\gt 9\) の間、常に重なりを持つが、<br />
+	  ふむ、途中から A は B に包含されるが、常に包含関係にあるわけではないな</li>
+	<li>従って \(x \in A\) は \(x \in B\) であるための
+	  なんの条件にもなってない、つまり（３）が正解だったか
+	  <ul>
+	    <li>ノートには「必要だけど十分じゃない」と書いてたけど、<br />
+	      この時の思い込みは、うむ、何考えてたのか分からん……<br />
+	      （左の絵を書いてるけど、これを A が B の中にあると
+	      思い込んでたか？）
+	    </li>
+	  </ul>
+	</li>
+	<li>一方、 \(x \in B\) は \(x \in \bar{A}\) の、どういう条件だ？
+	  <ul>
+	    <li>左の図（q = 5）では、十分条件ですね</li>
+	    <li>右の図（q = 9）では、この時やっと十分条件になる</li>
+	    <li>けれど右の図の直前では、 B の領域は A と重複するよね</li>
+	    <li>すると、なんでもない（３）じゃないのかな？やっぱり<br />
+	      （ここではノート書いた時とは違う考え方してる気がするが）
+	    </li>
+	    <li>でも、<font color="red">正解はこれ「十分条件ではあるが必要条件ではない」（１）</font>らしい
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>付記：なんか、グラフをプロットしてみればはっきりするが、
+      勘違いしてるところがあるな、きっと
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q4">第４問</h3>
+  <center>
+    <a href="Screen Shot 2022-02-21 at 19.17.22.png"><!-- 1362x1309 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.22_thumb.jpg" width="400" height="384" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.27.png"><!-- 1358x1037 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.27_thumb.jpg" width="400" height="305" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.36.png"><!-- 1357x1590 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.36_thumb.jpg" width="341" height="400" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.44.png"><!-- 1362x1262 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.44_thumb.jpg" width="400" height="371" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.48.png"><!-- 1356x1005 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.48_thumb.jpg" width="400" height="296" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.17.57.png"><!-- 1363x1472 -->
+      <img src="Screen Shot 2022-02-21 at 19.17.57_thumb.jpg" width="370" height="400" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.18.05.png"><!-- 1360x1633 -->
+      <img src="Screen Shot 2022-02-21 at 19.18.05_thumb.jpg" width="333" height="400" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.18.12.png"><!-- 1364x696 -->
+      <img src="Screen Shot 2022-02-21 at 19.18.12_thumb.jpg" width="400" height="204" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.18.17.png"><!-- 1356x1232 -->
+      <img src="Screen Shot 2022-02-21 at 19.18.17_thumb.jpg" width="400" height="363" style="border: 2px #ccc solid;" /></a>
+    <a href="Screen Shot 2022-02-21 at 19.18.21.png"><!-- 1360x896 -->
+      <img src="Screen Shot 2022-02-21 at 19.18.21_thumb.jpg" width="400" height="264" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ノート
+      <center>
+	<a href="note-08.jpg"><!-- 863x1133 -->
+	  <img src="note-08_thumb.jpg" width="457" height="600" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>もうここは、「四分位」ってなに？って感じだったので<br />
+      （勝手に想像して回答したけど）<br />
+      振り返る気もしないので、パス</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-rest-02">ここで一息、パート２</h3>
+  <ul>
+    <li>問題、やっと最後まできた。<br />
+      けど第２問〔２〕「円に内接する三角形の問題」はほとんど解けてない……<br />
+      ということで、後日、時間無制限で挑戦する。
+      <center>
+	<b>第２問〔２〕円に内接する三角形の問題、無制限一本勝負</b>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-i-01">問題 (2) の (i) とノート１</h3>
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+	  <a href="Screen Shot 2022-02-21 at 19.16.08.png"><!-- 1359x1224 -->
+	    <img src="Screen Shot 2022-02-21 at 19.16.08_thumb.jpg" width="600" height="540" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td valign="top">
+	  <a href="note-09.jpg"><!-- 898x1122 -->
+	    <img src="note-09_thumb.jpg" width="480" height="600" style="border: 2px #ccc solid;" /></a>
+	</td>
+      </tr>
+    </table>
+  </center>
+  <ul>
+    <li>第２問〔２〕円に内接する三角形の問題、無制限一本勝負
+      <ul>
+	<li>まずは (2) にフォーカスする
+	  <ul>
+	    <li>というのは (1) は難しそうだから。<br />
+	      （比が与えられてる、というのが具体的に考えにくいから）</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+    <li>思い出した円に内接する三角形の性質
+      <center>
+	円周上の点から他の２点の成す角は、<br />
+	その２点が中心から成す角の半分
+      </center>
+      を考えて、
+      中心 O をあからさまに書いて、３つの三角形に分割してみた。
+    </li>
+
+    <li><b>アプローチ１：加法定理を使う方向性</b>
+      <ul>
+	<li>面倒なので角度を以下のように置く
+	  \[
+	  \begin{eqnarray}
+	  a &:=& \angle\rm{BAC}\\
+	  b &:=& \angle\rm{ABC}\\
+	  c &:=& \angle\rm{ACB}
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>あと、この 中心 O を含む３つの二等辺三角形の角度を以下のように置く
+	  \[
+	  \begin{eqnarray}
+	  a_1 &:=& \angle\rm{OAB} = \angle\rm{OBA}\\
+	  b_1 &:=& \angle\rm{OBC} = \angle\rm{OCB}\\
+	  c_1 &:=& \angle\rm{OCA} = \angle\rm{OAC}
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>当然、以下の関係が成り立つ。
+	  \[
+	  \begin{eqnarray}
+	  a &=& a_1 + c_1\\
+	  b &=& b_1 + a_1\\
+	  c &=& c_1 + b_1
+	  \end{eqnarray}
+	  \]
+	  <ul>
+	    <li>ふむふむ、加法定理を使いたくなるね</li>
+	  </ul>
+	</li>
+	<li>３つの二等辺三角形（等しい２辺の長さは円の半径 3）を
+	  書き出して並べてみると、<br />
+	  中心までの距離が与えられてる２つの三角形
+	  （AB = 5, AC = 4）については、高さが決まるじゃん！
+	  <ul>
+	    <li>ABO の高さは \(\sqrt{11}/2\)</li>
+	    <li>ACO の高さは \(\sqrt{5}\)</li>
+	  </ul>
+	  その結果、これらの三角形の角度に対する sin と cos は求まるじゃん！
+	  \[
+	  \begin{eqnarray}
+	  \sin a_1 = \frac{\sqrt{11}/2}{3},&\quad&
+	  \cos a_1 = \frac{5/2}{3}\\
+	  \sin c_1 = \frac{\sqrt{5}}{3},&\quad&
+	  \cos c_1 = \frac{2}{3}
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>付記：ノートには書いてないが（このときは、その考えがなかったということ）
+	  <br />
+	  これらの２つの三角形から、角度 c と b に関する sin と cos も直接求まるね
+	  \[
+	  \begin{eqnarray}
+	  \sin c = \frac{5/2}{3},&\quad&
+	  \cos c = \frac{\sqrt{11}/2}{3}\\
+	  \sin b = \frac{2}{3},&\quad&
+	  \cos b = \frac{\sqrt{5}}{3}
+	  \end{eqnarray}
+	  \]
+	  <ul>
+	    <li>つまり、求める答え
+	      \(\sin\angle\rm{ABC} = \sin b = 2/3\) が求まる！</li>
+	  </ul>
+	</li>	      
+	<li>角度 \(a_1, c_1\) の sin と cos が分かったので、
+	  加法定理を使えば \(a = \angle\rm{BAC}\) の sin と cos は求まる
+	  \[
+	  \begin{eqnarray}
+	  &&
+	  \sin a = \sin\left(a_1 + c_1\right) =
+	  \sin a_1 \cos c_1 + \cos a_1 \sin c_1\\
+	  &=&
+	  \frac{\sqrt{11}/2}{3}
+	  \frac{2}{3}
+	  +
+	  \frac{5/2}{3}
+	  \frac{\sqrt{5}}{3}
+	  =
+	  \frac{1}{9}
+	  \left(
+	  \sqrt{11}
+	  +
+	  \frac{5\sqrt{5}}{2}
+	  \right)
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>でも、欲しいのはこれじゃない。<br />
+	  と \(\sin b\) を分解しようとするが、角度 \(b_1\) の sin と cos が
+	  分かってなかった……
+	</li>
+      </ul>
+    </li><!-- アプローチ１：加法定理を使う方向性 -->
+
+    <li><b>アプローチ２：作図で考える方向</b>
+      <ul>
+	<li>ここで、視点を変えて、図を書き直してみる。<br />
+	  ノートの「まってまって」の部分！
+	  <ul>
+	    <li>ここでの図の書き方が、実際のところ、ノートの「付記」にコメントした通り
+	      誤解だったのだけど、<br />
+	      今まとめるに際して見直したところ、
+	      この図において上に指摘した誤解は、そこにノートで行った計算に関係ない、
+	      <br />
+	      従って、この (2) の問いに関する正しい解答になっていることが分かった
+	    </li>
+	    <li>まず、<b>図の何が誤解だったかについて：</b>
+	      <ul>
+		<li>モティベーションが「点 B を基準に物事を見直そう」で、<br />
+		  その結果として x 軸上（つまり (-3, 0) の点）に B を設定した。
+		</li>
+		<li>その後 A と C を図のように置いたが、<br />
+		  この置き方は垂直に置いた。<br />
+		  その後に続く計算において、この性質を使ってあれこれやってる。
+		</li>
+		<li>しかし今の状況、つまり AB と AC の長さが違う（！）場合、<br />
+		  AC を垂直に置くと、 B は x 軸上に乗らないよね、<br />
+		  という認識が、ノートの「付記」で書いたこと。
+		</li>
+	      </ul>
+	    </li>
+	    <li>次に、<b>なぜ結果が正しかったのかについて：</b>
+	      <ul>
+		<li>作図に伴った計算で使った性質が、しかし、
+		  点 B が x 軸に乗っている、ということに依らないから。</li>
+		<li>つまり、使ってる情報は AC を y 軸に並行にとった、
+		  ということだけ。</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</li>
+	<li>話を戻して、 AC を x 軸に垂直に置いてみる、ということから始める。
+	  すると、
+	  <ul>
+	    <li>AC の中点、 x 軸との交点を仮に H として置いて、<br />
+	      ノートのこの部分で角度を
+	      \(\theta := \angle\rm{ABC}\) と置いていて、<br />
+	      あと AH の長さを \(l\) と置く
+	    </li>
+	    <li>この時 \(\angle\rm{AOH}\) は \(\angle\rm{ABC} = \theta\)
+	      と等しいじゃん！</li>
+	    <li>従って
+	      \[
+	      \begin{eqnarray}
+	      l = 3 \sin\theta\\
+	      \sin\theta = \frac{2}{3}
+	      \end{eqnarray}
+	      \]
+	    </li>
+	    <li>おぉ、すると、ノートの作図で赤く書いたように、<br />
+	      三角形 BAD は直角三角形なので、
+	      \[
+	      \rm{AD}
+	      =
+	      5\sin\angle\rm{ABC}
+	      =
+	      \frac{10}{3}
+	      \]
+	    </li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li><!-- アプローチ２：作図で考える方向 -->
+
+  </ul><!-- 問題 (2) の (i) とノート１ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-1-02">問題 (1) とノート２</h3>
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+	  <a href="Screen Shot 2022-02-21 at 19.16.03.png"><!-- 1356x752 -->
+	    <img src="Screen Shot 2022-02-21 at 19.16.03_thumb.jpg" width="600" height="333" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td valign="top">
+	  <a href="note-10.jpg"><!-- 898x1125 -->
+	    <img src="note-10_thumb.jpg" width="479" height="600" style="border: 2px #ccc solid;" /></a>
+	</td>
+      </tr>
+    </table>
+  </center>
+  <ul>
+    <li>(2) の (i) が解けた（と思ってた）ので、<br />
+      ちょっと状況が分かってきたと思ったし、(1) の問題に戻ってみる。</li>
+    <li>与えられた条件が
+      \[
+      \begin{eqnarray}
+      && \cos c = \frac{\sqrt{3}}{3}\\
+      && \rm{AC} : \rm{BC} = \sqrt{3} : 2
+      \end{eqnarray}
+      \]
+    </li>
+    <li>最初の条件から、その角度の sin を求めるのは簡単（上で既に解いてる）
+      \[
+      \cos c = \frac{\sqrt{3}}{3}
+      \quad\Rightarrow\quad
+      \sin c = \sqrt{1-\frac{3}{9}} = \frac{\sqrt{6}}{3}
+      \]
+    </li>
+    <li>さて、ここから、２つの辺 AB と AC の長さを求めろ、というのが問い。<br />
+      (2) の (i) でやったように、中心 O に関して３つの三角形に分割してみる。<br />
+      与えられている２辺 AC と BC の長さに関する条件が比なので、
+      パラメータ \(l\) を導入。
+    </li>
+    <li>おぉ、すると \(\sin c\) は三角形 OAB を睨むと
+      \[
+      \sin c = \frac{\rm{AB}/2}{3} = \frac{\sqrt{6}}{3}
+      \]
+      なので、あれれ、 AB は求まった！
+      \[
+      \rm{AB} = 2\sqrt{6}
+      \]
+    </li>
+    <li>そして、残るのは AC の長さか…</li>
+    <li>パラメータ \(l\) を決める必要があって、<br />
+      その条件は、三角形が半径３の円に接する、ということなのは
+      ロジックとして分かる。
+      <ul>
+	<li>フォーラムで喋った大学の数学科の同級生の友人の言葉を思い出したのは、
+	  ここで行き詰まった時のこと。
+	  <center>
+	    <br />
+	    条件が揃ってそうなら、そして計算できることがあるなら、
+	    まず計算してみればよい、<br />
+	    それがスマートな解法か、正しいアプローチか、とか置いておいて
+	  </center>
+	  <br />
+	</li>
+      </ul>
+    </li>
+    <li>三角形 OBC と OCA の高さをそれぞれ \(p\) と \(q\) と置く。</li>
+    <li>まず思いつくのは (2) の (i) で考えた加法定理を使うこと
+      <ul>
+	<li>今 \(\sin c\) の値は求まったので、
+	  角度 \(c\) が \(c_1 + b_1\) ということから、
+	  \[
+	  \begin{eqnarray}
+	  \sin c &=&
+	  \sin\left(c_1 + b_1\right)\\
+	  &=&
+	  \sin c_1 \cos b_1
+	  + \cos c_1 \sin b_1
+	  \\
+	  &=&
+	  \frac{q}{3}
+	  \frac{2l}{3}
+	  +
+	  \frac{\sqrt{3}l}{3}
+	  \frac{p}{3}
+	  =
+	  \frac{\sqrt{6}}{3}
+	  \end{eqnarray}
+	  \]
+	  まとめると
+	  \[
+	  2lq + \sqrt{3}lp
+	  =
+	  3\sqrt{6}
+	  \]
+	</li>
+      </ul>
+    </li>
+    <li>二つ余分なパラメータ \(p, q\) を導入したので、
+      これを消す必要がある
+      <ul>
+	<li>図を睨んで、直角三角形なので、
+	  \[
+	  \begin{eqnarray}
+	  4l^2 + p^2 = 3^2\\
+	  3l^2 + q^2 = 3^2
+	  \end{eqnarray}
+	  \]
+	  ここから \(p, q\) がそれぞれ \(l\) で書ける
+	  \[
+	  \begin{eqnarray}
+	  p^2 &=& 9 - 4l^2\\
+	  q^2 &=& 9 - 3l^2
+	  \end{eqnarray}
+	  \]
+	</li>
+      </ul>
+    </li>
+    <li>まとめると、 \(l\) を決定すべき式として以下が出てくる
+      \[
+      2l\sqrt{9-3l^2} + \sqrt{3}l\sqrt{9-4l^2} = 3\sqrt{6}
+      \]
+    </li>
+    <li>この式をこねくり回すが、ルート含んだ式の計算、面倒だよな
+      （できない……）<br />
+      BC の値は \(コ\sqrt{サ}\) という形に、最終的にはなるはずなんだが、ね
+    </li>
+
+    <li>ということで、再び問題 (1) から一時撤退。</li>
+  </ul><!-- 問題 (1) とノート２ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-03">問題 (2) の (ii) とノート３</h3>
+  <center>
+    <table border="0">
+      <tr>
+	<td valign="top">
+	  <a href="Screen Shot 2022-02-21 at 19.16.08.png"><!-- 1359x1224 -->
+	    <img src="Screen Shot 2022-02-21 at 19.16.08_thumb.jpg" width="600" height="540" style="border: 2px #ccc solid;" /></a>
+	</td>
+	<td valign="top">
+	  <a href="note-11.jpg"><!-- 829x1159 -->
+	    <img src="note-11_thumb.jpg" width="429" height="600" style="border: 2px #ccc solid;" /></a>
+	</td>
+      </tr>
+    </table>
+  </center>
+  <ul>
+    <li>先に進む。問題 (2) の (ii)<br />
+      状況は、BC に A から垂線を下ろした点 D を考えて、<br />
+      ここで２つの辺 AB と AC の値が指定される代わりに、以下の関係を満たす、
+      というもの。
+      \[
+      2\rm{AB} + \rm{AC} = 14
+      \]
+    </li>
+    <li>最初の問いは、この時 AB のとりうる範囲は何か？</li>
+    <li>まず、円の中に三角形が含まれるということ以外は何も考えないと、
+      \[
+      \begin{eqnarray}
+      && 0 \le \rm{AB} \le 6\\
+      && 0 \le \rm{AC} \le 6
+      \end{eqnarray}
+      \]
+      となる。<br />
+      先の条件式から
+      \[
+      2\rm{AB} = 14 - \rm{AC}
+      \]
+      なので、 AB の範囲を考えると、
+      \[
+      4 \le \rm{AB} \le 7
+      \]
+    </li>
+    <li id="note11">ノートに記載があるが、
+      実はこのとき \(\rm{AB}\) 自身の制限を考え忘れてた。
+      （円の外に出てしまいます。）<br />
+      解答は以下：
+      \[
+      4 \le \rm{AB} \le 6
+      \]
+      <ul>
+	<li>cf. 「<a href="#note18">問題 (2) の (ii) のつづき、ノート６〜（泥沼の計算地獄）</a>」での最後の部分では、きちんと認識してます。</li>
+      </ul>
+    </li>
+    <li>さて、次に聞かれてるのは、辺 \(\rm{AD}\) の長さに関するもので、<br />
+      これが、一般に（？） \(\rm{AB}\) の２次式で表せるのか？
+    </li>
+    <li>辺の長さに関しては、直角三角形の性質だろうな
+      \[
+      \rm{AD}^2 = \rm{AB}^2 - \rm{BD}^2
+      \]
+      ここで \(\rm{BC} = \rm{BC} - \rm{CD}\) だ。<br />
+      \(\rm{CD}\) が余分なものだけど、これに関しては
+      \[
+      \rm{CD}^2 = \rm{AC}^2 - \rm{AD}^2
+      \]
+      が（少なくとも）ある。
+    </li>
+    <li>うーむ、しかし、そもそも
+      \(\rm{AD}\) を \(\rm{AB}\) と \(\rm{AC}\) だけで書けるのか？
+      （と、ノートで叫んでる！）
+    </li>
+    <li>途方に暮れつつ、あれこれ、作図などしている……</li>
+  </ul><!-- 問題 (2) の (ii) とノート３ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-04">問題 (2) の (ii) のつづき、ノート４</h3>
+  <center>
+    <a href="note-12.jpg"><!-- 882x1172 -->
+      <img src="note-12_thumb.jpg" width="452" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ここで、再び、大学の同級生ことを思い出す。
+      <center>
+	綺麗に解けなくても、論理的に求まるのならば、<br />
+	どんなに泥臭くなっても、計算してしまえ！
+      </center>
+    </li>
+    <li>つまり、今の問題 (2) の建て付けにおいて、
+      <ul>
+	<li>円の内接三角形に関しては、</li>
+	<li>２辺の長さを指定しただけで、三角形は決まる。</li>
+	<li>もっと言うと、
+	  円周に乗った２点に対して、
+	  一方の点からの距離を決めれば、他方の点は一意に決まるよね、と。</li>
+      </ul>
+    </li>
+    <li>式にのせると、\(\rm{A}\) を \((-3, 0)\) に置くとして、
+      長さ \(p = \rm{AB}\) を指定した時、
+      \(\rm{B}\) の座標 \((x, y)\) は、求まる。
+      <ul>
+	<li>つまり
+	  \[
+	  \begin{eqnarray}
+	  x^2 + y^2 = 9\\
+	  p^2 = (x+3)^3 + y^2
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>\(y^2 = 9 - x^2\) を使って \(y\) を消すと、
+	  \[
+	  \begin{eqnarray}
+	  p^2 &=& (x+3)^2 + 9-x^2\\
+	  &=& 6x + 18
+	  \end{eqnarray}
+	  \]
+	  から
+	  \[
+	  x_\rm{B} = \frac{p^2}{6} - 3
+	  \]
+	  <ul>
+	    <li>注：ここの部分のノート、符号が間違ってるね。</li>
+	    <li>従って、この後の計算も、ノートは間違いってことだ。</li>
+	    <li>ここの計算は、正しい（はず）。</li>
+	  </ul>
+	</li>
+	<li>\(y_\rm{B}\) は、この結果を代入して
+	  \[
+	  \begin{eqnarray}
+	  y_\rm{B}^2
+	  &=& 9 - \left(\frac{p^2}{6} - 3\right)^2\\
+	  &=& 9 - \left(\frac{p^4}{36} - p^2 + 9\right)\\
+	  &=& p^2 \left(1 - \frac{p^2}{36}\right)\\
+	  &=& p^2 \left(1 + \frac{p}{6}\right)
+	  \left(1 - \frac{p}{6}\right)
+	  \end{eqnarray}
+	  \]
+	</li>
+      </ul>
+    </li>
+    <li>つまり点 \(\rm{B}\) の座標は \(p\) を使って、次のようにかける：
+      \[
+      x_\rm{B} = \frac{p^2}{6} - 3,\quad
+      y_\rm{B}^2 = p^2
+      \left(1 + \frac{p}{6}\right)\left(1 - \frac{p}{6}\right)
+      \]
+      <ul>
+	<li>実際、<br />
+	  \(p = 0\) で \(\rm{B}\) の座標は \((-3, 0)\)<br />
+	  \(p = 6\) で \(\rm{B}\) の座標は \((3, 0)\)<br />
+	  となる。</li>
+      </ul>
+    </li>
+    <li>同様に、\(\rm{AC}\) の長さを \(q\) とすると、
+      点 \(\rm{C}\) の座標は、
+      \[
+      x_\rm{C} = \frac{q^2}{6} - 3,\quad
+      y_\rm{C}^2 = q^2
+      \left(1 + \frac{q}{6}\right)\left(1 - \frac{q}{6}\right)
+      \]
+      と書ける。
+    </li>
+    <li>これで、２辺の長さを決めることで、３点の座標が代数的に求まった。</li>
+    <li>ぶっちゃけて言えば、あとは、ここから点 \(\rm{D}\) の座標を求めれば、
+      答えられるね、と。</li>
+    <li>（ノートでは、別の文脈のトライとして、
+      作図の方からあれこれ模索している。）</li>
+
+    <li>ここで、また日常生活に一時もどって、続きはまた後で。</li>
+  </ul><!-- 問題 (2) の (ii) のつづき、ノート４ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-05">問題 (2) の (ii) のつづき、ノート５</h3>
+  <center>
+    <a href="note-13.jpg"><!-- 869x832 -->
+      <img src="note-13_thumb.jpg" width="600" height="574" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>先のノートの計算（力業）を、改めて清書したノート。</li>
+    <li>はい、上の間違いがきちんと直ってます。</li>
+  </ul><!-- 問題 (2) の (ii) のつづき、ノート５ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-06">問題 (2) の (ii) のつづき、ノート６〜（泥沼の計算地獄）</h3>
+  <center>
+    <a href="note-14.jpg"><!-- 829x1090 -->
+      <img src="note-14_thumb.jpg" width="456" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="note-15.jpg"><!-- 747x586 -->
+      <img src="note-15_thumb.jpg" width="600" height="471" style="border: 2px #ccc solid;" /></a>
+    <a href="note-16.jpg"><!-- 850x1088 -->
+      <img src="note-16_thumb.jpg" width="469" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="note-17.jpg"><!-- 816x1130 -->
+      <img src="note-17_thumb.jpg" width="433" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="note-18.jpg"><!-- 784x1090 -->
+      <img src="note-18_thumb.jpg" width="432" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li id="note14">
+      ここから、なんとか楽して、直交点 \(\rm{D}\) を計算しようとして、<br />
+      図形の関係から \(\rm{BC}\) と x 軸の交点（これを \(\rm{E}\) と置いてる）
+      の座標が分かれば解決、と言って、<br />
+      頑張って計算しているけど、<br />
+      なんか、どうしても、\(\rm{AD}\) が \(\rm{AB}\) 、つまり \(p\) の
+      ２次式できれいになりそうになく、挫折……</li>
+    <li>途方にくれてたら、はたと気づいた！
+      <center>
+	問題 (i) の設定 \(\rm{AB} = 5, \rm{AC}=4\) は、<br />
+	問題 (ii) の条件 \(2\rm{AB} + \rm{AC} = 14\) を、<br />
+	<div style="font-size: 40px; font-weight: bolder;">
+	  満たしている！
+	</div>
+      </center>
+      じゃないですかっ！
+    </li>
+    <li>つまり、このとき \(\rm{AB}^2 = 25\) で、
+      \(\rm{AD} = \frac{10}{3}\) なのが分かってるので、
+      \[
+      \rm{AD} = a\ \rm{AB}^2 + b\ \rm{AB}
+      \]
+      と、変数 \(a, b\) を置いて、
+      \[
+      \frac{10}{3} = 25 a + 5 b
+      \]
+      あてずっぽうで、分母が３だとして、
+      \(a = \frac{a'}{3}, b = \frac{b'}{3}\) と思うと、
+      \[
+      2 = 5 a' + b'
+      \]
+      一番単純な選択肢として、\(a' = -1\) としたら \(b' = 7\) となって、<br />
+      後知恵だが、これが実際の答えだった、と。
+      <ul>
+	<li>ノートでは、すんなり
+	  \[
+	  a = \frac{-1}{3}, b = \frac{7}{3}
+	  \]
+	  と書いてるが、これ、どうやって書いたのか
+	  （後で戻って書き足した？）
+	  記憶にないので、上に書いたのは想像。
+	</li>
+      </ul>
+    </li>
+    <li id="note18">あとここで、\(\rm{AC}\) と \(\rm{AB}\) のグラフを
+      （手を抜かないで）きちんと書いて、<br />
+      ちゃんと \(\rm{AB}\) の上限が６だって、認識してますね。
+      <ul>
+	<li>cf. 「<a href="#note11">問題 (2) の (ii) とノート３</a>」
+	  での試み（のミス）</li>
+      </ul>
+    </li>
+  </ul><!-- 問題 (2) の (ii) のつづき、ノート６〜（泥沼の計算地獄） -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-rest-03">ここで一息、パート３</h3>
+  <ul>
+    <li>日付を改め、今一度、リフレッシュして状況を考え直してみる。</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-i-20220208-01">問題 (2) の (i) のつづき、ノート 2022/2/8 の１</h3>
+  <center>
+    <a href="note-19.jpg"><!-- 752x1122 -->
+      <img src="note-19_thumb.jpg" width="402" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>問題 (2) の (i) に戻って、考え直してみる。
+      <ul>
+	<li>作図して、あれこれ考えつつ……
+      </ul>
+    </li>
+
+    <li>先の「<a href="#note14">泥沼の計算</a>」に陥ったときのアイデアは、
+      <center>
+	円に内接する三角形は２辺の長さを指定しただけで決まる<br />
+	もっと言うと、<br />
+	円周上の２点は、一点を固定して距離を決めれば他方の点は一意に決まる
+      </center>
+      ことを、式にした。
+    </li>
+    <li>この状況をもうちょっと考えると、
+      <center>
+	円周上に固定した１点を通る直線の、もう一方の交点との距離は、一意<br />
+	（円の上半分を考えることにして）
+      </center>
+    </li>
+    <li>そしたら、もっと単純なセットアップでいい気がしてきた。<br />
+      つまり「距離」をパラメータにしないで、角度を媒介変数的に導入すれば、
+      あら、これ簡単じゃん。<br />
+      というのが、このノートの真ん中の図。
+    </li>
+    <li>あちこち点を飛ばして申し訳ないですが、<br />
+      固定点 \(\rm{A}\) を \((+3, 0)\) として、<br />
+      移動点 \(\rm{B}\) を、その成す角 \(\theta\) で特徴付けるとする。
+      \[
+      x_\rm{B} = 3\cos\theta, y_\rm{B} = 3\sin\theta
+      \]
+      このとき、 \(\rm{AB}\) の長さは、
+      \[
+      \begin{eqnarray}
+      \rm{AB}^2
+      &=& \left[3\left(1-\cos\theta\right)\right]^2
+      + \left(3\sin\theta\right)^2\\
+      &=&
+      18\left(1 - \cos\theta\right)
+      \end{eqnarray}
+      \]
+      と、すごくシンプルに書ける。
+    </li>
+    <li>このとき、 (i) の与えられた条件
+      \(\rm{AB} = 5, \rm{AC} = 4\) を、<br />
+      角度 \(\alpha\) を点 \(\rm{A}\) から \(\rm{B}\) までの角度、<br />
+      角度 \(\beta\) を点 \(\rm{A}\) から \(\rm{C}\) までの角度とすると、
+      \[
+      \begin{eqnarray}
+      \rm{AB}^2 = 25 = 18\left(1-\cos\alpha\right)\\
+      \rm{AC}^2 = 16 = 18\left(1-\cos\beta\right)
+      \end{eqnarray}
+      \]
+      から、
+      \[
+      \begin{eqnarray}
+      \cos\alpha = 1 - \frac{25}{18} = -\frac{7}{18}\\
+      \cos\beta = 1 - \frac{16}{18} = \frac{1}{9}
+      \end{eqnarray}
+      \]
+      しかし、今ほしいのは \(\rm{AD}\) で、<br />
+      それは、実は
+      \(\sin\angle\rm{ABC} = \sin\frac{\beta}{2} = \rm{AD}/5\) なので、
+      \(\sin\frac{\beta}{2} \) が欲しい！（けど、まだ分からない）
+    </li>
+  </ul><!-- 問題 (2) の (i) のつづき、ノート 2022/2/8 の１ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-i-20220208-02">問題 (2) の (i) のつづき、ノート 2022/2/8 の２</h3>
+  <center>
+    <a href="note-20.jpg"><!-- 818x1048 -->
+      <img src="note-20_thumb.jpg" width="468" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>つまり、三角関数の半角の公式が分かれば、
+      \(\beta\) の三角関数から求まりそう。
+      <ul>
+	<li>だけど、残念ながら「半角の公式」（倍角の公式）みたいなの、
+	  忘れてしまっている……</li>
+      </ul>
+    </li>
+    <li>ってことで、このノートでは、まず公式の導出をしてる。
+      <ul>
+	<li>使ってるのは「加法定理」<br />
+	  （これくらいしか覚えてない）
+	  \[
+	  \begin{eqnarray}
+	  \sin\left(\alpha + \beta\right)
+	  =
+	  \sin\alpha \cos\beta + \cos\alpha \sin\beta\\
+	  \cos\left(\alpha + \beta\right)
+	  =
+	  \cos\alpha \cos\beta - \sin\alpha \sin\beta
+	  \end{eqnarray}
+	  \]
+	  たしか、こうだったよね。
+	</li>
+	<li>ここで \(\alpha = \beta = \theta\) とか置けば、
+	  \[
+	  \begin{eqnarray}
+	  \sin\left(2\theta\right)
+	  &=&
+	  2\sin\theta \cos\theta\\
+	  \cos\left(2\theta\right)
+	  &=&
+	  \cos^2\theta - \sin^2\theta
+	  =
+	  1 - 2\sin^2\theta
+	  \end{eqnarray}
+	  \]
+	</li>
+	<li>なので \(\theta = \beta/2\) とすると、
+	  \[
+	  \cos\beta
+	  =
+	  1 - 2\sin^2\frac{\beta}{2}
+	  \]
+	  となり、最終的に、
+	  \[
+	  \sin\frac{\beta}{2}
+	  =
+	  \sqrt{\frac{1 - \cos\beta}{2}}
+	  \]
+	  を得る。めでたし、めでたし。
+	</li>
+      </ul>
+    </li>
+    <li>なので、先の結果を代入して、
+      \[
+      \sin\angle\rm{ABC}
+      = \sin\frac{\beta}{2}
+      =
+      \sqrt{\frac{1}{2}\left(1-\frac{1}{9}\right)}
+      =
+      \frac{2}{3}
+      \]
+      と求まった！
+    </li>
+    <li>従って、ここから \(\rm{AD}\) も求まって、
+      \[
+      \rm{AD}
+      =
+      5\sin\angle\rm{ABC}
+      =
+      \frac{10}{3}
+      \]
+    </li>
+    <li>で、こうやって求めた結果が、
+      前に「間違ってた！」と思った結果と、おんなじだった、と。
+    </li>
+  </ul><!-- 問題 (2) の (i) のつづき、ノート 2022/2/8 の２ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-20220209-01">問題 (2) の (ii) に進む、ノート 2022/2/9 の１</h3>
+  <center>
+    <a href="note-21.jpg"><!-- 813x1156 -->
+      <img src="note-21_thumb.jpg" width="422" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>（ここで、また日付が変わってますな。）</li>
+
+    <li>(ii) の問題に進む。</li>
+    <li>\(\rm{AB}\) の範囲のはなし、これで何度目かな？<br />
+      きちんと
+      \[
+      \rm{AC} = -2\rm{AB} + 14
+      \]
+      をグラフにして、\(\rm{AB}\) も \(\rm{AC}\) も
+      ０以上、６以下（円周上の２点なので）であることから、
+      \[
+      4\le\rm{AB}\le 6
+      \]
+      ですね。
+    </li>
+    <li>次の問い、つまり \(\rm{AD}\) を \(\rm{AB}\) の２次式で書くはなし、<br />
+      (i) で \(\rm{AD}\) を求めたように、
+      \[
+      \sin\frac{\beta}{2} = \frac{\rm{AD}}{\rm{AB}}
+      \]
+      なので
+      \[
+      \rm{AD} = \rm{AB} \sin\frac{\beta}{2}
+      \]
+      となる。つまり、
+      \(\sin\frac{\beta}{2}\) を
+      \(\rm{AB}\)のみでかければよい、<br />
+      あるいは（ \(\rm{AB}\) と \(\rm{AC}\) は互いに書けるので）
+      \(\rm{AC}\) のみで書けてもよい。
+    </li>
+    <li>今注目してるのは角度 \(\beta = \angle\rm{ABC}\) なので、<br />
+      辺 \(\rm{AC}\) に着目して、角度と辺の長さについてみてみよう。<br />
+      ちょうど \(\rm{AC}\) が x 軸に直行するように配置すると、<br />
+      \(\frac{\beta}{2}\) が直角三角形の角度として出てくるので、
+      \[
+      \frac{\rm{AC}}{2}
+      =
+      3\sin\frac{\beta}{2}
+      \]
+      から、
+      \[
+      \sin\frac{\beta}{2}
+      =
+      \frac{\rm{AC}}{6}
+      \]
+      と、\(\rm{AC}\) だけで書けた。
+    </li>
+    <li>従って \(\rm{AD}\) は
+      \[
+      \begin{eqnarray}
+      \rm{AD} &=&
+      \rm{AB}\ \frac{\rm{AC}}{6}\\
+      &=&
+      \frac{1}{6}\rm{AB}\left(-2\rm{AB} + 14\right)\\
+      &=&
+      \frac{-1}{3}\rm{AB}^2
+      +
+      \frac{7}{3}
+      \rm{AB}
+      \end{eqnarray}
+      \]
+      できた！
+    </li>
+  </ul><!-- 問題 (2) の (ii) に進む、ノート 2022/2/9 の１ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-20220209-02">問題 (2) の (ii) のつづき、ノート 2022/2/9 の２</h3>
+  <center>
+    <a href="note-22.jpg"><!-- 763x1038 -->
+      <img src="note-22_thumb.jpg" width="441" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>問題 (ii) は、まだ続きがあって、<br />
+      \(\rm{AD}\) の最大値と、<br />
+      その時の三角形 \(\rm{ABC}\) の面積を求めろ、と。
+    </li>
+    <li>\(\rm{AD}\) は \(\rm{AB}\) の２次式になっている。
+      \[
+      \rm{AD} = \frac{\rm{AB}}{3}
+      \left(7 - \rm{AB}\right)
+      \]
+      つまり \(\rm{AB} = 0, 7\) で \(\rm{AD} = 0\) となる
+      上に凸な２次関数。
+    </li>
+    <li>よっしゃ、では \(\rm{AB} = 7/2\) で \(\rm{AD}\) は最大値を取るので、
+      計算すると
+      \[
+      \rm{AD}\left(\rm{AB} = \frac{7}{2}\right)
+      =
+      \frac{1}{3}
+      \frac{7}{2}
+      \left(7-\frac{7}{2}\right)
+      =
+      \frac{7\cdot 7}{3\cdot 4}
+      \]
+      って、あれ、マークシートみると整数じゃん？
+    </li>
+    <li>で、よく考えると、 \(\rm{AB}\) の範囲が
+      \(4\le\rm{AB}\le 6\) でした。<br />
+      つまり \(7/2 = 3.5 \lt 4\) でしたね。<br />
+      \(\rm{AB} = 4\) は頂点より右にあるので、その範囲で単調減少、<br />
+      ということで、 \(\rm{AD}\) は \(\rm{AB} = 4\) で最大値を取る。
+      \[
+      \rm{AD}_\rm{max}
+      =
+      \frac{4}{3}\left(7 - 4\right)
+      = 4
+      \]
+      が、答え。
+    </li>
+    <li>この時の \(\rm{ABC}\) の面積を求める。</li>
+    <li>\(\rm{AB} = 4\) から、
+      \[
+      \rm{AC} = 14 - 8 = 6
+      \]
+      ふむ、なるほど、６というのは円の直径！（つまり最大値）ですね。<br />
+      つまり、これは \(\angle\rm{ABC} = 90^\circ\) 直角！です。<br />
+      なので \(\rm{BC}\) も求まって、
+      \[
+      \rm{BC}
+      =
+      \sqrt{6^2 - 4^2}
+      =
+      2\sqrt{5}
+      \]
+      なので、簡単に
+      \[
+      \triangle\rm{ABC}
+      =
+      \frac{1}{2}
+      \rm{BC}\times\rm{AB}
+      =
+      4\sqrt{5}
+      \]
+    </li>
+    <li>以上、 (ii) 終わった！</li>
+    <li>ってことで、問題 (2) 完了！！</li>
+  </ul><!-- 問題 (2) の (ii) のつづき、ノート 2022/2/9 の２ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-1-20220209-03">問題 (1) に戻る、ノート 2022/2/9 の３</h3>
+  <center>
+    <a href="note-23.jpg"><!-- 805x974 -->
+      <img src="note-23_thumb.jpg" width="496" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>ということで、問題 (1) の残ってる問題に戻る。</li>
+
+    <li>ノート上部は、既に解けてる sin のまとめ。</li>
+    <li>ノート右は、さっき見つけた中心からの角度 \(\theta\) を媒介変数として
+      辺の長さを書く式のまとめ。</li>
+    <li>ノート左が、本題。<br />
+      中心からの成す角として
+      \(\angle\rm{AOC} = \beta', \angle\rm{BOC} = \alpha'\)
+      を導入すると、
+      \[
+      \begin{eqnarray}
+      \rm{AC} = l\sqrt{1-\cos\beta'}\\
+      \rm{BC} = l\sqrt{1-\cos\alpha'}
+      \end{eqnarray}
+      \]
+      なので、
+      \[
+      \begin{eqnarray}
+      \rm{AC}:\rm{BC}
+      &=&
+      \sqrt{1-\cos\beta'} : \sqrt{1-\cos\alpha'}\\
+      &=&
+      \sqrt{3} : 2
+      \end{eqnarray}
+      \]
+      ２乗しても成立するので、
+      \[
+      \begin{eqnarray}
+      1-\cos\beta' : 1-\cos\alpha'
+      &=&
+      1-\cos 2\beta : 1-\cos 2\alpha\\
+      &=&
+      3 : 4
+      \end{eqnarray}
+      \]
+    </li>
+    <li>うーむ、だから、どうした？</li>
+    <li>この日（2022/2/9）は、ここまでのようだ。</li>
+  </ul><!-- 問題 (1) に戻る、ノート 2022/2/9 の３ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="math-q2-again-2-ii-20220210">問題 (1) に戻る、ノート 2022/2/10 の１と２</h3>
+  <center>
+    <a href="note-24.jpg"><!-- 816x1143 -->
+      <img src="note-24_thumb.jpg" width="428" height="600" style="border: 2px #ccc solid;" /></a>
+    <a href="note-25.jpg"><!-- 774x1143 -->
+      <img src="note-25_thumb.jpg" width="406" height="600" style="border: 2px #ccc solid;" /></a>
+  </center>
+  <ul>
+    <li>気分を改め、最後に残っている問題 (1) の残りの問題、<br />
+      つまり \(\rm{AB}\) と \(\rm{AC}\) の長さを求める問題に挑む。
+    </li>
+    <li>作図を、改めて行う。今回のポイントは、
+      <ul>
+	<li>中心からの角度を明確に意識して、</li>
+	<li>中心から各辺に垂線を下ろして、</li>
+	<li>すると中心からの角が二等分される、</li>
+	<li>つまりその角度は円周上の点からの成す角に直接、対応していること、</li>
+      </ul>
+      かな。
+      <ul>
+	<li>注：
+	  \(\rm{AC}\) を x 軸に垂直に取っているように見えるのは、
+	  そうではない。<br />
+	  つまり \(\rm{CO}\) のラインと、中心 \(\rm{O}\) から
+	  辺 \(\rm{AC}\) に下ろした垂線は、<br />
+	  （たまたま同一の直線に乗っているように見えるけど）
+	  そうではない。
+	</li>
+      </ul>
+    </li><!-- 作図を、改めて行う。今回のポイントは、 -->
+    <li>右上には、自明なことを導出してるな。
+      <ul>
+	<li>中心 \(\rm{O}\) 周りの角について、
+	  \[
+	  2\alpha + 2\beta + 2\gamma = 360^\circ
+	  \]
+	  なので、
+	  \[
+	  \alpha + \beta + \gamma = 180^\circ
+	  \]
+	  となるが、<br />
+	  この３つの角度 \(\alpha, \beta, \gamma\) は
+	  三角形 \(\rm{ABC}\) の角度なので、その和
+	  （三角形の内角の和）は１８０度ですね、と。<br />
+	  たしかにそうですね。
+	</li>
+	<li>その下、\(\angle\rm{CBA} = \beta\) を
+	  \[
+	  x = \angle\rm{ABO}\\
+	  y = \angle\rm{ABO}
+	  \]
+	  に分けると、<br />
+	  この \(x\) と \(y\) を含む２つの直角三角形に対して、
+	  その内角の和から、
+	  \[
+	  \gamma + 90^\circ + x = 180^\circ\\
+	  \alpha + 90^\circ + y = 180^\circ
+	  \]
+	  この式と \(x + y = \beta\) を使って、
+	  \[
+	  \beta = 180 -\alpha - \beta
+	  \]
+	  あれれ、トートロジーか……
+	</li>
+      </ul>
+    </li><!-- 右上には、自明なことを導出してるな。 -->
+    <li>気を取り直して、<br />
+      直角三角形が出てるので、 sin や cos は辺の長さで全部計算できるね。
+      \[
+      \begin{eqnarray}
+      \frac{\rm{BC}}{2} &=& 3\sin\alpha\\
+      \frac{\rm{AB}}{2} &=& 3\sin\gamma\\
+      \frac{\rm{AC}}{2} &=& 3\sin\beta
+      \end{eqnarray}
+      \]
+      ほぉ、ならば、今与えられてる条件にぶち込んでみると、
+      \[
+      \frac{\rm{AC}}{\rm{BC}}
+      =
+      \frac{\sqrt{3}}{2}
+      =
+      \frac{\sin\beta}{\sin\alpha}
+      \]
+    </li>
+    <li>そう言えば、今 \(\sin\gamma\) と \(\cos\gamma\) は既知だった。<br />
+      なので、おぉ、まず \(\rm{AB}\) の長さが求まるね。
+      \[
+      \rm{AB} = 6\sin\gamma = 6\frac{\sqrt{6}}{3} = 2\sqrt{6}
+      \]
+    </li>
+    <li>最後の \(\rm{AC}\) は、結局 \(\sin\beta\) が分かればよい、
+      ということだ。<br />
+      ここに、さっき得られた条件
+      \(\frac{\sin\beta}{\sin\alpha} = \frac{\sqrt{3}}{2}\)
+      を使いなさいね、ということだ。
+    </li>
+    <li>方針： \(\alpha\) を消そう！<br />
+      使えそうなのは、トートロジーやってた、三角形の内角の和だろうな。
+      \[
+      \alpha = 180^\circ - \beta - \gamma
+      \]
+      ってことで、あれだ、三角関数の公式の
+      \(\sin\left(180^\circ - x\right)\) を \(\sin x\)
+      で書くやつを使えばいいのかな。<br />
+      これは、単純に
+      \[
+      \sin\left(180^\circ - x\right) = \sin x
+      \]
+      で、いいのかな？
+    </li>
+    <li>すると、内角の和の関係から、
+      \[
+      \begin{eqnarray}
+      \sin\alpha &=& \sin\left(\beta + \gamma\right)\\
+      &=&
+      \sin\beta\cos\gamma + \cos\beta\sin\gamma
+      \end{eqnarray}
+      \]
+      で、 \(\sin\gamma, \cos\gamma\) の結果を使うと、
+      \[
+      \sin\alpha = \frac{\sqrt{3}}{3}\sin\beta
+      + \frac{\sqrt{6}}{3}\cos\beta
+      \]
+      なので、２辺 \(\rm{AC}\) と \(\rm{BC}\) の比の関係から、
+      \[
+      \sin\beta
+      =
+      \frac{\sqrt{3}}{2}
+      \sin\alpha
+      =
+      \frac{\sqrt{3}}{2}
+      \left(
+      \frac{\sqrt{3}}{3}\sin\beta
+      +
+      \frac{\sqrt{6}}{3}\cos\beta
+      \right)
+      \]
+    </li>
+    <li>簡単のために、以下のように置く。
+      \[
+      \begin{eqnarray}
+      \sin\beta = X\\
+      \cos\beta = Y
+      \end{eqnarray}
+      \]
+      すると、最後の得られた式は、
+      \[
+      X
+      =
+      \frac{\sqrt{3}}{2}
+      \frac{\sqrt{3}}{3}
+      X
+      +
+      \frac{\sqrt{3}}{2}
+      \frac{\sqrt{6}}{3}
+      Y
+      \]
+      と書けて、整理すると、
+      \[
+      X = \sqrt{2}Y
+      \]
+      となる。三角関数なので \(X^2 + Y^2 = 1\) なので、
+      \[
+      X^2 = 2Y^2 = 2\left(1-X^2\right)
+      \]
+      となり、最終的に解けて、
+      \[
+      \begin{eqnarray}
+      X^2 = \frac{2}{3}\\
+      Y^2 = \frac{1}{3}
+      \end{eqnarray}
+      \]
+      辺の長さを議論してるので、複号は正をとればいいでしょう、ということで、
+      \[
+      \sin\beta = \sqrt{\frac{2}{3}}
+      \]
+      を使って、答えは、
+      \[
+      \rm{AC} = 6\sin\beta = 2\sqrt{6}
+      \]
+    </li>
+    <li>あれれ、これ、二等辺三角形ってことか！</li>
+
+    <li>以下、蛇足。</li>
+    <li>これらの結果から、 \(\sin\alpha\) も求まり、
+      結果 \(\rm{BC}\) も計算できるので、しておこう。
+      \[
+      \sin\alpha
+      =
+      \frac{\sqrt{3}}{3}
+      \sin\beta
+      +
+      \frac{\sqrt{6}}{3}
+      \cos\beta
+      =
+      \frac{\sqrt{3}}{3}
+      \sqrt{\frac{2}{3}}
+      +
+      \frac{\sqrt{6}}{3}
+      \sqrt{\frac{1}{3}}
+      =
+      \frac{2\sqrt{2}}{3}
+      \]
+      なので、
+      \[
+      \rm{BC}
+      =
+      6\sin\alpha
+      =
+      4\sqrt{2}
+      \]
+      となる。
+    </li>
+    <li>念のため、検算。<br />
+      このとき、
+      \[
+      \rm{AC} : \rm{BC}
+      =
+      2\sqrt{6} : 4\sqrt{2}
+      =
+      \sqrt{3} : 2
+      \]
+      と、おぉ、ちゃんと条件を回復したね。
+    </li>
+  </ul><!-- 問題 (1) に戻る、ノート 2022/2/10 の１と２ -->
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="kaggle">
+    <div style="font-size: 50px; font-weight: bolder;">
+      第１部
+      <br />
+      久しぶりに Kaggle に挑戦
+    </div>
+  </center>
+
+  <ul>
+    <li>久しぶりに Kaggle のサイトを徘徊していました
+      <ul>
+	<li>シンプルな画像コンペって、最近、ないのかなぁ、と</li>
+	<li>画像コンペは、 EDA で画像を眺めてて、面白いので</li>
+      </ul>
+    </li>
+    <li>そしたら、いくつか、なつかしい感じのコンペがあったので、紹介します</li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+
+  <center id="kaggle-herbarium">
+    <div style="font-size: 50px; font-weight: bolder;">
+      めざせ植物博士！
+      <br />
+      Herbarium コンペ
+    </div>
+  </center>
+
+  <ul>
+    <li><a href="https://www.kaggle.com/c/herbarium-2022-fgvc9">Herbarium 2022 - FGVC9</a>
+      <center>
+	<a href="https://www.kaggle.com/c/herbarium-2022-fgvc9">
+	  <img src="Screen Shot 2022-02-23 at 11.34.49_thumb.jpg" width="800" height="185" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 11.34.58.png"><!-- 1939x1043 -->
+	  <img src="Screen Shot 2022-02-23 at 11.34.58_thumb.jpg" width="800" height="430" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 11.35.20.png"><!-- 1941x394 -->
+	  <img src="Screen Shot 2022-02-23 at 11.35.20_thumb.jpg" width="800" height="162" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 11.42.30.png"><!-- 1925x606 -->
+	  <img src="Screen Shot 2022-02-23 at 11.42.30_thumb.jpg" width="800" height="252" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>これも、２年前に同じようなコンペありましたね</li>
+      </ul>
+    </li>
+
+    <li><a href="https://www.kaggle.com/c/herbarium-2020-fgvc7">Herbarium 2020 - FGVC7</a>
+      <center>
+	<a href="https://www.kaggle.com/c/herbarium-2020-fgvc7">
+	  <img src="Screen Shot 2022-02-23 at 11.35.48_thumb.jpg" width="800" height="186" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>生物の分類学、みなさん知ってますか？
+      <ul>
+	<li>「界 - 門 - 綱 - 目 - 科 - 属 - 種」ってやつ
+	  <center>
+	    <a href="https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3_(%E5%88%86%E9%A1%9E%E5%AD%A6)">
+	      <img src="Screen Shot 2022-02-23 at 12.28.44_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+	  </center>	      
+	</li>
+	<li>このコンペは「<a href="https://ja.wikipedia.org/wiki/%E6%A4%8D%E7%89%A9">植物</a> 界」の中の「<a href="https://ja.wikipedia.org/wiki/%E7%B6%AD%E7%AE%A1%E6%9D%9F%E6%A4%8D%E7%89%A9">維管束植物</a>」に含まれる４つの門がターゲット
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 12.24.44.png"><!-- 2316x707 -->
+	      <img src="Screen Shot 2022-02-23 at 12.24.44_thumb.jpg" width="800" height="244" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  <ul>
+	    <li>"lycophytes" Lycophyte
+	      <a href="https://ja.wikipedia.org/wiki/%E5%B0%8F%E8%91%89%E6%A4%8D%E7%89%A9">ヒカゲノカズラ植物門</a>
+	    </li>
+	    <li>"ferns" Fern
+	      <a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%80%E9%A1%9E">シダ綱</a>
+	    </li>
+	    <li>"gymnosperms" Gymnosperm
+	      <a href="https://ja.wikipedia.org/wiki/%E8%A3%B8%E5%AD%90%E6%A4%8D%E7%89%A9">裸子植物</a>
+	    </li>
+	    <li>"flowering plants" Flowering plant
+	      <a href="https://ja.wikipedia.org/wiki/%E8%A2%AB%E5%AD%90%E6%A4%8D%E7%89%A9">被子植物</a>
+	    </li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li><!-- 生物の分類学、みなさん知ってますか？ -->
+
+    <li>コンペはこの
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  植物の 32,094 種
+	</div>
+      </center>
+      の分類をしましょう！というもの
+    </li>
+
+
+    <li>１位の解答： <a href="https://www.kaggle.com/c/herbarium-2020-fgvc7/discussion/154351">NguyenThanhNhan: 1st place solution</a>
+      <center>
+	<a href="Screen Shot 2022-02-23 at 12.57.19.png"><!-- 1930x839 -->
+	  <img src="Screen Shot 2022-02-23 at 12.57.19_thumb.jpg" width="800" height="348" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 12.57.27.png"><!-- 1946x914 -->
+	  <img src="Screen Shot 2022-02-23 at 12.57.27_thumb.jpg" width="800" height="376" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+
+  <center id="kaggle-happy-whale-and-dolphin">
+    <div style="font-size: 50px; font-weight: bolder;">
+      くじら🐳イルカ🐬コンペ
+    </div>
+  </center>
+
+  <ul>
+    <li>くじら🐳イルカ🐬コンペ<br />
+      <a href="https://www.kaggle.com/c/happy-whale-and-dolphin/">Happywhale - Whale and Dolphin Identification</a>
+	<center>
+	<a href="https://www.kaggle.com/c/happy-whale-and-dolphin/">
+	  <img src="Screen Shot 2022-02-23 at 11.29.14_thumb.jpg" width="800" height="186" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 11.42.13.png"><!-- 1932x385 -->
+	  <img src="Screen Shot 2022-02-23 at 11.42.13_thumb.jpg" width="800" height="159" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-23 at 11.31.27.png"><!-- 1937x609 -->
+	  <img src="Screen Shot 2022-02-23 at 11.31.27_thumb.jpg" width="800" height="252" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>とは言っても、現在開催中のコンペについて、
+	  YouTube でワーワーいうのも、いろいろと問題だろうから、
+	</li>
+	<li>今日は３年前のくじら🐳コンペを題材にしゃべります</li>
+      </ul>
+    </li><!-- くじらとイルカ -->
+
+    <li><a href="https://www.kaggle.com/c/humpback-whale-identification/">Humpback Whale Identification</a>
+      <center>
+	<a href="https://www.kaggle.com/c/humpback-whale-identification/">
+	  <img src="Screen Shot 2022-02-23 at 10.32.13_thumb.jpg" width="800" height="184" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>実は、このコンペ、かつて ZENKEI AI FORUM で古川さんが発表してくれましたね
+	  (2020/12/23)
+	  <center>
+	    <table border="0">
+	      <tr>
+		<td valign="top">
+		  ビデオ ZAF-2012
+		</td>
+		<td valign="top">
+		  ポッドキャスト S12E02
+		</td>
+	      </tr>
+	      <tr>
+		<td valign="top">
+		  <a href="https://youtu.be/_NLUEZO1B8Q">
+		    <img src="Screen Shot 2022-02-23 at 11.06.30_thumb.jpg" width="400" height="254" style="border: 2px #ccc solid;" /></a>
+		</td>
+		<td valign="top">
+		  <a href="https://zenkei.seesaa.net/article/483492283.html">
+		    <img src="Screen Shot 2022-02-23 at 11.18.29_thumb.jpg" width="400" height="194" style="border: 2px #ccc solid;" /></a>
+		</td>
+	      </tr>
+	    </table>
+	  </center>
+	</li>
+	<li>１位の解答： <a href="https://www.kaggle.com/c/humpback-whale-identification/discussion/82366">earhian: 1st solution(classification) && code</a>
+	  <ul>
+	    <li>github: <a href="https://github.com/earhian/Humpback-Whale-Identification-1st-">earhian/Humpback-Whale-Identification-1st-</a>
+	      <center>
+		<table border="0">
+		  <tr>
+		    <td valign="top">
+		      <a href="Screen Shot 2022-02-23 at 11.09.05.png"><!-- 1938x807 -->
+			<img src="Screen Shot 2022-02-23 at 11.09.05_thumb.jpg" width="400" height="167" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		    <td valign="top">
+		      <a href="Screen Shot 2022-02-23 at 11.09.11.png"><!-- 1932x829 -->
+			<img src="Screen Shot 2022-02-23 at 11.09.11_thumb.jpg" width="400" height="172" style="border: 2px #ccc solid;" /></a>
+		    </td>
+		  </tr>
+		</table>
+	      </center>
+	    </li>
+	  </ul>
+	</li><!-- １位の解答： earhian: 1st solution(classification) && code -->
+
+	<li>２位の解答： <a href="https://www.kaggle.com/c/humpback-whale-identification/discussion/83885">SeuTao: 2nd place code, end to end whale Identification model</a>
+	  <ul>
+	    <li>github: <a href="https://github.com/SeuTao/Humpback-Whale-Identification-Challenge-2019_2nd_palce_solution">SeuTao/Humpback-Whale-Identification-Challenge-2019_2nd_palce_solution</a>
+	      <center>
+		<a href="Screen Shot 2022-02-23 at 11.12.26.png"><!-- 1926x1040 -->
+		  <img src="Screen Shot 2022-02-23 at 11.12.26_thumb.jpg" width="800" height="432" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li><!-- ２位の解答： SeuTao: 2nd place code... -->
+
+	<li>３位の解答： <a href="https://www.kaggle.com/c/humpback-whale-identification/discussion/82484">pudae: 3rd place solution with code: ArcFace</a>
+	  <ul>
+	    <li>github: <a href="https://github.com/pudae/kaggle-humpback">pudae/kaggle-humpback</a>
+	      <center>
+		<a href="Screen Shot 2022-02-23 at 11.12.37.png"><!-- 1923x1021 -->
+		  <img src="Screen Shot 2022-02-23 at 11.12.37_thumb.jpg" width="800" height="425" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li><!-- ３位の解答： pudae: 3rd place solution with code: ArcFace -->
+
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="arcface">
+    <div style="font-size: 50px; font-weight: bolder;">
+      第２部
+      <br />
+      ArcFace - 難しい画像分類への応用として
+    </div>
+  </center>
+
+  <ul>
+    <li>最近のこれらの（巨大クラスの）画像分類タスクって、
+      みんな、どうやって解いてるんだろう？
+    </li>
+
+    <li>すると、どうも最近は
+      <center>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  ArcFace
+	</div>
+      </center>
+      というものがあるらしいことが分かった
+      <ul>
+	<li>というのは、古川さんもすでに ZAF-2012 で言及してますね<br />
+	  （そのときは、きちんと理解できなかった……）
+	</li>
+	<li>そもそも「画像分類」と「距離学習」の関係が、良く分からなかった</li>
+      </ul>
+    </li>
+
+    <li>Kaggler の Discussions
+      <ul>
+	<li>Herbarium 2020 の <a href="https://www.kaggle.com/c/herbarium-2020-fgvc7/discussion/154351">１位の解答</a>
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 12.57.27.png"><!-- 1946x914 -->
+	      <img src="Screen Shot 2022-02-23 at 12.57.27_thumb.jpg" width="800" height="376" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>Humpback Whale コンペの <a href="https://www.kaggle.com/c/humpback-whale-identification/discussion/83885">２位の解答</a>
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.06.14.png"><!-- 1848x945 -->
+	      <img src="Screen Shot 2022-02-23 at 13.06.14_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>Humpback Whale コンペの <a href="https://www.kaggle.com/c/humpback-whale-identification/discussion/83885">３位の解答</a>
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.09.11.png"><!-- 1940x454 -->
+	      <img src="Screen Shot 2022-02-23 at 13.09.11_thumb.jpg" width="800" height="187" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+      </ul>
+    </li><!-- Kaggler の Discussions -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="arcface-article">
+    <div style="font-size: 50px; font-weight: bolder;">
+      論文
+    </div>
+    <div style="font-size: 40px; font-weight: bolder;">
+      "ArcFace: Additive Angular Margin Loss for Deep Face Recognition"
+    </div>
+  </center>
+
+  <ul>
+    <li>arxiv: <a href="https://arxiv.org/abs/1801.07698">1801.07698</a>
+      <center>
+	<a href="https://arxiv.org/abs/1801.07698">
+	  <img src="Screen Shot 2022-02-23 at 13.16.32_thumb.jpg" width="800" height="405" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>PDF (<a href="arxiv-1801.07698-arcface.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.13.10.png"><!-- 1859x941 -->
+	      <img src="Screen Shot 2022-02-23 at 13.13.10_thumb.jpg" width="800" height="405" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li>普通の画像分類 CNN の終段に対する手法
+	  <ul>
+	    <li>Feature から Logit にする間に、あれこれする
+	      <center>
+		<a href="Screen Shot 2022-02-23 at 13.13.20.png"><!-- 1862x986 -->
+		  <img src="Screen Shot 2022-02-23 at 13.13.20_thumb.jpg" width="800" height="424" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	    <li>Logit に softmax をかますことで、予測を得る</li>
+	    <li>「ArcFace loss」と呼ばれるが、<br />
+	      モデル最終段のレイヤーとして導入されていて、<br />
+	      Logit と正解から計算する loss は普通の
+	      Cross-entropy Loss を使う</li>
+	    <li>注意点：この「最終レイヤー」は正解に依存する</li>
+
+	    <li>普通の Cross-entropy Loss による分類との比較
+	      <center>
+		<a href="Screen Shot 2022-02-23 at 13.13.36.png"><!-- 1864x674 -->
+		  <img src="Screen Shot 2022-02-23 at 13.13.36_thumb.jpg" width="800" height="289" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li><!-- （論文） arxiv: 1801.07698 -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="arcface-qiita">
+    <div style="font-size: 50px; font-weight: bolder;">
+      困ったときの Qiita
+    </div>
+    <div style="font-size: 40px; font-weight: bolder;">
+      モダンな深層距離学習手法 (@yu4u)
+    </div>
+  </center>
+
+  <ul>
+    <li>困ったときの Qiita
+      <ul>
+	<li>というか、古川さん（ZAF-2012）で言及されているページ
+	  <center>
+	    <a href="https://youtu.be/_NLUEZO1B8Q?t=785">
+	      <img src="Screen Shot 2022-02-23 at 14.44.13_thumb.jpg" width="800" height="499" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>Qiita: <a href="https://qiita.com/yu4u/items/078054dfb5592cbb80cc">モダンな深層距離学習 (deep metric learning) 手法: SphereFace, CosFace, ArcFace (@yu4u posted at 2019-03-06)</a>
+	  <center>
+	    <a href="https://qiita.com/yu4u/items/078054dfb5592cbb80cc">
+	      <img src="Screen Shot 2022-02-23 at 13.37.43_thumb.jpg" width="800" height="490" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li>引用
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.43.36.png"><!-- 1712x752 -->
+	      <img src="Screen Shot 2022-02-23 at 13.43.36_thumb.jpg" width="800" height="351" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li>実装
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.45.44.png"><!-- 1703x570 -->
+	      <img src="Screen Shot 2022-02-23 at 13.45.44_thumb.jpg" width="800" height="268" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+      </ul>
+    </li><!-- 困ったときの Qiita -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="arcface-github">
+    <div style="font-size: 50px; font-weight: bolder;">
+      ArcFace の実装
+    </div>
+    <div style="font-size: 40px; font-weight: bolder;">
+      github: ronghuaiyang/arcface-pytorch
+    </div>
+  </center>
+
+  <ul>
+    <li>コード
+      <ul>
+	<li>github: <a href="https://github.com/ronghuaiyang/arcface-pytorch">ronghuaiyang/arcface-pytorch</a>
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.47.35.png"><!-- 2790x356 -->
+	      <img src="Screen Shot 2022-02-23 at 13.47.35_thumb.jpg" width="800" height="102" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-02-23 at 13.47.40.png"><!-- 2787x1162 -->
+	      <img src="Screen Shot 2022-02-23 at 13.47.40_thumb.jpg" width="800" height="334" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>実際に使うのは <a href="https://github.com/ronghuaiyang/arcface-pytorch/blob/master/models/metrics.py">models/metrics.py</a> に含まれる ArcMarginProduct レイヤー
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 13.50.35.png"><!-- 1992x1422 -->
+	      <img src="Screen Shot 2022-02-23 at 13.50.35_thumb.jpg" width="800" height="571" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>このレイヤーは（上でコメントした通り）
+	  入力テンソルの他にラベル（正解）も与える必要がある
+	  <ul>
+	    <li>margin を計算するのに必要
+	  </ul>
+	</li>
+	<li>training loop に手を入れないといけない（面倒くさいね）</li>
+	<li>あt、 inference 時（validation 時も）
+	  ラベルを与えないときの出力は、これ、単純に cosine を返して、いいのかな？
+	</li>
+
+	<li>（ここまできて、改めて Kaggle の Discussion や Code を眺めてみると、<br />
+	  ArcFace 使ってる人のコードは、ほとんどこのコードのコピーですね）</li>
+
+      </ul>
+    </li><!-- コード -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="arcface-gorojima">
+    <div style="font-size: 50px; font-weight: bolder;">
+      使ってみた（その１）
+      <br />
+      五郎島の８階級分類問題
+    </div>
+  </center>
+
+  <ul>
+    <li>いつものように、五郎島の８階級分類問題
+      <ul>
+	<li>ArcMarginProduct レイヤーの定義
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.02.11.png"><!-- 2806x1225 -->
+	      <img src="Screen Shot 2022-02-23 at 14.02.11_thumb.jpg" width="800" height="349" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-02-23 at 14.03.08.png"><!-- 2292x862 -->
+	      <img src="Screen Shot 2022-02-23 at 14.03.08_thumb.jpg" width="800" height="301" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>ResNet18 に導入
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.03.29.png"><!-- 2336x1035 -->
+	      <img src="Screen Shot 2022-02-23 at 14.03.29_thumb.jpg" width="800" height="354" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-02-23 at 14.04.18.png"><!-- 2306x763 -->
+	      <img src="Screen Shot 2022-02-23 at 14.04.18_thumb.jpg" width="800" height="265" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>training loop を修正
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.07.16.png"><!-- 2315x876 -->
+	      <img src="Screen Shot 2022-02-23 at 14.07.16_thumb.jpg" width="800" height="303" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-02-23 at 14.04.26.png"><!-- 2310x599 -->
+	      <img src="Screen Shot 2022-02-23 at 14.04.26_thumb.jpg" width="800" height="207" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>lr finder
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.04.37.png"><!-- 2325x1182 -->
+	      <img src="Screen Shot 2022-02-23 at 14.04.37_thumb.jpg" width="800" height="407" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>20 epochs まわした結果
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.04.47.png"><!-- 2320x1193 -->
+	      <img src="Screen Shot 2022-02-23 at 14.04.47_thumb.jpg" width="800" height="411" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="arcface-whale">
+    <div style="font-size: 50px; font-weight: bolder;">
+      使ってみた（その２）
+      <br />
+      くじら🐳（イルカ🐬）コンペ
+    </div>
+  </center>
+
+  <ul>
+    <li>（雑談）くじら🐳イルカ🐬コンペに使ってみた
+      <ul>
+	<li>結果
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.14.30.png"><!-- 2810x1425 -->
+	      <img src="Screen Shot 2022-02-23 at 14.14.30_thumb.jpg" width="800" height="406" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>validation のスコアが０のまま……</li>
+	<li>ちなみに ArcFace なしで、普通に画像分類した結果は、これくらい
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.15.11.png"><!-- 2810x1418 -->
+	      <img src="Screen Shot 2022-02-23 at 14.15.11_thumb.jpg" width="800" height="404" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li>なにか ArcFace （の使い方）が、根本的に間違ってる？</li>
+
+      </ul>
+    </li><!-- くじら🐳イルカ🐬コンペに使ってみた -->
+
+    <li>確認のため（既に終わってる）くじら🐳コンペの３位の解答を、
+      手元で計算してみる
+      <ul>
+	<li>github からクローンして、
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.20.32.png"><!-- 2810x1376 -->
+	      <img src="Screen Shot 2022-02-23 at 14.20.32_thumb.jpg" width="800" height="392" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>学習プログラム train.py を Jupyter Notebook にコピペして、実行してみる
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.21.25.png"><!-- 2206x1195 -->
+	      <img src="Screen Shot 2022-02-23 at 14.21.25_thumb.jpg" width="800" height="433" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  <ul>
+	    <li>scipy の imread が古いと怒られたり（imageio を代わりに使う）</li>
+	    <li>メモリーが足りないと怒られて、バッチサイズを 32 から 16 に下げたり</li>
+	  </ul>
+	</li>
+	<li>すると、学習の最初は、やはり training score は０とかから出発みたい
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.21.34.png"><!-- 2209x1136 -->
+	      <img src="Screen Shot 2022-02-23 at 14.21.34_thumb.jpg" width="800" height="411" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>途中経過だが、その後、
+	  dev/score が 94.8% で train/score が 36.5% くらいまできた
+	  <center>
+	    <a href="Screen Shot 2022-02-23 at 14.21.42.png"><!-- 2208x1130 -->
+	      <img src="Screen Shot 2022-02-23 at 14.21.42_thumb.jpg" width="800" height="409" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF は 2022 年３月３０日開催の予定です。
+      <ul>
+	<li>ゲスト・スピーカー１名、内定してます！</li>
+      </ul>
+    </li>
+    <li>いつもの通り、 ZAF 講演者、 ZAM 執筆者、絶賛、大募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li>前座
+      <ul>
+	<li><a href="#artist">前座の前座：アーティスト</a>
+	</li>
+	<li><a href="#techbookfest12">技術書典１２のまとめ</a>
+	  <ul>
+	    <li><a href="#techbookfest12-comments">技術書典１２の感想</a></li>
+	    <li><a href="#techbookfest12-new-prices">ZAM 季報の価格を改定！</a></li>
+	  </ul>
+	</li>
+	<li><a href="#center-shiken">2022年のセンター試験、数学 I に挑戦</a>
+	  <ul>
+	    <li><a href="#center-shiken-preface">そもそも、なぜ、センター試験？</a></li>
+	    <li><a href="#center-shiken-math">数学 I チャレンジ</a>
+	      <ul>
+		<li>第１問
+		  <a href="#math-q1-1">〔１〕</a>
+		  <a href="#math-q1-2">〔２〕</a></li>
+	        <li>第２問
+		  <a href="#math-q2-1">〔１〕</a>
+		  〔２〕
+	          <a href="#math-q2-2-1">(1)</a>
+		  <a href="#math-q2-2-2">(2)</a></li>
+	        <li>第３問
+		  <a href="#math-q3-1">〔１〕</a>
+	          （<a href="#math-rest-01">ここで一息</a>）
+	          <a href="#math-q3-2">〔２〕</a></li>
+	        <li><a href="#math-q4">第４問</a></li>
+	      </ul>
+	    </li><!-- 数学 I チャレンジ -->
+	    <li><a href="#math-rest-02">第２問〔２〕円に内接する三角形の問題、無制限一本勝負</a>
+	      <ul>
+	        <li><a href="#math-q2-again-2-i-01">問題 (2) の (i) とノート１</a></li>
+	        <li><a href="#math-q2-again-1-02">問題 (1) とノート２</a></li>
+	        <li><a href="#math-q2-again-2-ii-03">問題 (2) の (ii) とノート３</a></li>
+	        <li><a href="#math-q2-again-2-ii-04">問題 (2) の (ii) のつづき、ノート４</a></li>
+	        <li><a href="#math-q2-again-2-ii-05">問題 (2) の (ii) のつづき、ノート５</a></li>
+	        <li><a href="#math-q2-again-2-ii-06">問題 (2) の (ii) のつづき、ノート６〜（泥沼の計算地獄）</a></li>
+	        <li><a href="#math-rest-03">ここで一息、パート３</a></li>
+	        <li><a href="#math-q2-again-2-i-20220208-01">問題 (2) の (i) のつづき、ノート 2022/2/8 の１</a></li>
+	        <li><a href="#math-q2-again-2-i-20220208-02">問題 (2) の (i) のつづき、ノート 2022/2/8 の２</a></li>
+	        <li><a href="#math-q2-again-2-ii-20220209-01">問題 (2) の (ii) に進む、ノート 2022/2/9 の１</a></li>
+	        <li><a href="#math-q2-again-2-ii-20220209-02">問題 (2) の (ii) のつづき、ノート 2022/2/9 の２</a></li>
+	        <li><a href="#math-q2-again-1-20220209-03">問題 (1) に戻る、ノート 2022/2/9 の３</a></li>
+	        <li><a href="#math-q2-again-2-ii-20220210">問題 (1) に戻る、ノート 2022/2/10 の１と２</a></li>
+	      </ul>
+	    </li><!-- 第２問〔２〕円に内接する三角形の問題、無制限一本勝負 -->
+	  </ul>
+
+	</li><!-- 2022年のセンター試験、数学 I に挑戦 -->
+
+      </ul>
+    </li>
+
+    <li>第１部
+      <a href="#kaggle">久しぶりに Kaggle に挑戦</a>
+      <ul>
+	<li><a href="#kaggle-herbarium">めざせ植物博士！Herbarium コンペ</a></li>
+	<li><a href="#kaggle-happy-whale-and-dolphin">くじら🐳イルカ🐬コンペ</a></li>
+      </ul>
+    </li><!-- 第１部 -->
+
+    <li>第２部
+      <a href="#arcface">ArcFace - 難しい画像分類への応用として</a>
+      <ul>
+	<li><a href="#arcface-article">論文 "ArcFace"</a></li>
+	<li><a href="#arcface-qiita">困ったときの Qiita</a></li>
+	<li><a href="#arcface-github">ArcFace の実装</a></li>
+	<li><a href="#arcface-gorojima">使ってみた（その１）五郎島</a></li>
+	<li><a href="#arcface-whale">使ってみた（その２）くじら🐳（イルカ🐬）コンペ</a></li>
+      </ul>
+    </li><!-- 第２部 -->
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
