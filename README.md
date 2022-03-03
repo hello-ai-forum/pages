@@ -3,6 +3,8 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://zenkei-ai-forum.github.io/pages/
+* ZAF 2022/02 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202202/ichiki/)
+  * 技術書典１２まとめ / センター試験 数学 I に挑戦 / 久しぶりに Kaggle
 * ZAF 2022/01 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202201/ichiki/)
   * （脱線）「同人誌」とは？／2022年の画像分類
 * ZAF 2021/12 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202112/ichiki/)
