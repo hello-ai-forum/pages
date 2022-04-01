@@ -1,0 +1,913 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2022/03/30)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="text/javascript" id="MathJax-script" async
+	    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2022/03/30</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20220330-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20220330-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF ２０２２年３月３０日
+    </div>
+    <div style="font-size: 40px;">＜本日のテーマ＞</div>
+    <div style="font-size: 80px;">
+      久しぶりのゲストだよ！
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2>目次</h2>
+  <ul>
+    <li>[6:30 - 7:00]
+      <b>前座</b>
+      <a href="#part0">（いちき）</a>
+      <ul>
+	<li><a href="#part0-law-of-sines">振り返り - 正弦定理</a></li>
+	<li><a href="#part0-tasks">できてないことごと - ZAM と ZAP</a></li>
+	<li><a href="#part0-learning">最近の学び - ふわっとした理解にとどまらないこと</a></li>
+      </ul>
+    </li>
+
+    <li>[7:00 - 8:00]
+      <b>第１部</b>
+      <a href="#part1">最近の話題から 2022年春（いちき）</a>
+      <ul>
+	<li><a href="#part1-history">これまでの「最近の話題から」</a></li>
+	<li><a href="#part1-nerf">NeRF</a></li>
+	<li><a href="#part1-practice">実践</a></li>
+      </ul>
+    </li>
+
+    <li>[8:00 - 8:30]
+      <b>第２部</b>
+      <a href="#part2">メラノーマ疑惑のホクロをAIで診断してみた（ちゃんもりさん）</a>
+    </li>
+
+    <li>[8:30 - 9:00]
+      <b>おまけ</b>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part0">
+    <div style="font-size: 50px; font-weight: bolder;">
+      前座
+    </div>
+  </center>
+
+  <h3 id="part0-law-of-sines">振り返り</h3>
+
+  <ul>
+    <li>これまでの ZAF の発表資料は <a href="https://zenkei-ai-forum.github.io/pages/">zenkei-ai-forum.github.io/pages</a> にまとめてます。
+      <center>
+	<a href="https://zenkei-ai-forum.github.io/pages/">
+	  <img src="Screen Shot 2022-03-30 at 13.52.36_thumb.jpg" width="900" height="175" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-03-30 at 13.48.58.png"><!-- 2709x1294 -->
+	  <img src="Screen Shot 2022-03-30 at 13.48.58_thumb.jpg" width="900" height="430" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>前回のイベントの後、円に内接する三角形のはなし
+      <center>
+	<a href="Screen Shot 2022-03-30 at 13.55.47.png"><!-- 2712x1299 -->
+	  <img src="Screen Shot 2022-03-30 at 13.55.47_thumb.jpg" width="900" height="431" style="border: 2px #ccc solid;" /></a>
+      </center>
+      あれ、ググって、予備校とかの回答を眺めてみました。（しつこい）
+      <center>
+	<a href="https://www.toshin.com/kyotsutest/suugaku-1a_question_1.html">
+	  <img src="Screen Shot 2022-03-30 at 14.03.11_thumb.jpg" width="900" height="321" style="border: 2px #ccc solid;" /></a>
+      </center>
+      回答は、あっさり１ページ
+      <center>
+	<a href="https://www.toshin.com/kyotsutest/data/630/sugaku-1a.pdf">
+	  <img src="Screen Shot 2022-03-30 at 14.02.41_thumb.jpg" width="900" height="386" style="border: 2px #ccc solid;" /></a>
+      </center>
+      ふむ、「正弦定理」っすか。<br />
+      （言われても、思い出せない。習ったんだっけ？ってことは、完璧に忘れてるってことか……）
+      <center>
+	<a href="Screen Shot 2022-03-30 at 13.44.13.png"><!-- 2605x1359 -->
+	  <img src="Screen Shot 2022-03-30 at 13.44.13_thumb.jpg" width="900" height="470" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>思ったことは、
+      <center>
+	まぁ、普通に高校出て人生送ってる人が、<br />
+	２次方程式の解の公式を覚えてないとか、<br />
+	sin や cos とか忘れたとか、<br />
+	オレも、人のことは言えないな、
+      </center>
+      と。
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part0-tasks">できてないことごと</h3>
+
+  <ul>
+    <li><b>ZAM</b> こと ZENKEI AI MAGAZINE...
+      <ul>
+	<li>前から言ってますが、
+	  もうずっと、発行できてません。
+	  (cf. <a href="https://zenkei-ai-forum.github.io/pages/ZAF202111/ichiki/">ZAF 2111</a>)
+
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 14.14.38.png"><!-- 1716x1399 -->
+	      <img src="Screen Shot 2022-03-30 at 14.14.38_thumb.jpg" width="600" height="489" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>ZAM 2112 号の原稿は、大島さんからきちんといただいているのですが……
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 14.19.23.png"><!-- 2678x1066 -->
+	      <img src="Screen Shot 2022-03-30 at 14.19.23_thumb.jpg" width="900" height="358" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li><b>ZAP</b> こと ZENKEI AI ポッドキャスト...
+      <ul>
+	<li>これ、今年（2022年）から週１にペースダウンしたんですが、<br />
+	  ３月に入って２週目（3/9）以降、更新できてません……
+	  <center>
+	    <a href="https://zenkei.seesaa.net/">
+	      <img src="Screen Shot 2022-03-30 at 14.22.49_thumb.jpg" width="900" height="339" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>気持ちを切り替えて、<br />
+	  できる範囲で、再開します！
+	</li>
+      </ul>
+    </li>
+    <li>フィードバック、まってます！！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part0-learning">最近の学び</h3>
+
+  <ul>
+    <li>最近、目が見開かれたことがあって、
+      <center>
+	<div style="font-size: 40px; font-weight: bold;">
+	  ふわっと分かった気になって、<br />満足してはいけない
+	</div>
+      </center>
+      と思った、
+      ということを、共有したい。</li>
+
+    <li>具体的には「Jazz の音楽」のこと
+      <ul>
+	<li>これまでずっと（好きだから、というのが当然あるが）、<br />
+	  かっこいいな、くらいの「ふわっ」としたレベルで
+	  観賞してきたが、<br />
+	  ミュージシャンたちがやってることは、
+	  <center>
+	    <div style="font-size: 40px; font-weight: bold;">
+	      極めて緻密なことだ
+	    </div>
+	  </center>
+	  と、最近改めて認識した、と。
+	</li>
+	<li>自分のことを考えても、これは当たり前のこと、
+	  分かってて当然なことなんだけども。
+	  <ul>
+	    <li>「量子力学は波動です」とか言ってるコーチ（あれ、何者なんだろね）
+	      とか考えれば、ということ</li>
+	    <li>研究者、科学者が日々やってることは、<br />
+	      そういう「フワッ」とした人たちが想像もできないような
+	      極めて緻密なことを、<br />
+	      普通に山のように積み上げて行って構築されたものだ、<br />
+	      ということ。
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>このことは、言われ尽くされてることだけど
+      <ul>
+	<li>Wayne Shorter だったっけ？(Miles Daves だったっけ？)
+	  <center>
+	    <div style="font-size: 40px; font-weight: bold;">
+	      宇宙船の軌道計算するような<br />
+	      天文学者なみのことを<br />
+	      俺たちはしてる
+	    </div>
+	  </center>
+	  みたいなことを言ってたのは。
+	</li>
+      </ul>
+    </li>
+
+    <li>ZAF でも、一度、 John Coltrane すげぇ、ってのをやりましたね。
+      <ul>
+	<li>YouTube <a href="https://youtu.be/tWvm7LmXKhE">ZAF 2006</a>
+	  <center>
+	    <a href="https://youtu.be/tWvm7LmXKhE">
+	      <img src="Screen Shot 2022-03-30 at 14.42.47_thumb.jpg" width="450" height="283" style="border: 2px #ccc solid;" /></a>
+	    <a href="https://youtu.be/tWvm7LmXKhE">
+	      <img src="Screen Shot 2022-03-30 at 14.42.49_thumb.jpg" width="450" height="287" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>今日は、 Bill Evans のピアノソロでやってる（めずらしい） bebop の曲
+      Ornithology の演奏について。
+      <center>
+	<a href="https://youtu.be/0yfUlNXZt6M">
+	  <img src="Screen Shot 2022-03-30 at 15.10.00_thumb.jpg" width="800" height="452" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>この演奏は、大学の頃からずーっと聞いている。
+	  <ul>
+	    <li>Bill Evans が、もろ bebop の曲をやるのは珍しいので、
+	      結構、印象に残る演奏だけど、<br />
+	      この曲だけ浮いてるというか、どこが良いのか
+	      ずっと理解できなかった曲。</li>
+	  </ul>
+	</li>
+	<li>この曲はスタンダードの How High The Moon という曲のコード進行に基づいた曲
+	  <center>
+	    <a href="ornithology-ireal-pro.jpg"><!-- 3024x1940 -->
+	      <img src="ornithology-ireal-pro_thumb.jpg" width="600" height="385" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>Bill Evans のこの演奏では、
+	  「テーマ」（ヘッド）抜きで、いきなり「ソロ」がはじまる</li>
+	<li>ソロは単音なので、音を採ることは、ゆっくりやれば、まぁ、誰でもできる。
+	  <ul>
+	    <li>最近、ゆっくりと、自分で採譜していたけど、
+	      <center>
+		<a href="ornithology-my-note.jpg"><!-- 1331x889 -->
+		  <img src="ornithology-my-note_thumb.jpg" width="900" height="601" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	      最初のソロの部分、両手ユニゾンで弾いてる部分、
+	      どこかどこに対応してるのか分かんなかった。</li>
+	    <li>というか、ソロ（一人）で演奏してるんで、
+	      テンポとか適当に気分で弾いたりしてるのかな、くらいに思ってた。
+	      <ul>
+		<li>クラシックとか、音符は譜面に書かれてるので、<br />
+		  テンポで表現しないといけないせいなんだろうけど、<br />
+		  過剰にタメたりしてる、ああいう感じかな、みたいな</li>
+	      </ul>
+	    </li>
+	  </ul>
+	</li>
+	<li>地道に採譜してるが、なかなか進まない……<br />
+	  がっ、最近、正解（？）を発見！きっちり採譜してる人がいた！！
+	  <center>
+	    <a href="http://drwilliamhughes.blogspot.com/2017/03/bill-evans-transcriptions-of-solo-piano.html">
+		<img src="Screen Shot 2022-03-30 at 14.52.02_thumb.jpg" width="900" height="348" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  これが Ornithology の譜面
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 14.54.55.png"><!-- 2254x1260 -->
+	      <img src="Screen Shot 2022-03-30 at 14.54.55_thumb.jpg" width="800" height="447" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li>Bill Evans のソロに、伴奏をつけて弾いてみる！
+	  <ul>
+	    <li>pv の助けを借りて、テンポを落とす（自分の腕がショボいので）
+	      <center>
+		<a href="Screen Shot 2022-03-30 at 16.05.36.png"><!-- 1135x547 -->
+		  <img src="Screen Shot 2022-03-30 at 16.05.36_thumb.jpg" width="800" height="386" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+
+	<li>まとめ
+	  <center>
+	    <div style="font-size: 40px; font-weight: bold;">
+	      結論：
+	      Jazz は、やっぱりすごい<br />（緻密に考えられた演奏だ）
+	    </div>
+	  </center>
+	  という、当たり前のことを確認した、ということ。
+	  <center>
+	    <div style="font-size: 40px; font-weight: bold;">
+	      教訓：
+	      ディープラーニングのモデル<br />
+	      すげぇすげぇばっかり言ってないで、<br />
+	      きちんと論文読んで、<br />
+	      きちんと理解しましょう！
+	    </div>
+	  </center>
+	</li>
+      </ul>
+    </li><!-- 今日は、 Bill Evans の... Ornithology の演奏について。 -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part1">
+    <div style="font-size: 50px; font-weight: bolder;">
+      最近の話題から
+      <br />
+      2022年春
+    </div>
+  </center>
+
+  <h3 id="part1-history">振り返り</h3>
+
+  <ul>
+    <li><a href="https://zenkei-ai-forum.github.io/pages/ZAF202111/ichiki/#news1">ZAF 2021年11月</a>
+      最近の話題から</li>
+    <li><a href="https://zenkei-ai-forum.github.io/pages/ZAF202108/ichiki/#whats-new">ZAF 2021年8月</a>
+      最近の話題から 2021年夏</li>
+    <li><a href="https://zenkei-ai-forum.github.io/pages/ZAF202106/ichiki/#ichiki">ZAF 2021年6月</a>
+      GPT-3 で遊んでみた！</li>
+    <li><a href="https://zenkei-ai-forum.github.io/pages/ZAF202102/ichiki/#whatsnew">ZAF 2021年２月</a>
+      画像分類でSOTA更新した NFNets</li>
+    <li>ZAF 2020年11月 画像分類の新手法 ViT と BYOL</li>
+    <li>ZAF 2020年7月 GPT-3 と StyleGAN2</li>
+    <li>ZAF 2020年1月 2020年版　最近の話題から</li>
+    <li>ZAF 2019年9月 最近の話題から</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-nerf">NeRF</h3>
+
+  <div>今日は
+    <center>
+      <div style="font-size: 60px;">
+	<b>NeRF</b> - <b>Ne</b>ural <b>R</b>adiance <b>F</b>ields
+      </div>
+    </center>
+    に注目します。
+  </div>
+
+  <ul>
+    <li>Wired: <a href="https://www.wired.com/story/new-way-ai-see-3d/">A New Trick Lets Artificial Intelligence See in 3D </a>
+      <center>
+	<a href="Screen Shot 2022-02-08 at 15.47.32.png"><!-- 2802x1085 -->
+	  <img src="Screen Shot 2022-02-08 at 15.47.32_thumb.jpg" width="900" height="349" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>以下、記事で言及されていた論文をリストアップしておく
+      <ul>
+	<li><a href="#NeRF">NeRF</a></li>
+	<li><a href="#NeRV">NeRV</a></li>
+	<li><a href="#NeuralVolumes">Neural Volumes</a></li>
+	<li><a href="#NeRF-Tex">NeRF-Tex</a></li>
+	<li><a href="#NeRF-in-the-Wild">NeRF in the Wild</a></li>
+	<li><a href="#Dex-NeRF">Dex-NeRF</a></li>
+	<li><a href="#SRN">Scene Representation Networks (SRN)</a></li>
+	<li><a href="#LFN">Light Field Networks (LFN)</a></li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <h3 id="NeRF">NeRF</h3>
+  <ul>
+    <li><a href="https://www.matthewtancik.com/nerf">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>
+    </li>
+
+    <li>arxiv: <a href="https://arxiv.org/abs/2003.08934">2003.08934</a> (<a href="arxiv-2003.08934-NeRF.pdf">local copy</a>)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.18.32.png"><!-- 2195x803 -->
+	  <img src="Screen Shot 2022-02-08 at 16.18.32_thumb.jpg" width="900" height="329" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>github: <a href="https://github.com/bmild/nerf">bmild/nerf</a>
+    </li>
+  </ul>
+
+  <h3 id="NeRV">NeRV</h3>
+  <ul>
+    <li><a href="https://pratulsrinivasan.github.io/nerv/">NeRV: Neural Reflectance and Visibility Fields for Relighting and View Synthesis</a>
+    </li>
+
+    <li>arxiv: <a href="https://arxiv.org/abs/2012.03927">2012.03927</a> (<a href="arxiv-2012.03927-NeRV.pdf">local copy</a>)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.15.09.png"><!-- 2199x922 -->
+	  <img src="Screen Shot 2022-02-08 at 16.15.09_thumb.jpg" width="900" height="377" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>youtube: <a href="https://youtu.be/4XyDdvhhjVo">https://youtu.be/4XyDdvhhjVo</a>
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.16.08.png"><!-- 1837x1115 -->
+	  <img src="Screen Shot 2022-02-08 at 16.16.08_thumb.jpg" width="500" height="303" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <h3 id="NeuralVolumes">Neural Volumes</h3>
+  <ul>
+    <li>Meta: <a href="https://research.facebook.com/publications/neural-volumes-learning-dynamic-renderable-volumes-from-images/">Neural Volumes: Learning Dynamic Renderable Volumes from Images</a>
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.10.34.png"><!-- 2800x915 -->
+	  <img src="Screen Shot 2022-02-08 at 16.10.34_thumb.jpg" width="500" height="163" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li><a href="https://research.facebook.com/file/274670197906122/Neural-Volumes-Learning-Dynamic-Renderable-Volumes-from-Images.pdf">PDF</a> (<a href="meta-240887052_556268828830553_6683310959178690396_n.pdf">local copy</a>)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.10.43.png"><!-- 2192x840 -->
+	  <img src="Screen Shot 2022-02-08 at 16.10.43_thumb.jpg" width="900" height="345" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li><a href="https://www.facebook.com/watch/?v=481071689788208">video</a>
+    </li>
+  </ul>
+
+  <h3 id="NeRF-Tex">NeRF-Tex</h3>
+  <ul>
+    <li>NVIDIA: <a href="https://developer.nvidia.com/blog/nvidia-research-nerf-tex-neural-reflectance-field-textures/">NVIDIA Research: NeRF-Tex: Neural Reflectance Field Textures (Jun 28, 2021)</a>
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.07.23.png"><!-- 2795x899 -->
+	  <img src="Screen Shot 2022-02-08 at 16.07.23_thumb.jpg" width="900" height="289" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>publication: <a href="https://research.nvidia.com/publication/2021-06_NeRF-Tex%3A-Neural-Reflectance">NeRF-Tex: Neural Reflectance Field Textures</a> (<a href="https://d1qx31qr3h6wln.cloudfront.net/publications/NeRFTex.pdf">PDF</a>, <a href="NeRFTex.pdf">local copy</a>)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.08.30.png"><!-- 2197x938 -->
+	  <img src="Screen Shot 2022-02-08 at 16.08.30_thumb.jpg" width="900" height="384" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <h3 id="NeRF-in-the-Wild">NeRF in the Wild</h3>
+  <ul>
+    <li>NVIDIA: <a href="https://developer.nvidia.com/blog/googles-new-ai-model-improves-3d-image-synthesis-of-outdoor-scenes/">Google’s New AI Model Improves 3D Image Synthesis of Outdoor Scenes (Aug 06, 2020)</a>
+    </li>
+
+    <li>youtube: <a href="https://youtu.be/yPKIxoN2Vf0">https://youtu.be/yPKIxoN2Vf0</a>
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.05.04.png"><!-- 1887x1151 -->
+	  <img src="Screen Shot 2022-02-08 at 16.05.04_thumb.jpg" width="500" height="305" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li><a href="https://nerf-w.github.io/">https://nerf-w.github.io/</a><br />
+      NeRF in the Wild
+    </li>
+  </ul>
+
+  <h3 id="Dex-NeRF">Dex-NeRF</h3>
+  <ul>
+
+    <li>arxiv: <a href="https://arxiv.org/abs/2110.14217">2110.14217</a>
+      (<a href="arxiv-2110.14217-DexNeRF.pdf">local copy</a>)
+      <br />
+      Dex-NeRF: Using a Neural Radiance Field to Grasp Transparent Objects
+      (Jeffrey Ichnowski, et al.)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 16.02.58.png"><!-- 2200x745 -->
+	  <img src="Screen Shot 2022-02-08 at 16.02.58_thumb.jpg" width="500" height="169" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-08 at 16.03.21.png"><!-- 2200x724 -->
+	  <img src="Screen Shot 2022-02-08 at 16.03.21_thumb.jpg" width="500" height="165" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <h3 id="SRN">Scene Representation Networks (SRN)</h3>
+  <ul>
+    <li>NeurIPS 2019: <a href="https://proceedings.neurips.cc/paper/2019/file/b5dc4e5d9b495d0196f61d45b26ef33e-Paper.pdf">PDF</a>
+      (<a href="NeurIPS-2019-scene-representation-networks-continuous-3d-structure-aware-neural-scene-representations-Paper.pdf">local copy</a>)
+      <br />
+      Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
+      (V. Sitzmann et al.)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 15.57.41.png"><!-- 2198x724 -->
+	  <img src="Screen Shot 2022-02-08 at 15.57.41_thumb.jpg" width="500" height="165" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-08 at 15.57.56.png"><!-- 2195x805 -->
+	  <img src="Screen Shot 2022-02-08 at 15.57.56_thumb.jpg" width="500" height="183" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <h3 id="LFN">Light Field Networks (LFN)</h3>
+  <ul>
+    <li>arxiv: <a href="https://arxiv.org/abs/2106.02634">2106.02634</a>
+      (<a href="arxiv-2106.02634-LFN.pdf">local copy</a>)
+      <br />
+      Light Field Networks: Neural Scene Representations with Single-Evaluation Rendering (V. Sitzmann et al.)
+      <center>
+	<a href="Screen Shot 2022-02-08 at 15.55.00.png"><!-- 2194x828 -->
+	  <img src="Screen Shot 2022-02-08 at 15.55.00_thumb.jpg" width="500" height="189" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-02-08 at 15.56.05.png"><!-- 2195x820 -->
+	  <img src="Screen Shot 2022-02-08 at 15.56.05_thumb.jpg" width="500" height="187" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <h3 id="nerf-recent">その他、最近の発展</h3>
+
+  <ul>
+    <li id="Block-NeRF"><a href="https://waymo.com/research/block-nerf/">Block-NeRF</a>
+      <br />
+      Scalable Large Scene Neural View Synthesis
+      <center>
+	<a href="Screen Shot 2022-03-30 at 16.58.45.png"><!-- 2759x908 -->
+	  <img src="Screen Shot 2022-03-30 at 16.58.45_thumb.jpg" width="900" height="296" style="border: 2px #ccc solid;" /></a>
+	<a href="https://youtu.be/6h7gJofBUkc">
+	  <img src="Screen Shot 2022-03-30 at 16.58.52_thumb.jpg" width="900" height="529" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>arxiv: <a href="https://arxiv.org/abs/2202.05263">2202.05263</a>
+	  (<a href="arxiv-2202.05263-Block-NeRF.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.05.03.png"><!-- 2159x797 -->
+	      <img src="Screen Shot 2022-03-30 at 17.05.03_thumb.jpg" width="900" height="332" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li id="Mip-Nerf360"><a href="https://jonbarron.info/mipnerf360/">Mip-NeRF 360</a>
+      <br />
+      Unbounded Anti-Aliased Neural Radiance Fields
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.07.54.png"><!-- 2747x1153 -->
+	  <img src="Screen Shot 2022-03-30 at 17.07.54_thumb.jpg" width="900" height="378" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>arxiv: <a href="https://arxiv.org/abs/2111.12077">2111.12077</a>
+	  (<a href="arxiv-2111.12077-Mip-NeRF360.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.11.57.png"><!-- 2158x891 -->
+	      <img src="Screen Shot 2022-03-30 at 17.11.57_thumb.jpg" width="900" height="372" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li id="pixelNeRF"><a href="https://alexyu.net/pixelnerf/">pixelNeRF</a>
+      <br />
+      Neural Radiance Fields from One or Few Images
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.49.28.png"><!-- 2757x1022 -->
+	  <img src="Screen Shot 2022-03-30 at 17.49.28_thumb.jpg" width="900" height="334" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>arxiv: <a href="https://arxiv.org/abs/2012.02190">2012.02190</a>
+	  (<a href="arxiv-2012.02190-pixelNeRF.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.51.20.png"><!-- 2159x765 -->
+	      <img src="Screen Shot 2022-03-30 at 17.51.20_thumb.jpg" width="900" height="319" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>github: <a href="https://github.com/sxyu/pixel-nerf">sxyu/pixel-nerf</a> (official)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.50.37.png"><!-- 2756x1212 -->
+	      <img src="Screen Shot 2022-03-30 at 17.50.37_thumb.jpg" width="900" height="396" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li id="PortraitNeRF"><a href="https://portrait-nerf.github.io/">Portrait NeRF</a>
+      <br />
+      Portrait Neural Radiance Fields from a Single Image
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.54.39.png"><!-- 2756x1147 -->
+	  <img src="Screen Shot 2022-03-30 at 17.54.39_thumb.jpg" width="900" height="375" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>arxiv: <a href="https://arxiv.org/abs/2012.05903">2012.05903</a>
+	  (<a href="arxiv-2012.05903-PortraitNeRF.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.57.28.png"><!-- 2160x698 -->
+	      <img src="Screen Shot 2022-03-30 at 17.57.28_thumb.jpg" width="900" height="291" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li id="ViewFormer"><a href="https://jkulhanek.github.io/viewformer/">ViewFormer</a>
+      <br />
+      NeRF-free Neural Rendering from Few Images Using Transformers
+      <center>
+	<a href="Screen Shot 2022-03-30 at 18.00.06.png"><!-- 2760x1086 -->
+	  <img src="Screen Shot 2022-03-30 at 18.00.06_thumb.jpg" width="900" height="354" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>arxiv: <a href="https://arxiv.org/abs/2203.10157">2203.10157</a>
+	  (<a href="arxiv-2203.10157-ViewFormer.pdf">local copy</a>)
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 18.00.56.png"><!-- 2160x689 -->
+	      <img src="Screen Shot 2022-03-30 at 18.00.56_thumb.jpg" width="900" height="287" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-03-30 at 18.01.05.png"><!-- 2157x452 -->
+	      <img src="Screen Shot 2022-03-30 at 18.01.05_thumb.jpg" width="900" height="189" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="part1-practice">実践</h3>
+
+  <ul>
+    <li>悪いとは知りつつ……
+      <ul>
+	<li>これまども、何度となく、試したけどわからん、となって、<br />
+	  きちんと論文を読まないといけません、と気づいてきたんだけど。</li>
+	<li>今日などは「前座」で、まさに、
+	  <center>
+	    <div style="font-size: 40px; font-weight: bolder;">
+	      ふわっとやってても、<br />何も得るものはない
+	    </div>
+	  </center>
+	  と、自分で言ってたばかり、なんですが……<br />
+	  （cf. <a href="#part0-learning">最近の学び</a>）
+	</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="awesome-NeRF">実装を探す</h3>
+  <ul>
+    <li>github: <a href="https://github.com/yenchenlin/awesome-NeRF">yenchenlin/awesome-NeRF</a>
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.26.35.png"><!-- 2762x1416 -->
+	  <img src="Screen Shot 2022-03-30 at 17.26.35_thumb.jpg" width="900" height="461" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-03-30 at 17.26.54.png"><!-- 2755x1056 -->
+	  <img src="Screen Shot 2022-03-30 at 17.26.54_thumb.jpg" width="900" height="345" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nerf-pytorch">yenchenlin/nerf-pytorch</h3>
+
+  <ul>
+    <li>github: <a href="https://github.com/yenchenlin/nerf-pytorch">yenchenlin/nerf-pytorch</a>
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.31.08.png"><!-- 2756x1400 -->
+	  <img src="Screen Shot 2022-03-30 at 17.31.08_thumb.jpg" width="900" height="457" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>Jupyter Notebook
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.25.19.png"><!-- 2763x1033 -->
+	      <img src="Screen Shot 2022-03-30 at 17.25.19_thumb.jpg" width="900" height="336" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>blender/lego データセット（ショベルカーのモデル）をローカルで学習した結果
+	  <center>
+	    <video controls
+		   width="400" height="400" style="border: 2px #ccc solid;">
+	      <source src="nerf-pytorch-blender_paper_lego-renderonly_path_049999.mp4">
+	    </video>
+	  </center>
+	</li>
+      </ul>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h3 id="nerf-pl">kwea123/nerf_pl</h3>
+
+  <ul>
+    <li>github: <a href="https://github.com/kwea123/nerf_pl">kwea123/nerf_pl</a>
+      <center>
+	<a href="Screen Shot 2022-03-30 at 17.38.38.png"><!-- 2758x1363 -->
+	  <img src="Screen Shot 2022-03-30 at 17.38.38_thumb.jpg" width="900" height="445" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-03-30 at 17.39.06.png"><!-- 2753x1082 -->
+	  <img src="Screen Shot 2022-03-30 at 17.39.06_thumb.jpg" width="900" height="354" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>Jupyter Notebook
+	  <center>
+	    <a href="Screen Shot 2022-03-30 at 17.36.45.png"><!-- 2774x948 -->
+	      <img src="Screen Shot 2022-03-30 at 17.36.45_thumb.jpg" width="900" height="308" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>学習済みモデルを使って render のみしてみた。
+	  <center>
+	    <img src="lego.gif" />
+	    <img src="fern.gif" />
+	    <img src="silica.gif" />
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part2">
+    <div style="font-size: 50px; font-weight: bolder;">
+      <br />
+      本日のメイン
+      <br />
+      <br />
+      『メラノーマ疑惑のホクロをAIで診断してみた』
+      <br />
+      <a href="https://youtu.be/Pf8LNyyM82o?t=4738">
+	<img src="Screen Shot 2022-04-01 at 11.27.09_thumb.jpg" width="900" height="387" style="border: 2px #ccc solid;" /></a>
+      <br />
+      ちゃんもりさん
+    </div>
+  </center>
+
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part3">
+    <div style="font-size: 50px; font-weight: bolder;">
+      本日のおまけ
+      <br />
+      最近買った本
+    </div>
+  </center>
+
+  <ul>
+    <li id="book-BERT">
+      <a href="https://www.amazon.co.jp/dp/427422726X">BERTによる自然言語処理入門</a>
+      <br />
+      Transformersを使った実践プログラミング
+      <center>
+	<a href="Screen Shot 2022-03-30 at 18.14.19.png"><!-- 519x661 -->
+	  <img src="Screen Shot 2022-03-30 at 18.14.19_thumb.jpg" width="314" height="400" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li id="book-Okanohara">
+      <a href="https://www.amazon.co.jp/dp/4297125609">ディープラーニングを支える技術</a>（岡野原大輔）
+      <br />
+      「正解」を導くメカニズム
+      <center>
+	<a href="Screen Shot 2022-03-30 at 18.16.08.png"><!-- 483x696 -->
+	  <img src="Screen Shot 2022-03-30 at 18.16.08_thumb.jpg" width="278" height="400" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li id="book-YanLeCun">
+      <a href="https://www.amazon.co.jp/dp/4065238080">ディープラーニング 学習する機械</a>
+      <br />
+      ヤン・ルカン、人工知能を語る
+      <center>
+	<a href="Screen Shot 2022-03-30 at 18.17.35.png"><!-- 492x694 -->
+	  <img src="Screen Shot 2022-03-30 at 18.17.35_thumb.jpg" width="284" height="400" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li id="book-transformers">
+      <a href="https://www.amazon.co.jp/dp/1098103246">Natural Language Processing With Transformers</a>
+      <br />
+      Building Language Applications With Hugging Face
+      <center>
+	<a href="Screen Shot 2022-03-30 at 18.18.51.png"><!-- 522x685 -->
+	  <img src="Screen Shot 2022-03-30 at 18.18.51_thumb.jpg" width="305" height="400" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF は 2022 年４月２７日開催の予定です。</li>
+    <li>ZAF 講演者、 ZAM 執筆者、絶賛、大募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li><b>前座</b>
+      <a href="#part0">（いちき）</a>
+      <ul>
+	<li><a href="#part0-law-of-sines">振り返り - 正弦定理</a></li>
+	<li><a href="#part0-tasks">できてないことごと - ZAM と ZAP</a></li>
+	<li><a href="#part0-learning">最近の学び - ふわっとした理解にとどまらないこと</a></li>
+      </ul>
+    </li>
+
+    <li><b>第１部</b>
+      <a href="#part1">最近の話題から 2022年春（いちき）</a>
+      <ul>
+	<li><a href="#part1-history">これまでの「最近の話題から」</a></li>
+	<li><a href="#part1-nerf">NeRF</a>
+	  <ul>
+	    <li><a href="#NeRF">NeRF</a></li>
+	    <li><a href="#NeRV">NeRV</a></li>
+	    <li><a href="#NeuralVolumes">Neural Volumes</a></li>
+	    <li><a href="#NeRF-Tex">NeRF-Tex</a></li>
+	    <li><a href="#NeRF-in-the-Wild">NeRF in the Wild</a></li>
+	    <li><a href="#Dex-NeRF">Dex-NeRF</a></li>
+	    <li><a href="#SRN">Scene Representation Networks (SRN)</a></li>
+	    <li><a href="#LFN">Light Field Networks (LFN)</a></li>
+	  </ul>
+	</li>
+	<li><a href="#nerf-recent">その他、最近の発展</a>
+	  <ul>
+	    <li><a href="#Block-NeRF">Block-NeRF</a></li>
+	    <li><a href="#Mip-Nerf360">Mip-NeRF 360</a></li>
+	    <li><a href="#pixelNeRF">pixelNeRF</a></li>
+	    <li><a href="#PortraitNeRF">Portrait NeRF</a></li>
+	    <li><a href="#ViewFormer">ViewFormer</a></li>
+	  </ul>
+	</li>
+	<li><a href="#part1-practice">実践</a>
+	  <ul>
+	    <li><a href="#awesome-NeRF">実装を探す</a></li>
+	    <li><a href="#nerf-pytorch">yenchenlin/nerf-pytorch</a></li>
+	    <li><a href="#nerf-pl">kwea123/nerf_pl</a></li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+    <li><b>第２部</b>
+      <a href="#part2">メラノーマ疑惑のホクロをAIで診断してみた（ちゃんもりさん）</a>
+    </li>
+
+    <li><b>おまけ</b>
+      <a href="#part3">最近買った本</a>
+      <ul>
+	<li><a href="#book-BERT">BERTによる自然言語処理入門</a></li>
+	<li><a href="#book-Okanohara">ディープラーニングを支える技術（岡野原大輔）</a></li>
+	<li><a href="#book-YanLeCun">ディープラーニング 学習する機械（ヤン・ルカン）</a></li>
+	<li><a href="#book-transformers">Natural Language Processing With Transformers</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
