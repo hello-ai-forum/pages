@@ -3,6 +3,8 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://zenkei-ai-forum.github.io/pages/
+* ZAF 2022/06 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202206/ichiki/)
+  * 技術書典１３企画会議！ - コミュニティ志向のビジネス最先端
 * ZAF 2022/05 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202205/ichiki/)
   * ZAM出します / 趣味のポッドキャスト / Let's Dance!
 * ZAF 2022/04 : [市來の発表コンテンツ](https://zenkei-ai-forum.github.io/pages/ZAF202204/ichiki/)
