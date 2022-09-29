@@ -1,0 +1,1227 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title>ZENKEI AI FORUM (2022/09/28)</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../bright-M_PLUS_1p.css" />
+
+    <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="text/javascript" id="MathJax-script" async
+	    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+<body style="font-size: 20px;">
+
+<header>
+<center><h1>ZENKEI AI FORUM 2022/09/28</h1></center>
+</header>
+
+<article>
+
+<section id="main">
+
+  <center>
+    <a href="ZENKEI_AI_FORUM_zoom_20220928-2488x1400.jpg"><!-- 2488x1400 -->
+      <img src="ZENKEI_AI_FORUM_zoom_20220928-2488x1400_thumb.jpg" width="800" height="450" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center>
+    <div style="font-size: 60px; font-weight: bold;">
+      ZAF 2022 年 9 月 28 日
+    </div>
+    <div style="font-size: 40px;">＜本日のテーマ＞</div>
+    <div style="font-size: 50px;">
+      技術書典１３お疲れ様でした！
+    </div>
+    <br />
+    <div style="font-size: 70px;">
+      『ZAM 季報 VOL.2』振り返り
+    </div>
+  </center>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <h2 id="toc">目次</h2>
+  <ul>
+    <li>[6:30 - 7:00]
+      <b>前座</b>
+      <a href="#part0">日常への回帰</a>
+    </li>
+
+    <li>[7:00 - 8:00]
+      <b>パート１</b>
+      <a href="#part1">(Stable) Diffusion 完璧に理解するぞ！</a></li>
+    </li>
+
+    <li>[8:00 - 9:00]
+      <b>パート２</b>
+      <a href="#part2">技術書典１３　お疲れさま　座談会</a>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+
+    <li><a href="#detailed-toc">総合目次</a></li>
+  </ul>
+
+  <hr />
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part0">
+    <div style="font-size: 50px; font-weight: bolder;">
+      （前座）
+      <br />
+      日常への回帰
+    </div>
+  </center>
+
+  <ul>
+    <li>６月下旬から、<br />
+      ７月、８月、９月と、<br />
+      超多忙な日々を潜り抜け、<br />
+      やっとぼくの生活に日常が戻ってきました
+    </li>
+    <li>先月の <a href="https://zenkei-ai-forum.github.io/pages/ZAF202208/ichiki/">ZAF-2208</a> の前座もそのはなしをしましたね
+      <center>
+	<a href="Screen Shot 2022-09-28 at 14.44.26.png"><!-- 2749x843 -->
+	  <img src="Screen Shot 2022-09-28 at 14.44.26_thumb.jpg" width="800" height="245" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 14.44.40.png"><!-- 2750x413 -->
+	  <img src="Screen Shot 2022-09-28 at 14.44.40_thumb.jpg" width="800" height="120" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>ついくさ (<a href="https://twekusa.com/">twekusa.com</a>)
+      というものに、先日登録（？）したんですが
+      <center>
+	<a href="Screen Shot 2022-09-28 at 14.39.13.png"><!-- 2771x625 -->
+	  <img src="Screen Shot 2022-09-28 at 14.39.13_thumb.jpg" width="800" height="180" style="border: 2px #ccc solid;" /></a>
+      </center>
+      これみると<br />（７月は中旬まではツイートしてたみたいだけど）<br />
+      ８月は本当に１つもツイートできてない……
+      <center>
+	<a href="Screen Shot 2022-09-13 at 16.00.31.png"><!-- 2769x1378 -->
+	  <img src="Screen Shot 2022-09-13 at 16.00.31_thumb.jpg" width="800" height="398" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>その辺のはなしを、前座でしゃべります</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part0-1">
+    <div style="font-size: 40px; font-weight: bolder;">
+      ZAP (ZENKEI AI ポッドキャスト) 復活しました！
+    </div>
+  </center>
+
+  <ul>
+    <li>お待たせしました！</li>
+    <li>（１シーズンごとにまとめて仕込んでいるとはいえ）<br />
+      ８月３日（水）以来、更新できてませんでした
+      <center>
+	<a href="Screen Shot 2022-09-28 at 13.56.11.png"><!-- 525x421 -->
+	  <img src="Screen Shot 2022-09-28 at 13.56.11_thumb.jpg" width="300" height="241" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 13.56.15.png"><!-- 521x400 -->
+	  <img src="Screen Shot 2022-09-28 at 13.56.15_thumb.jpg" width="300" height="230" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>新シーズン２４、スタートしました！
+      <center>
+	<a href="Screen Shot 2022-09-28 at 13.56.00.png"><!-- 2757x1071 -->
+	  <img src="Screen Shot 2022-09-28 at 13.56.00_thumb.jpg" width="800" height="311" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>シーズン２４は、 ZAF-2112 （２０２１年１２月２２日）の内容です！
+      <ul>
+	<li>（2022年9月21日公開）<b>S24E01</b>
+	  （前座）今月のポッドキャストと技術書典１２</li>
+	<li>（2022年9月28日公開）<b>S24E02</b>
+	  第１部 2021年の振り返り</li>
+	<li>（2022年10月05日公開予定）<b>S24E03</b>
+	  浮世絵チャレンジ　俳句TO浮世絵プログラム　PoemGANの紹介
+	  （<b>大島圭祐さん</b>）
+	  </li>
+	<li>（2022年10月12日公開予定）<b>S24E04</b>
+	  大島とPoemGANと私
+	  （<b>ホンダナオさん</b>）
+	  </li>
+      </ul>
+    </li><!-- シーズン２４は、 ZAF-2112 （２０２１年１２月２２日）の内容です！ -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part0-2">
+    <div style="font-size: 40px;">
+      （ぼくの趣味１００％の）
+    </div>
+    <br />
+    <div style="font-size: 45px; font-weight: bolder;">
+      音楽と数理 🎼 ♾ ポッドキャスト
+    </div>
+    <br />
+    <div style="font-size: 40px; font-weight: bolder;">
+      復活しました！
+    </div>
+    <br />
+    <a href="Screen Shot 2022-09-28 at 14.56.45.png"><!-- 2754x1031 -->
+      <img src="Screen Shot 2022-09-28 at 14.56.45_thumb.jpg" width="800" height="299" style="border: 2px #ccc solid;" /></a>
+  </center>
+
+  <ul>
+    <li>お待たせしました！</li>
+    <li>こちらは（１エピソードごとに作ってリリースしてるので）<br />
+      前回のエピソードが７月２４日でしたね
+      <center>
+	<a href="Screen Shot 2022-09-28 at 14.56.36.png"><!-- 2759x1164 -->
+	  <img src="Screen Shot 2022-09-28 at 14.56.36_thumb.jpg" width="800" height="338" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>９月の多忙の「技術書典１３」が一息ついた９月２３日（金）に収録、<br />
+      編集して９月２５日（日）にリリース
+      <center>
+	<a href="Screen Shot 2022-09-28 at 14.56.59.png"><!-- 2761x1050 -->
+	  <img src="Screen Shot 2022-09-28 at 14.56.59_thumb.jpg" width="800" height="304" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>収録は１時間を超えていて、編集後も５１分と長かったのですが、<br />
+      どうしても「技術書典１３」の閉会前にリリースしておきたかったので、<br />
+      分割せずに１本として公開しました。
+    </li>
+    <li>久しぶりの収録で、この間いろいろとあったので、話があっちこっちに飛びまくってます
+      <ul>
+	<li>主観的に丁寧に生きること</li>
+	<li>６月末から８月下旬まで忙しかったこと（仕事、2D から 3D）</li>
+	<li>ゼロから１にすることが好き</li>
+	<li>創造性を損なわないツール、スキル</li>
+	<li>ファインマインのパワーは試行錯誤の回数</li>
+	<li>Blender やっとマスターしてきた、Blender すごい</li>
+	<li>９月も忙しかったのは「技術書典１３」、新刊でました！</li>
+	<li>『ZAM 季報 VOL.2』出さなければならなかった２つの理由</li>
+	<li>技術書典のおどろくべき「後から印刷」と「キャッシュバック」</li>
+	<li>松尾芭蕉と同人について</li>
+	<li>『正法眼蔵』読んでます。「春秋」</li>
+	<li>『竜とそばかすの姫』見た</li>
+	<li>手を抜けないこと、園芸とぬか床</li>
+      </ul>
+    </li>
+    <li>YouTube もあります(<a href="https://youtu.be/ZaEcO2z_5l8">https://youtu.be/ZaEcO2z_5l8</a>)。よろしければ聞いてみてください。
+      <center>
+	<a href="https://youtu.be/ZaEcO2z_5l8">
+	  <img src="Screen Shot 2022-09-28 at 15.17.15_thumb.jpg" width="800" height="411" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part0-3">
+    <div style="font-size: 45px; font-weight: bolder;">
+      日常への回帰
+    </div>
+    <br />
+    <div style="font-size: 40px;">
+      まだ戻ってきてないものなど
+    </div>
+  </center>
+
+  <ul>
+    <li>『ZAM 季報 VOL.2』の中でも書いていますが
+      <center>
+	<a href="ZAM-VOL2-where-am-i-going.png"><!-- 1584x1118 -->
+	  <img src="ZAM-VOL2-where-am-i-going_thumb.jpg" width="800" height="565" style="border: 2px #ccc solid;" /></a>
+      </center>
+      （引用）
+      <div style="font-size: 28px;">
+	<blockquote>
+実際のところ<br />
+その後の 7 月と 8 月は仕事が忙しくて、
+<ul>
+  <li>ZAP を配信しつつ、</li>
+  <li>個人的なポッドキャストも配信しつつ、</li>
+  <li><b>Twitch でピアノの練習も配信する</b></li>
+</ul>
+ような日常が完全に失われてしまいました。<br />
+まだ平常モードに戻れていません。
+	</blockquote>
+      </div>
+    </li>
+    <li>ここで「Twitch」というよりも<br />
+      「<b>ピアノ</b>」を復活させたい
+      <ul>
+	<li>が、こういう肉体のトレーニング系のプロジェクトって<br />
+	  中断すると、いろいろと戻していくこと自体が大変なんですよね……</li>
+      </ul>
+    </li>
+
+    <center>
+      <br /><br />
+      <div style="font-size: 40px; font-weight: bolder;">
+	一歩ずつ、がんばろう！
+	<br />
+	継続は力なり
+      </div>
+      <div style="font-size: 30px;">
+	（と、継続が滞るたびに心に誓う）
+      </div>
+    </center>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="part0-4">
+    <div style="font-size: 45px; font-weight: bolder;">
+      前座
+    </div>
+    <br />
+    <div style="font-size: 40px;">
+      One More Thing
+      <br /><br />
+      （コロナ禍のもと）<br />
+      自分が大切だと思うこところの<br />
+      経済を回すこと
+    </div>
+  </center>
+
+  <ul>
+    <li>『技術書典』が終わったタイミングで思ったこと</li>
+    <li>ぼくの個人的な「大事なもの」として、
+      <center>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  「紙の本」
+	</div>
+      </center>
+      がある
+    </li>
+    <li>（技術）同人誌活動に入ってみて、一番、感動したのは、
+      <center>
+	<br />
+	<div style="font-size: 40px;">
+	  （IT 屋さんのお題目としてではなく）
+	</div>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  DTP （デスクトップパブリッシング）が根付いているな
+	</div>
+	<br />
+      </center>
+      という感覚
+      <ul>
+	<li>個人一人一人を、技術がエンパワーする、ということ</li>
+	<li>それを支えている「リアル」の重要な構成要素に、<br />
+	  個人を対象にした、小部数からでも対応する<b>印刷屋さん</b>の存在
+	</li>
+      </ul>
+    </li>
+
+    <li>「技術書典」の運営の人たちがあれこれ考えていることの一部分も同じ気持ちだと思う
+      <ul>
+	<li>「紙の本」推し
+	  <center>
+	    <a href="Screen Shot 2022-09-28 at 16.01.33.png"><!-- 1119x618 -->
+	      <img src="Screen Shot 2022-09-28 at 16.01.33_thumb.jpg" width="800" height="442" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>「後から印刷」企画、
+	    「80% キャッシュバック」キャンペーン
+	  <center>
+	    <a href="Screen Shot 2022-09-28 at 16.02.24.png"><!-- 1109x609 -->
+	      <img src="Screen Shot 2022-09-28 at 16.02.24_thumb.jpg" width="400" height="220" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-09-28 at 16.01.25.png"><!-- 1117x614 -->
+	      <img src="Screen Shot 2022-09-28 at 16.01.25_thumb.jpg" width="400" height="220" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+      </ul>
+    </li>
+
+    <li>先日この「後から印刷」への入稿データに問題があって、
+      <a href="https://www.nikko-pc.com/index/top.html">日光企画</a>
+      さんから電話がきた
+      <center>
+	<a href="https://www.nikko-pc.com/index/top.html">
+	  <img src="Screen Shot 2022-09-28 at 16.11.32_thumb.jpg" width="800" height="269" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li><b>日光企画</b>さんといえば、個人的には<br />
+	  既刊『<b>音楽と数理</b>』『<b>厳密な計算</b>』の印刷をお願いしたところ
+	  <center>
+	    <a href="Screen Shot 2022-09-28 at 16.19.45.png"><!-- 2092x845 -->
+	      <img src="Screen Shot 2022-09-28 at 16.19.45_thumb.jpg" width="800" height="323" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+	<li>それから、
+	  <center>
+	    <div style="font-size: 50px; font-weight: bolder;">
+	      幸せの黄色い『音楽と数理』ミニハンカチ
+	    </div>
+	  </center>
+	  も作った！
+	</li>
+
+	<li>幸せの黄色い『音楽と数理』ミニハンカチ、とは<br />
+	  (<a href="https://twitter.com/ichiki_k/status/1353161879766536192">https://twitter.com/ichiki_k/status/1353161879766536192</a>)
+	  <center>
+	    <a href="Screen Shot 2022-09-27 at 15.55.41.png"><!-- 1191x1219 -->
+	      <img src="Screen Shot 2022-09-27 at 15.55.41_thumb.jpg" width="586" height="600" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	  <ul>
+	    <li>技術書典の印刷版（紙の本）は送料無料だけど、<br />
+	      <a href="https://zenkei.booth.pm/items/2386424">BOOTH</a>
+	      では送料（あんしんBOOTHパック、ネコポス） 370 円かかるので、<br />
+	      おまけとして付けていた
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 16.17.55.png"><!-- 2770x1397 -->
+		  <img src="Screen Shot 2022-09-27 at 16.17.55_thumb.jpg" width="800" height="403" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 16.18.03.png"><!-- 2763x270 -->
+		  <img src="Screen Shot 2022-09-27 at 16.18.03_thumb.jpg" width="800" height="78" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+
+      </ul>
+    </li><!-- 先日この「後から印刷」への入稿データに問題があって、 -->
+
+    <li>そうこうしてたら、こんなツイートが
+      (<a href="https://twitter.com/nikko_boss/status/1574276283999010816">https://twitter.com/nikko_boss/status/1574276283999010816</a>)
+      <center>
+	<a href="Screen Shot 2022-09-28 at 16.07.04.png"><!-- 1187x908 -->
+	  <img src="Screen Shot 2022-09-28 at 16.07.04_thumb.jpg" width="600" height="459" style="border: 2px #ccc solid;" /></a>
+      </center>
+      これは
+      <center>
+	<div style="font-size: 40px; font-weight: bolder;">
+	  なにかせねばっ！
+	</div>
+      </center>
+      <ul>
+	<li>「後から印刷」は、今回
+	  『<b>ZAM 季報 VOL.2</b>』の紙の注文が７冊だったところ、<br />
+	  個人的に配る用と、あとで BOOTH で頒布する用など見込んで、元気よく
+	  <center>
+	    <div style="font-size: 40px; font-weight: bolder;">
+	      ３０冊、印刷！
+	    </div>
+	  </center>
+	  することにした
+	  <ul>
+	    <li>（もちろん、キャッシュバックは
+	      このうち７冊分しかないことは承知の上で）</li>
+	  </ul>
+	</li>
+
+	<li>そういえば、先述のおまけ「幸せの黄色い『音楽と数理』ミニタオル」
+	  の在庫が切れかけてたことを思い出した（残り２枚）
+	</li>
+      </ul>
+    </li>
+
+    <li>ということで
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  幸せの黄色い『音楽と数理』ミニハンカチ
+	  <br />
+	  ほか、新しいグッズも含め
+	  <br />
+	  発注しよう！企画
+	</div>
+      </center>
+    </li>
+
+
+    <li><a href="http://www.nikko-pc.com/doujinkoubou_web/web-price/web-price.html">同人工房Web</a>
+      <center>
+	<a href="Screen Shot 2022-09-27 at 15.47.31.png"><!-- 2770x1162 -->
+	  <img src="Screen Shot 2022-09-27 at 15.47.31_thumb.jpg" width="800" height="336" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-27 at 15.47.43.png"><!-- 2752x677 -->
+	  <img src="Screen Shot 2022-09-27 at 15.47.43_thumb.jpg" width="800" height="197" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-27 at 15.47.56.png"><!-- 2752x684 -->
+	  <img src="Screen Shot 2022-09-27 at 15.47.56_thumb.jpg" width="800" height="199" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>さて、なにを作ろう？とちょっと考えて、以下の４点を作ることにしました
+	  <ul>
+	    <li>（１）<b>幸せの黄色い『音楽と数理』ミニタオル</b></li>
+	    <li>（２）通常の３倍のスピードできれいになる！
+	      <b>真紅の『厳密な計算』メガネ拭き</b></li>
+	    <li>（３） Stable Diffusion のコラージュ
+	      <b>『ZAM 季報 VOL.2』クリアファイル</b> (A5)</li>
+	    <li>（４）名刺代わりになるかな？
+	      <b>『数理三部作＋α』和紙ファイル</b>（試作）</li>
+	  </ul>
+	  欲しい人いますか？
+	</li>
+      </ul>
+    </li>
+
+    <li>原稿をチラ見せ！
+      <ul>
+	<li>在庫補充
+	  <center>
+	    <div style="font-size: 50px; font-weight: bolder;">
+	      幸せの黄色い『音楽と数理』ミニハンカチ
+	    </div>
+	  </center>
+	  の原稿
+	  <center>
+	    <img src="minitowl_music-and-math_cmyk_thumb.jpg" width="400" height="283" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+	<li>新グッズ、その１
+	  <center>
+	    <div style="font-size: 40px;">
+	      通常の３倍のスピードできれいになる！
+	    </div>
+	    <br />
+	    <div style="font-size: 50px; font-weight: bolder;">
+	      真紅の『厳密な計算』メガネ拭き
+	    </div>
+	  </center>
+	  こんな感じ
+	  <center>
+	    <img src="meganehuki-ExactComputation-cover1_cmyk_thumb.jpg" width="400" height="278" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+	<li>新グッズ、その２
+	  <center>
+	    <div style="font-size: 40px;">
+	      Stable Diffusion のコラージュ
+	    </div>
+	    <br />
+	    <div style="font-size: 50px; font-weight: bolder;">
+	      『ZAM 季報 VOL.2』クリアファイル (A5)
+	    </div>
+	  </center>
+	  こんな感じ
+	  <center>
+	    <img src="clearfile_A5-ZAM2022Summer-cover4_cmyk_thumb.jpg" width="259" height="400" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+	<li>新グッズ、その３
+	  <center>
+	    <div style="font-size: 40px;">
+	      名刺代わりになるかな？
+	    </div>
+	    <br />
+	    <div style="font-size: 50px; font-weight: bolder;">
+	      『数理三部作＋α』和紙ファイル（試作）
+	    </div>
+	  </center>
+	  こんな感じ
+	  <center>
+	    <img src="washi-clear-file-KengoIchiki_cmyk_thumb.jpg" width="245" height="400" style="border: 2px #ccc solid;" />
+	  </center>
+	</li>
+
+      </ul>
+    </li>
+
+    <li>基本的に、これらのグッズは BOOTH で紙の本を買ってくれた人の
+      「おまけ」としてプレゼントする予定です
+    </li>
+
+  </ul>
+
+  <br /><br />
+  <div align="right">
+    （<a href="#toc">目次に戻る</a>）
+  </div>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part1">
+    <div style="font-size: 50px; font-weight: bolder;">
+      <br />
+      パート１
+      <br />
+      (Stable) Diffusion<br />完璧に理解するぞ！
+    </div>
+  </center>
+
+
+  <h2 id="part1-1">連ツイ「技術書典 Stable Diffusion 本を読む」</h2>
+
+  <ul>
+    <li>技術書典１３の RTA (real time attach) も無事に終わって、<br />
+      時間ができたので、技術書典に出てる本の中から Stable Diffusion に関する本を<br />
+      （いくつかは購入して）眺めてみた
+    </li>
+    <li>連ツイ「技術書典 Stable Diffusion 本を読む」シリーズ
+      (<a href="https://twitter.com/ichiki_k/status/1571332528656748545">https://twitter.com/ichiki_k/status/1571332528656748545</a>)
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.31.54.png"><!-- 1180x1124 -->
+	  <img src="Screen Shot 2022-09-28 at 17.31.54_thumb.jpg" width="400" height="381" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 17.32.02.png"><!-- 1181x1109 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.02_thumb.jpg" width="400" height="376" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 17.32.11.png"><!-- 1187x1224 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.11_thumb.jpg" width="388" height="400" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 17.32.21.png"><!-- 1190x1237 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.21_thumb.jpg" width="385" height="400" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 17.32.29.png"><!-- 1186x1271 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.29_thumb.jpg" width="373" height="400" style="border: 2px #ccc solid;" /></a>
+	<a href="Screen Shot 2022-09-28 at 17.32.41.png"><!-- 1186x1224 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.41_thumb.jpg" width="388" height="400" style="border: 2px #ccc solid;" /></a>
+	<br />
+	<a href="Screen Shot 2022-09-28 at 17.32.47.png"><!-- 1184x624 -->
+	  <img src="Screen Shot 2022-09-28 at 17.32.47_thumb.jpg" width="600" height="316" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+
+    <li>技術書典ほかで『機械学習の炊いたん。』で有名な tomo-makes さんのレビュー
+      (<a href="https://twitter.com/tomo_makes/status/1573966109946290176">https://twitter.com/tomo_makes/status/1573966109946290176</a>)
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.26.57.png"><!-- 1193x819 -->
+	  <img src="Screen Shot 2022-09-28 at 17.26.57_thumb.jpg" width="500" height="343" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part1-2">原典にあたれ --- 完璧に理解すべきだなと認識</h2>
+
+  <ul>
+    <li>ちょうど最近、以下のようなツイート
+      (<a href="https://twitter.com/mi141/status/1569879255429054464">https://twitter.com/mi141/status/1569879255429054464</a>)
+      が流れてきた
+      <pre>
+ほぼ同じタイミングで拡散モデルのサーベイが２本公開されてます
+<a href="https://arxiv.org/abs/2209.04747">https://arxiv.org/abs/2209.04747</a>
+<a href="https://arxiv.org/abs/2209.00796">https://arxiv.org/abs/2209.00796</a>
+
+１本目は画像に特化して事例をたくさん知りたい場合、２本目は拡散モデルを基礎から幅広く把握したい場合にオススメ！
+特に後者の最後、他の生成モデルとの関連はとても面白いです。
+      </pre>
+      <center>
+	<a href="Screen Shot 2022-09-21 at 15.30.30.png"><!-- 1187x428 -->
+	  <img src="Screen Shot 2022-09-21 at 15.30.30_thumb.jpg" width="400" height="144" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li><a href="https://arxiv.org/abs/2209.04747">https://arxiv.org/abs/2209.04747</a>
+	  (<a href="arxiv-2209.04747-DiffusionModel-Survey.pdf">local copy</a>)
+	  <pre>
+Diffusion Models in Vision: A Survey
+Florinel-Alin Croitoru, Vlad Hondru, Radu Tudor Ionescu, Mubarak Shah
+	  </pre>
+	  <center>
+	    <a href="Screen Shot 2022-09-26 at 18.35.04.png"><!-- 2139x1120 -->
+	      <img src="Screen Shot 2022-09-26 at 18.35.04_thumb.jpg" width="800" height="419" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-09-26 at 18.35.20.png"><!-- 2151x894 -->
+	      <img src="Screen Shot 2022-09-26 at 18.35.20_thumb.jpg" width="800" height="332" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+	<li><a href="https://arxiv.org/abs/2209.00796">https://arxiv.org/abs/2209.00796</a>
+	  (<a href="arxiv-2209.00796-DiffusionModels-Survey-Applications.pdf">local copy</a>)
+	  <pre>
+Diffusion Models: A Comprehensive Survey of Methods and Applications
+Ling Yang, Zhilong Zhang, Shenda Hong, Runsheng Xu, Yue Zhao,
+Yingxia Shao, Wentao Zhang, Ming-Hsuan Yang, Bin Cui
+	  </pre>
+	  <center>
+	    <a href="Screen Shot 2022-09-26 at 18.34.23.png"><!-- 2148x856 -->
+	      <img src="Screen Shot 2022-09-26 at 18.34.23_thumb.jpg" width="800" height="319" style="border: 2px #ccc solid;" /></a>
+	    <a href="Screen Shot 2022-09-26 at 18.34.55.png"><!-- 2147x1286 -->
+	      <img src="Screen Shot 2022-09-26 at 18.34.55_thumb.jpg" width="800" height="479" style="border: 2px #ccc solid;" /></a>
+	  </center>
+	</li>
+
+      </ul>
+    </li>
+
+    <li>少し乗り遅れたが、時間を作って、この辺を手掛かりにして
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  <br />
+	  (Stable) Diffusion を<br />完璧に理解するぞ！
+	</div>
+	<br />
+      </center>
+      と思った。
+    </li>
+
+    <li>まずこの２本のレビューに目を通す
+      <ul>
+	<li>同じようなまとめだった</li>
+	<li>現状、 Diffusion Models は３つのカテゴリに分類される
+	  <ul>
+	    <li>denoising diffusion probabilistic models (<b>DDPMs</b>)</li>
+	    <li>noise conditioned score networks (<b>NCSNs</b>)</li>
+	    <li>stochastic differential equations (<b>SDEs</b>)</li>
+	  </ul>
+	</li>
+	<li>これらと、他の画像生成系のアプローチも整理されつつある
+	  <ul>
+	    <li>variational auto-encoders (<b>VAEs</b>)</li>
+	    <li>generative adversarial networks (<b>GANs</b>)</li>
+	    <li>energy-based models (<b>EBMs</b>)</li>
+	    <li>autoregressive models</li>
+	    <li>normalizing flows</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+
+    <li>レビューから、キーとなる論文をピックアップ
+      <ul>
+
+	<li>Latent Diffusion Model (LDM)
+	  <ul>
+	    <li><a href="https://arxiv.org/abs/2112.10752">https://arxiv.org/abs/2112.10752</a> (<a href="arxiv-2112.10752-LDM.pdf">local copy</a>)
+	      <pre>
+High-Resolution Image Synthesis with Latent Diffusion Models
+Rombach et al.
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 17.58.16.png"><!-- 2147x690 -->
+		  <img src="Screen Shot 2022-09-27 at 17.58.16_thumb.jpg" width="800" height="257" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 17.58.58.png"><!-- 2156x627 -->
+		  <img src="Screen Shot 2022-09-27 at 17.58.58_thumb.jpg" width="800" height="233" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li>
+
+	<li>denoising diffusion probabilistic models (DDPMs)
+	  <ul>
+	    <li><a href="https://arxiv.org/abs/1503.03585">https://arxiv.org/abs/1503.03585</a> (<a href="arxiv-1503.03585-SohlDickstein.pdf">local copy</a>)
+	      <pre>
+Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+Jascha Sohl-Dickstein et al
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 18.01.34.png"><!-- 2147x615 -->
+		  <img src="Screen Shot 2022-09-27 at 18.01.34_thumb.jpg" width="800" height="229" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 18.01.45.png"><!-- 2151x807 -->
+		  <img src="Screen Shot 2022-09-27 at 18.01.45_thumb.jpg" width="800" height="300" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+
+	    <li><a href="https://arxiv.org/abs/2006.11239">https://arxiv.org/abs/2006.11239</a> (<a href="arxiv-2006.11239-DDPM.pdf">local copy</a>)
+	      <pre>
+Denoising Diffusion Probabilistic Models
+Jonathan Ho et al.
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 18.35.52.png"><!-- 2148x358 -->
+		  <img src="Screen Shot 2022-09-27 at 18.35.52_thumb.jpg" width="800" height="133" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 18.36.03.png"><!-- 2149x694 -->
+		  <img src="Screen Shot 2022-09-27 at 18.36.03_thumb.jpg" width="800" height="258" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	      <ul>
+		<li>published link:
+		  <a href="https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html">https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html</a>
+		</li>
+
+		<li>読んでみる
+		  <center>
+		    <a href="HoEtal2020-Fig2.png"><!-- 1476x232 -->
+		      <img src="HoEtal2020-Fig2_thumb.jpg" width="800" height="126" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq1.png"><!-- 1438x126 -->
+		      <img src="HoEtal2020-Eq1_thumb.jpg" width="800" height="70" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq2.png"><!-- 1438x132 -->
+		      <img src="HoEtal2020-Eq2_thumb.jpg" width="800" height="73" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq3.png"><!-- 1438x125 -->
+		      <img src="HoEtal2020-Eq3_thumb.jpg" width="800" height="70" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq4.png"><!-- 1438x73 -->
+		      <img src="HoEtal2020-Eq4_thumb.jpg" width="800" height="41" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq5.png"><!-- 1473x135 -->
+		      <img src="HoEtal2020-Eq5_thumb.jpg" width="800" height="73" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq6.png"><!-- 1473x63 -->
+		      <img src="HoEtal2020-Eq6_thumb.jpg" width="800" height="34" style="border: 2px #ccc solid;" /></a>
+		    <a href="HoEtal2020-Eq7.png"><!-- 1473x88 -->
+		      <img src="HoEtal2020-Eq7_thumb.jpg" width="800" height="48" style="border: 2px #ccc solid;" /></a>
+		  </center>
+		</li>
+
+	      </ul>
+	    </li>
+
+	  </ul>
+	</li><!-- denoising diffusion probabilistic models (DDPMs) -->
+
+	<li>noise conditioned score networks (NCSNs)
+	  <ul>
+	    <li><a href="https://arxiv.org/abs/1907.05600">https://arxiv.org/abs/1907.05600</a> (<a href="arxiv-1907.05600-NCSN.pdf">local copy</a>)
+	      <pre>
+Generative Modeling by Estimating Gradients of the Data Distribution
+Yang Song, Stefano Ermon
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 18.08.14.png"><!-- 2148x932 -->
+		  <img src="Screen Shot 2022-09-27 at 18.08.14_thumb.jpg" width="800" height="347" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 18.08.36.png"><!-- 2152x535 -->
+		  <img src="Screen Shot 2022-09-27 at 18.08.36_thumb.jpg" width="800" height="199" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+	  </ul>
+	</li><!-- noise conditioned score networks (NCSNs) -->
+
+
+	<li>stochastic differential equations (SDEs)
+	  <ul>
+	    <li><a href="https://arxiv.org/abs/2011.13456">https://arxiv.org/abs/2011.13456</a> (<a href="arxiv-2011.13456-SDE.pdf">local copy</a>)
+	      <pre>
+Score-Based Generative Modeling through Stochastic Differential Equations
+Yang Song et al.
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 18.13.21.png"><!-- 2141x550 -->
+		  <img src="Screen Shot 2022-09-27 at 18.13.21_thumb.jpg" width="800" height="206" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 18.13.42.png"><!-- 2141x330 -->
+		  <img src="Screen Shot 2022-09-27 at 18.13.42_thumb.jpg" width="800" height="123" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	    </li>
+
+	    <li><a href="https://arxiv.org/abs/2106.02808">https://arxiv.org/abs/2106.02808</a> (<a href="arxiv-2106.02808-HuangEtal.pdf">local copy</a>)
+	      <pre>
+A Variational Perspective on Diffusion-Based Generative Models and Score Matching
+Chin-Wei Huang et al.
+	      </pre>
+	      <center>
+		<a href="Screen Shot 2022-09-27 at 18.36.19.png"><!-- 2146x382 -->
+		  <img src="Screen Shot 2022-09-27 at 18.36.19_thumb.jpg" width="800" height="142" style="border: 2px #ccc solid;" /></a>
+		<a href="Screen Shot 2022-09-27 at 18.36.38.png"><!-- 2150x506 -->
+		  <img src="Screen Shot 2022-09-27 at 18.36.38_thumb.jpg" width="800" height="188" style="border: 2px #ccc solid;" /></a>
+	      </center>
+	      <ul>
+		<li>published link:
+		  <a href="https://papers.nips.cc/paper/2021/hash/c11abfd29e4d9b4d4b566b01114d8486-Abstract.html">https://papers.nips.cc/paper/2021/hash/c11abfd29e4d9b4d4b566b01114d8486-Abstract.html</a>
+		</li>
+
+		<li><a href="https://yang-song.net/">https://yang-song.net/</a>
+		  <center>
+		    <a href="Screen Shot 2022-09-27 at 18.36.56.png"><!-- 2743x546 -->
+		      <img src="Screen Shot 2022-09-27 at 18.36.56_thumb.jpg" width="800" height="159" style="border: 2px #ccc solid;" /></a>
+		  </center>
+		  <ul>
+		    <li><a href="https://yang-song.net/blog/2021/score/">
+			Generative Modeling by Estimating Gradients of the Data Distribution</a>
+		      <pre>
+This blog post focuses on a promising new direction for generative modeling.
+Yang Song
+Stanford University
+PUBLISHED May 5, 2021
+		      </pre>
+		      <center>
+			<a href="Screen Shot 2022-09-27 at 18.36.49.png"><!-- 2746x1086 -->
+			  <img src="Screen Shot 2022-09-27 at 18.36.49_thumb.jpg" width="800" height="316" style="border: 2px #ccc solid;" /></a>
+		      </center>
+		    </li>
+		  </ul>
+		</li>
+
+	      </ul>
+	    </li>
+
+	  </ul>
+	</li><!-- stochastic differential equations (SDEs) -->
+
+      </ul>
+    </li><!-- レビューから深堀り -->
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part1-3">次回（？）予告</h2>
+
+  <ul>
+    <li>今日はここまで。<br />
+      次回（？）予告
+      <center>
+	<div style="font-size: 50px; font-weight: bolder;">
+	  <br />
+	  (Stable) Diffusion<br />
+	  完璧に理解するぞ！<br />
+	</div>
+	<br />
+      </center>
+      乞うご期待！
+    </li>
+
+  </ul>
+
+  <br /><br />
+  <div align="right">
+    （<a href="#toc">目次に戻る</a>）
+  </div>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+
+  <center id="part2">
+    <div style="font-size: 50px; font-weight: bolder;">
+      パート２
+      <br />
+      技術書典１３　お疲れさま　座談会
+    </div>
+  </center>
+
+  <h2 id="part2-1">『ZAM 季報 VOL.2』完成しました！</h2>
+
+  <ul>
+    <li>総ページ数（本文）１２８の大作になりました（なってしまいました）
+      <ul>
+	<li>記事の数は１５本。内訳は、
+	  <ul>
+	    <li>【講演】３本</li>
+	    <li>【連載】２本</li>
+	    <li>【AI実践編】３本</li>
+	    <li>【エッセイ】６本</li>
+	    <li>【AI小説】１本</li>
+	  </ul>
+	</li>
+      </ul>
+    </li>
+    <li>表紙
+      <center>
+	<a href="cover14-with-back.jpg">
+	  <img src="cover14-with-back_thumb.jpg" width="800" height="514" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>目次
+      <center>
+	<a href="ZAM2022Summer-v10-toc-preface.png"><!-- 1921x1347 -->
+	  <img src="ZAM2022Summer-v10-toc-preface_thumb.jpg" width="800" height="561" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+    <li>まえがき</li>
+    <li>【連載】ZENKEI AI FORUM 年代記（２）（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.01.35.png"><!-- 1909x1343 -->
+	  <img src="Screen Shot 2022-09-28 at 17.01.35_thumb.jpg" width="800" height="563" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【講演】浮世絵チャレンジ　俳句TO浮世絵プログラムPoemGANの紹介（大島圭祐）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.01.42.png"><!-- 1911x1346 -->
+	  <img src="Screen Shot 2022-09-28 at 17.01.42_thumb.jpg" width="800" height="563" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】ZENKEI AI MAGAZINEに寄稿すべし！（河村千種）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.01.54.png"><!-- 1915x1343 -->
+	  <img src="Screen Shot 2022-09-28 at 17.01.54_thumb.jpg" width="800" height="561" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【AI実践編】アニメ顔になってみよう！---最近の GAN（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.02.10.png"><!-- 1912x1347 -->
+	  <img src="Screen Shot 2022-09-28 at 17.02.10_thumb.jpg" width="800" height="564" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】締め切りに関する考察（山本浩貴）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.02.25.png"><!-- 1914x1341 -->
+	  <img src="Screen Shot 2022-09-28 at 17.02.25_thumb.jpg" width="800" height="561" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【講演】メラノーマ疑惑のホクロをAIで診断してみた（ちゃんもり）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.02.45.png"><!-- 1914x1342 -->
+	  <img src="Screen Shot 2022-09-28 at 17.02.45_thumb.jpg" width="800" height="561" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【連載】日常で使えない英語トリビアⅡ～略語編（河村千種）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.02.57.png"><!-- 1911x1344 -->
+	  <img src="Screen Shot 2022-09-28 at 17.02.57_thumb.jpg" width="800" height="563" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】共通テストってどれほどのものよ？（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.07.png"><!-- 1914x1343 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.07_thumb.jpg" width="800" height="561" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】執筆が先か、学びが先か（窪田智紗季）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.14.png"><!-- 1913x1345 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.14_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【AI小説】アンドロメダの女（野木恵吉）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.25.png"><!-- 1914x1346 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.25_thumb.jpg" width="800" height="563" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】コミュニティ志向と科学的視点（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.35.png"><!-- 1915x1346 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.35_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【AI実践編】Let's Dance!（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.41.png"><!-- 1915x1346 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.41_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【講演】Stable Diffusion 革命（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.03.56.png"><!-- 1913x1343 -->
+	  <img src="Screen Shot 2022-09-28 at 17.03.56_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【AI実践編】2022年9月上旬版 Stable Diffusion の使い方（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.04.10.png"><!-- 1915x1345 -->
+	  <img src="Screen Shot 2022-09-28 at 17.04.10_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>【エッセイ】最近のオレはどこに向かっているんだろう？（市來健吾）
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.04.19.png"><!-- 1912x1348 -->
+	  <img src="Screen Shot 2022-09-28 at 17.04.19_thumb.jpg" width="800" height="564" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>執筆者紹介
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.04.26.png"><!-- 1913x1344 -->
+	  <img src="Screen Shot 2022-09-28 at 17.04.26_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>編集後記
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.04.30.png"><!-- 1913x1345 -->
+	  <img src="Screen Shot 2022-09-28 at 17.04.30_thumb.jpg" width="800" height="562" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part2-2">技術書典１３ドタバタ出典記（オンライン）〜約２週間でサークル雑誌『ZAM 季報 VOL.2』を書いたはなし</h2>
+
+  <ul>
+    <li>Qiita:
+      <a href="https://qiita.com/kichiki/items/f6edaadb5e4ec20e8227">
+	技術書典１３ドタバタ出典記（オンライン）〜約２週間でサークル雑誌『ZAM 季報 VOL.2』を書いたはなし</a>
+      <center>
+	<a href="Qiita-20220919.png"><!-- 2764x1384 -->
+	  <img src="Qiita-20220919_thumb.jpg" width="800" height="401" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part2-3">フィードバックなど</h2>
+
+  <ul>
+    <li>技術書典ほかで『機械学習の炊いたん。』で有名な tomo-makes さんからのコメント
+      (<a href="https://twitter.com/tomo_makes/status/1573995432983699456">https://twitter.com/tomo_makes/status/1573995432983699456</a>)
+      <center>
+	<a href="Screen Shot 2022-09-28 at 17.27.42.png"><!-- 1185x1115 -->
+	  <img src="Screen Shot 2022-09-28 at 17.27.42_thumb.jpg" width="500" height="470" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <pre>
+#技術書典 @ichiki_k さん単著から拝読しています。
+#stablediffusion 記事目当てに手に取るも、その完成度は勿論、
+各記事一貫した実践姿勢、コミュニティの在り方への思索など、
+同じ合同本を作る立場で引き込まれました。
+旅先のカフェで手に取るミニコミ誌のような読後感。
+      </pre>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part2-4">売り上げ報告</h2>
+
+  <ul>
+    <li>毎回恒例の売り上げ報告です<br />
+      凡例
+      <ul>
+	<li><font color="#2077b4">■</font>：ゼロから始めるAI</li>
+	<li><font color="#ff7f0e">■</font>：音楽と数理</li>
+	<li><font color="#2da02c">■</font>：Jupyter BookでAIの解説本を書く方法</li>
+	<li><font color="#d62728">■</font>：厳密な計算</li>
+	<li><font color="#9567bd">■</font>：ZAM 季報 VOL.1</li>
+	<li><font color="#8c564c">■</font>：ZAM 季報 VOL.2</li>
+      </ul>
+    </li>
+
+    <li>技術書典９からの時系列
+      <center>
+	<a href="Screen Shot 2022-09-26 at 17.49.03.png"><!-- 2265x1022 -->
+	  <img src="Screen Shot 2022-09-26 at 17.49.03_thumb.jpg" width="800" height="361" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>「<font color="#2077b4"><b>ゼロはじ</b></font>」は
+	  （無料であることも大きいですが）ダントツですね。</li>
+	<li>前回の技術書典１２終了時点で総頒布数（ダウンロード数）が
+	  1,000 を超えました</li>
+      </ul>
+    </li>
+    <li>縦軸をズームイン
+      <center>
+	<a href="Screen Shot 2022-09-26 at 17.49.13.png"><!-- 2026x1025 -->
+	  <img src="Screen Shot 2022-09-26 at 17.49.13_thumb.jpg" width="800" height="405" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>有料の本については「<font color="#ff7f0e"><b>音楽と数理</b></font>」
+	  が一番出ています</li>
+	<li>こちらも、累計 200 部を超えました。</li>
+	<li>世界の 200 人の人に（ぼくのニッチなこの本が）届いたのかと思うと、
+	  嬉しいです</li>
+      </ul>
+    </li>
+    <li>さらに縦軸をズームイン
+      <center>
+	<a href="Screen Shot 2022-09-26 at 17.49.20.png"><!-- 2021x1046 -->
+	  <img src="Screen Shot 2022-09-26 at 17.49.20_thumb.jpg" width="800" height="414" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>技術書典１０で刊行した２冊
+	  <ul>
+	    <li>中野さんの「<font color="#2da02c"><b>Jupyter Book</b></font>」本と</li>
+	    <li>ぼくの「<font color="#d62728"><b>厳密な計算</b></font>」</li>
+	  </ul>
+	  も、それ以降も（一桁ですが）コンスタントに出ています</li>
+	<li>サークル雑誌（同人誌の世界では「合同誌」と呼ぶらしいですね）の２冊、<br />
+	  「<b>ZAM 季報</b>」の <font color="#9567bd"><b>VOL.1</b></font> と
+	  <font color="#8c564c"><b>VOL.2</b></font> ですが、
+	  （相対的に？）注目度が低いのかな？と思いました</li>
+	<li>今回がんばった新刊の <font color="#8c564c"><b>VOL.2</b></font>
+	  は 13 部出ました</li>
+      </ul>
+    </li>
+    <li>イベントごとにまとめた頒布数の推移
+      <center>
+	<a href="Screen Shot 2022-09-26 at 17.49.37.png"><!-- 2257x1001 -->
+	  <img src="Screen Shot 2022-09-26 at 17.49.37_thumb.jpg" width="800" height="355" style="border: 2px #ccc solid;" /></a>
+      </center>
+    </li>
+    <li>縦軸をズームイン
+      <center>
+	<a href="Screen Shot 2022-09-26 at 17.49.43.png"><!-- 2184x1020 -->
+	  <img src="Screen Shot 2022-09-26 at 17.49.43_thumb.jpg" width="800" height="374" style="border: 2px #ccc solid;" /></a>
+      </center>
+      <ul>
+	<li>ぼくの２冊「<font color="#ff7f0e"><b>音楽と数理</b></font>」
+      	  と「<font color="#d62728"><b>厳密な計算</b></font>」
+	  の推移を見ると、<br />
+	  新刊の時のピークから２回目で減衰するけど、<br />
+	  ３回目以降はもうサチってる感じなのかな？<br />
+	  つまり
+	  <ul>
+	    <li>「<font color="#ff7f0e"><b>音楽と数理</b></font>」
+	      は１５冊</li>
+      	    <li>「<font color="#d62728"><b>厳密な計算</b></font>」
+	      は５冊</li>
+	  </ul>
+	  くらいのコンスタントな需要がある（のかな？）
+	</li>
+      </ul>
+    </li>
+
+    <center>
+      <div style="font-size: 50px; font-weight: bolder;">
+	次（技術書典１４）こそは<br />
+	数理三部作の新刊出すぞ！
+      </div>
+    </center>
+
+    <li>ちなみに「技術書典１４」は半年後の 2023 年春ごろだそうです
+      <ul>
+	<li>（フムフム、まだ時間はいっぱいあるなぁ……）</li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <h2 id="part2-5">Let's 座談会！</h2>
+
+  <ul>
+    <li>みんな、来てくれるかなぁ</li>
+  </ul>
+
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <center id="epilogue">
+    <div style="font-size: 50px; font-weight: bolder;">
+      今日のおわりに
+    </div>
+  </center>
+
+  <p>……</p>
+
+  <h3>今後の予定</h3>
+  <ul>
+    <li>次回 ZAF は 2022 年 10 月 26 日開催の予定です。</li>
+    <li>ZAF 講演者、 ZAM 執筆者、絶賛、大募集中です！<br />
+      お気軽にお問い合わせください！</li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+  <hr />
+  <hr />
+
+  <h2 id="detailed-toc">総合目次</h2>
+  <ul>
+    <li><b>前座</b>
+      <a href="#part0">日常への回帰</a></li>
+      <ul>
+	<li><a href="#part0-1">ZAP (ZENKEI AI ポッドキャスト) 復活しました！</a></li>
+	<li><a href="#part0-2">（ぼくの趣味１００％の）音楽と数理 🎼 ♾ ポッドキャスト復活しました！</a></li>
+	<li><a href="#part0-3">日常への回帰〜まだ戻ってきてないものなど</a></li>
+	<li><a href="#part0-4">（コロナ禍のもと）自分が大切だと思うこところの経済を回すこと</a></li>
+      </ul>
+    </li>
+
+    <li><b>第１部</b>
+      <a href="#part1">(Stable) Diffusion 完璧に理解するぞ！</a>
+      <ul>
+	<li><a href="#part1-1">連ツイ「技術書典 Stable Diffusion 本を読む」</a></li>
+	<li><a href="#part1-2">原典にあたれ --- 完璧に理解すべきだなと認識</a></li>
+	<li><a href="#part1-3">次回（？）予告</a></li>
+      </ul>
+    </li>
+
+    <li><b>第２部</b>
+      <a href="#part2">技術書典１３　お疲れさま　座談会</a>
+      <ul>
+	<li><a href="#part2-1">『ZAM 季報 VOL.2』完成しました！</a></li>
+	<li><a href="#part2-2">技術書典１３ドタバタ出典記（オンライン）〜約２週間でサークル雑誌『ZAM 季報 VOL.2』を書いたはなし</a></li>
+	<li><a href="#part2-3">フィードバックなど</a></li>
+	<li><a href="#part2-4">売り上げ報告</a></li>
+	<li><a href="#part2-5">Let's 座談会！</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#epilogue">今日のおわりに</a></li>
+  </ul>
+
+  <br /><br /><br /><center>...♦...</center><br /><br /><br />
+
+</section>
+
+</body>           
+</html>
