@@ -3,6 +3,8 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://hello-ai-forum.github.io/pages/
+* KAF 2023/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/ichiki/)
+  * 今年前半の振り返り / 最近のAI業界 / Llama2 と LLaMA.cpp と llama2.c
 * KAF 2023/06 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2306/ichiki/)
   * Daily Rituals / Munk Debates / AlphaZero で対戦 / 貧乏人のAI
 * KAF 2023/05 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2305/ichiki/)
