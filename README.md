@@ -3,11 +3,13 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://hello-ai-forum.github.io/pages/
-* KAF 2023/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/ichiki/)
+* KAF 23/08 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2308/ichiki/)
+  * AI の意識 / AI と意識 / Yoshua Bengio の覚悟と希望
+* KAF 23/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/ichiki/)
   * 今年前半の振り返り / 最近のAI業界 / Llama2 と LLaMA.cpp と llama2.c
-* KAF 2023/06 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2306/ichiki/)
+* KAF 23/06 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2306/ichiki/)
   * Daily Rituals / Munk Debates / AlphaZero で対戦 / 貧乏人のAI
-* KAF 2023/05 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2305/ichiki/)
+* KAF 23/05 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2305/ichiki/)
   * 技術書典１４、絶賛開催中 / AI FORUM は自由にする / 市來仕事やめたってよ
 * ZAF 2023/04 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/ZAF202304/ichiki/)
   * 技術書典１４ / ボイスチェンジャー / AI セキュリティ問題など
