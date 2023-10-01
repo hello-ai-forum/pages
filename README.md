@@ -3,6 +3,8 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://hello-ai-forum.github.io/pages/
+* KAF 23/09 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2309/ichiki/)
+  * 技術書典１５ / 社会とのかかわり / 科学の社会への活用とビジネス
 * KAF 23/08 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2308/ichiki/)
   * AI の意識 / AI と意識 / Yoshua Bengio の覚悟と希望
 * KAF 23/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/ichiki/)
