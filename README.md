@@ -3,15 +3,17 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://hello-ai-forum.github.io/pages/
-* KAF 23/09 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2309/ichiki/)
+* KAF 23/10 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2310/)
+  * 読書の秋 / AGI に関する”うわさ” / AI と意識 -- IIT に関して
+* KAF 23/09 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2309/)
   * 技術書典１５ / 社会とのかかわり / 科学の社会への活用とビジネス
-* KAF 23/08 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2308/ichiki/)
+* KAF 23/08 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2308/)
   * AI の意識 / AI と意識 / Yoshua Bengio の覚悟と希望
-* KAF 23/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/ichiki/)
+* KAF 23/07 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2307/)
   * 今年前半の振り返り / 最近のAI業界 / Llama2 と LLaMA.cpp と llama2.c
-* KAF 23/06 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2306/ichiki/)
+* KAF 23/06 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2306/)
   * Daily Rituals / Munk Debates / AlphaZero で対戦 / 貧乏人のAI
-* KAF 23/05 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2305/ichiki/)
+* KAF 23/05 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2305/)
   * 技術書典１４、絶賛開催中 / AI FORUM は自由にする / 市來仕事やめたってよ
 * ZAF 2023/04 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/ZAF202304/ichiki/)
   * 技術書典１４ / ボイスチェンジャー / AI セキュリティ問題など
