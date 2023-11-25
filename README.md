@@ -3,6 +3,8 @@
 gh-pages で、個別に書いた HTML コンテンツをホスティングするためのレポジトリです。
 
 * トップ： https://hello-ai-forum.github.io/pages/
+* KAF 23/11 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2311/)
+  * 技術書典１５ / OpenAI のドタバタ / 読書の秋、勉強の秋
 * KAF 23/10 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2310/)
   * 読書の秋 / AGI に関する”うわさ” / AI と意識 -- IIT に関して
 * KAF 23/09 : [市來の発表コンテンツ](https://hello-ai-forum.github.io/pages/KAF2309/)
